@@ -1,0 +1,57 @@
+runtime: gp: gp=0xc208000120, goid=1, gp->atomicstatus=0x1
+runtime:  g:  g=0xc20da00120, goid=0,  g->atomicstatus=0x0
+fatal error: bad g->status in ready
+
+runtime stack:
+runtime.throw(0x562f53)
+	/usr/local/go/src/runtime/panic.go:491 +0xad
+runtime.ready(0xc208000120)
+	/usr/local/go/src/runtime/proc.c:225 +0x6c
+runtime.ready_m()
+	/usr/local/go/src/runtime/proc.c:244 +0x55
+runtime.onM(0xc208065200)
+	/usr/local/go/src/runtime/asm_amd64.s:257 +0x68
+runtime.mstart()
+	/usr/local/go/src/runtime/proc.c:818
+
+goroutine 199173 [running]:
+runtime.switchtoM()
+	/usr/local/go/src/runtime/asm_amd64.s:198 fp=0xc214aec698 sp=0xc214aec690
+runtime.goready(0xc208000120)
+	/usr/local/go/src/runtime/proc.go:142 +0x58 fp=0xc214aec6b8 sp=0xc214aec698
+runtime.chansend(0x4a55c0, 0xc21d33e4e0, 0xc214aec7bf, 0xc214aec701, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:151 +0x2a8 fp=0xc214aec760 sp=0xc214aec6b8
+runtime.chansend1(0x4a55c0, 0xc21d33e4e0, 0xc214aec7bf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc214aec798 sp=0xc214aec760
+main.func·002()
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc214aec7e0 sp=0xc214aec798
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc214aec7e8 sp=0xc214aec7e0
+created by main.(*TaskPool).Start
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
+
+goroutine 1 [runnable]:
+main.(*TaskPool).Stop(0xc208020020)
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:61 +0x66
+main.sparselu_par_call(0xc2080ae000, 0x9dd1, 0x9dd1)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe-chan.go:102 +0x2b3
+main.main()
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe-chan.go:121 +0x12f
+
+goroutine 199177 [runnable]:
+main.func·002()
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:50 +0x5c
+created by main.(*TaskPool).Start
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
+
+goroutine 199209 [running]:
+	goroutine running on other thread; stack unavailable
+created by main.(*TaskPool).Start
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
+
+goroutine 199179 [chan send]:
+main.func·002()
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4
+created by main.(*TaskPool).Start
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
+exit status 2

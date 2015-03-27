@@ -4,8 +4,9 @@ import (
 	"flag"
 	"fmt"
 	"runtime"
-	"sync"
 )
+
+var pool = NewTaskPool()
 
 var matrixSize, submatrixSize int
 
@@ -60,13 +61,13 @@ func genmat(M []*[][]float32) {
  * bmod:
  **********************************************************************/
 func bmod(row [][]float32, col [][]float32, inner [][]float32) {
-	for i := 0; i < submatrixSize; i++ {
-		for j := 0; j < submatrixSize; j++ {
-			for k := 0; k < submatrixSize; k++ {
-				inner[i][j] = inner[i][j] - row[i][k]*col[k][j]
-			}
-		}
-	}
+        for i := 0; i < submatrixSize; i++ {
+                for j := 0; j < submatrixSize; j++ {
+                        for k := 0; k < submatrixSize; k++ {
+                                inner[i][j] = inner[i][j] - row[i][k]*col[k][j]
+                        }
+                }
+        }
 }
 
 func sparselu_init(pBENCH *[]*[][]float32, pass string) {
@@ -76,8 +77,6 @@ func sparselu_init(pBENCH *[]*[][]float32, pass string) {
 
 func sparselu_par_call(BENCH []*[][]float32) {
 
-	var wg sync.WaitGroup
-
 	for kk := 0; kk < matrixSize; kk++ {
 
 		for ii := kk + 1; ii < matrixSize; ii++ {
@@ -85,11 +84,9 @@ func sparselu_par_call(BENCH []*[][]float32) {
 				for jj := kk + 1; jj < matrixSize; jj++ {
 					if BENCH[kk*matrixSize+jj] != nil {
 						//#pragma omp task untied firstprivate(kk, jj, ii) shared(BENCH)
-						wg.Add(1)
 						jj := jj
 
-						go func(wg *sync.WaitGroup) {
-							defer (*wg).Done()
+						pool.AddTask(func() {
 							if BENCH[ii*matrixSize+jj] == nil {
 								subMatrix := make([][]float32, submatrixSize)
 								// go-style initializing 2d matrix in a loop
@@ -98,11 +95,12 @@ func sparselu_par_call(BENCH []*[][]float32) {
 								}
 								BENCH[ii*matrixSize+jj] = &subMatrix
 							}
-							bmod(*BENCH[ii*matrixSize+kk], *BENCH[kk*matrixSize+jj], *BENCH[ii*matrixSize+jj])
-						}(&wg)
+                            bmod(*BENCH[ii*matrixSize+kk], *BENCH[kk*matrixSize+jj], *BENCH[ii*matrixSize+jj])
+						})
 					}
 				}
-				wg.Wait()
+				pool.Stop()
+				pool.Start()
 			}
 		}
 	}
@@ -119,8 +117,9 @@ func main() {
 	var matrixPar []*[][]float32
 	sparselu_init(&matrixPar, "Parallel")
 	{
-		// we're not measuring initialization time, just like BOTS
+		pool.Start()
 		sparselu_par_call(matrixPar)
+		pool.Stop()
 	}
 	fmt.Println("Program ended")
 

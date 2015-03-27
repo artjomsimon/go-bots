@@ -1,1 +1,1 @@
-signal: segmentation fault
+Program ended

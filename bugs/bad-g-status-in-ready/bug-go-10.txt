@@ -1,224 +1,2813 @@
-acquirep: p->m=0xc20dba6000(44) p->status=1
-fatal error: acquirep: invalid p state
+runtime: gp: gp=0xc208000120, goid=1, gp->atomicstatus=0x1
+runtime:  g:  g=0xc20d990120, goid=0,  g->atomicstatus=0x0
+SCHED 0ms: gomaxprocs=48 idleprocs=14 threads=50 spinningthreads=1 idlethreads=15 runqueue=0 gcwaiting=0 nmidlelocked=0 stopwait=0 sysmonwait=0
+  P0: status=1 schedtick=16920 syscalltick=0 m=18 runqsize=0 gfreecnt=39
+  P1: status=1 schedtick=17539 syscalltick=0 m=30 runqsize=0 gfreecnt=24
+  P2: status=1 schedtick=17332 syscalltick=0 m=24 runqsize=0 gfreecnt=60
+  P3: status=1 schedtick=17341 syscalltick=0 m=42 runqsize=0 gfreecnt=52
+  P4: status=1 schedtick=16743 syscalltick=0 m=20 runqsize=0 gfreecnt=48
+  P5: status=1 schedtick=16878 syscalltick=0 m=22 runqsize=0 gfreecnt=41
+  P6: status=1 schedtick=16630 syscalltick=0 m=8 runqsize=0 gfreecnt=30
+  P7: status=1 schedtick=16921 syscalltick=0 m=25 runqsize=0 gfreecnt=50
+  P8: status=1 schedtick=16481 syscalltick=0 m=40 runqsize=0 gfreecnt=15
+  P9: status=1 schedtick=18235 syscalltick=0 m=35 runqsize=0 gfreecnt=32
+  P10: status=1 schedtick=16618 syscalltick=0 m=39 runqsize=0 gfreecnt=34
+  P11: status=1 schedtick=16519 syscalltick=0 m=36 runqsize=0 gfreecnt=45
+  P12: status=1 schedtick=16709 syscalltick=0 m=7 runqsize=0 gfreecnt=25
+  P13: status=1 schedtick=16671 syscalltick=0 m=9 runqsize=0 gfreecnt=11
+  P14: status=1 schedtick=16778 syscalltick=0 m=44 runqsize=0 gfreecnt=17
+  P15: status=0 schedtick=16407 syscalltick=0 m=-1 runqsize=0 gfreecnt=32
+  P16: status=1 schedtick=16612 syscalltick=0 m=5 runqsize=0 gfreecnt=51
+  P17: status=1 schedtick=16903 syscalltick=0 m=47 runqsize=0 gfreecnt=52
+  P18: status=1 schedtick=16637 syscalltick=0 m=0 runqsize=0 gfreecnt=61
+  P19: status=1 schedtick=16753 syscalltick=0 m=12 runqsize=0 gfreecnt=39
+  P20: status=1 schedtick=16624 syscalltick=0 m=27 runqsize=0 gfreecnt=28
+  P21: status=1 schedtick=16703 syscalltick=0 m=49 runqsize=0 gfreecnt=41
+  P22: status=1 schedtick=17018 syscalltick=0 m=14 runqsize=0 gfreecnt=22
+  P23: status=1 schedtick=16669 syscalltick=0 m=16 runqsize=0 gfreecnt=53
+  P24: status=1 schedtick=16667 syscalltick=0 m=26 runqsize=0 gfreecnt=63
+  P25: status=1 schedtick=16977 syscalltick=0 m=11 runqsize=0 gfreecnt=31
+  P26: status=1 schedtick=17206 syscalltick=0 m=32 runqsize=0 gfreecnt=29
+  P27: status=1 schedtick=20358 syscalltick=0 m=45 runqsize=0 gfreecnt=10
+  P28: status=1 schedtick=16620 syscalltick=0 m=17 runqsize=0 gfreecnt=48
+  P29: status=1 schedtick=16425 syscalltick=0 m=23 runqsize=0 gfreecnt=63
+  P30: status=0 schedtick=16952 syscalltick=0 m=-1 runqsize=0 gfreecnt=50
+  P31: status=1 schedtick=16710 syscalltick=0 m=48 runqsize=0 gfreecnt=51
+  P32: status=1 schedtick=16939 syscalltick=0 m=34 runqsize=0 gfreecnt=41
+  P33: status=1 schedtick=16831 syscalltick=0 m=10 runqsize=0 gfreecnt=29
+  P34: status=0 schedtick=16753 syscalltick=0 m=-1 runqsize=0 gfreecnt=58
+  P35: status=1 schedtick=17214 syscalltick=0 m=31 runqsize=0 gfreecnt=62
+  P36: status=1 schedtick=16667 syscalltick=0 m=2 runqsize=0 gfreecnt=54
+  P37: status=1 schedtick=17119 syscalltick=0 m=41 runqsize=0 gfreecnt=23
+  P38: status=1 schedtick=16759 syscalltick=0 m=21 runqsize=0 gfreecnt=41
+  P39: status=1 schedtick=16640 syscalltick=0 m=38 runqsize=0 gfreecnt=56
+  P40: status=1 schedtick=16649 syscalltick=0 m=13 runqsize=0 gfreecnt=48
+  P41: status=1 schedtick=16688 syscalltick=0 m=29 runqsize=0 gfreecnt=32
+  P42: status=1 schedtick=16780 syscalltick=0 m=28 runqsize=0 gfreecnt=38
+  P43: status=0 schedtick=16497 syscalltick=0 m=-1 runqsize=0 gfreecnt=54
+  P44: status=0 schedtick=16919 syscalltick=0 m=-1 runqsize=0 gfreecnt=57
+  P45: status=1 schedtick=16759 syscalltick=0 m=4 runqsize=0 gfreecnt=35
+  P46: status=1 schedtick=16620 syscalltick=0 m=33 runqsize=0 gfreecnt=29
+  P47: status=1 schedtick=16825 syscalltick=0 m=15 runqsize=0 gfreecnt=45
+  M49: p=21 curg=297661 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M48: p=-1 curg=-1 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M47: p=-1 curg=-1 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M46: p=-1 curg=-1 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M45: p=27 curg=297638 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M44: p=-1 curg=-1 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M43: p=-1 curg=-1 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M42: p=3 curg=-1 mallocing=0 throwing=0 gcing=0 locks=1 dying=0 helpgc=0 spinning=1 blocked=0 lockedg=-1
+  M41: p=37 curg=297625 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M40: p=8 curg=-1 mallocing=0 throwing=0 gcing=0 locks=1 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M39: p=10 curg=297621 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M38: p=-1 curg=-1 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M37: p=-1 curg=-1 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M36: p=-1 curg=-1 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M35: p=9 curg=-1 mallocing=0 throwing=0 gcing=0 locks=1 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M34: p=32 curg=297647 mallocing=0 throwing=1 gcing=0 locks=4 dying=1 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M33: p=46 curg=-1 mallocing=0 throwing=0 gcing=0 locks=1 dying=0 helpgc=0 spinning=1 blocked=0 lockedg=-1
+  M32: p=26 curg=297655 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M31: p=35 curg=-1 mallocing=0 throwing=0 gcing=0 locks=1 dying=0 helpgc=0 spinning=1 blocked=0 lockedg=-1
+  M30: p=1 curg=-1 mallocing=0 throwing=0 gcing=0 locks=1 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M29: p=41 curg=297660 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M28: p=42 curg=-1 mallocing=0 throwing=0 gcing=0 locks=1 dying=0 helpgc=0 spinning=1 blocked=0 lockedg=-1
+  M27: p=20 curg=297631 mallocing=0 throwing=0 gcing=0 locks=1 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M26: p=24 curg=297649 mallocing=0 throwing=0 gcing=0 locks=1 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M25: p=7 curg=-1 mallocing=0 throwing=0 gcing=0 locks=1 dying=0 helpgc=0 spinning=1 blocked=0 lockedg=-1
+  M24: p=-1 curg=-1 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M23: p=29 curg=-1 mallocing=0 throwing=0 gcing=0 locks=1 dying=0 helpgc=0 spinning=1 blocked=0 lockedg=-1
+  M22: p=-1 curg=-1 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M21: p=38 curg=-1 mallocing=0 throwing=0 gcing=0 locks=1 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M20: p=4 curg=-1 mallocing=0 throwing=0 gcing=0 locks=1 dying=0 helpgc=0 spinning=1 blocked=0 lockedg=-1
+  M19: p=-1 curg=-1 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M18: p=0 curg=-1 mallocing=0 throwing=0 gcing=0 locks=1 dying=0 helpgc=0 spinning=1 blocked=0 lockedg=-1
+  M17: p=28 curg=297646 mallocing=0 throwing=0 gcing=0 locks=1 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M16: p=-1 curg=-1 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M15: p=47 curg=-1 mallocing=0 throwing=0 gcing=0 locks=1 dying=0 helpgc=0 spinning=1 blocked=0 lockedg=-1
+  M14: p=22 curg=-1 mallocing=0 throwing=0 gcing=0 locks=1 dying=0 helpgc=0 spinning=1 blocked=0 lockedg=-1
+  M13: p=40 curg=-1 mallocing=0 throwing=0 gcing=0 locks=1 dying=0 helpgc=0 spinning=1 blocked=0 lockedg=-1
+  M12: p=19 curg=297628 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M11: p=25 curg=297652 mallocing=0 throwing=0 gcing=0 locks=1 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M10: p=33 curg=297654 mallocing=0 throwing=0 gcing=0 locks=1 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M9: p=13 curg=-1 mallocing=0 throwing=0 gcing=0 locks=1 dying=0 helpgc=0 spinning=1 blocked=0 lockedg=-1
+  M8: p=6 curg=297629 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M7: p=12 curg=-1 mallocing=0 throwing=0 gcing=0 locks=1 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M5: p=16 curg=-1 mallocing=0 throwing=0 gcing=0 locks=1 dying=0 helpgc=0 spinning=1 blocked=0 lockedg=-1
+  M4: p=45 curg=-1 mallocing=0 throwing=0 gcing=0 locks=1 dying=0 helpgc=0 spinning=1 blocked=0 lockedg=-1
+  M3: p=-1 curg=-1 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M2: p=36 curg=-1 mallocing=0 throwing=0 gcing=0 locks=1 dying=0 helpgc=0 spinning=1 blocked=0 lockedg=-1
+  M1: p=-1 curg=-1 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M0: p=18 curg=-1 mallocing=0 throwing=0 gcing=0 locks=1 dying=0 helpgc=0 spinning=1 blocked=0 lockedg=-1
+  G1: status=1(chan receive) m=-1 lockedm=-1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G3: status=4(GC sweep wait) m=-1 lockedm=-1
+  G4: status=4(finalizer wait) m=-1 lockedm=-1
+  G295152: status=6() m=-1 lockedm=-1
+  G296782: status=6() m=-1 lockedm=-1
+  G297547: status=6() m=-1 lockedm=-1
+  G295771: status=6() m=-1 lockedm=-1
+  G296085: status=6() m=-1 lockedm=-1
+  G297460: status=6() m=-1 lockedm=-1
+  G294955: status=6() m=-1 lockedm=-1
+  G297469: status=6() m=-1 lockedm=-1
+  G296370: status=6() m=-1 lockedm=-1
+  G272685: status=6() m=-1 lockedm=-1
+  G296605: status=6() m=-1 lockedm=-1
+  G297514: status=6() m=-1 lockedm=-1
+  G295106: status=6() m=-1 lockedm=-1
+  G292030: status=6() m=-1 lockedm=-1
+  G293840: status=6() m=-1 lockedm=-1
+  G296538: status=6() m=-1 lockedm=-1
+  G293402: status=6() m=-1 lockedm=-1
+  G284932: status=6() m=-1 lockedm=-1
+  G287238: status=6() m=-1 lockedm=-1
+  G295180: status=6() m=-1 lockedm=-1
+  G285561: status=6() m=-1 lockedm=-1
+  G297140: status=6() m=-1 lockedm=-1
+  G294116: status=6() m=-1 lockedm=-1
+  G297257: status=6() m=-1 lockedm=-1
+  G292762: status=6() m=-1 lockedm=-1
+  G296967: status=6() m=-1 lockedm=-1
+  G294150: status=6() m=-1 lockedm=-1
+  G288821: status=6() m=-1 lockedm=-1
+  G296220: status=6() m=-1 lockedm=-1
+  G290645: status=6() m=-1 lockedm=-1
+  G297291: status=6() m=-1 lockedm=-1
+  G296068: status=6() m=-1 lockedm=-1
+  G295753: status=6() m=-1 lockedm=-1
+  G297381: status=6() m=-1 lockedm=-1
+  G297031: status=6() m=-1 lockedm=-1
+  G297290: status=6() m=-1 lockedm=-1
+  G296998: status=6() m=-1 lockedm=-1
+  G288735: status=6() m=-1 lockedm=-1
+  G293522: status=6() m=-1 lockedm=-1
+  G290805: status=6() m=-1 lockedm=-1
+  G282992: status=6() m=-1 lockedm=-1
+  G293749: status=6() m=-1 lockedm=-1
+  G296426: status=6() m=-1 lockedm=-1
+  G297554: status=6() m=-1 lockedm=-1
+  G284375: status=6() m=-1 lockedm=-1
+  G294828: status=6() m=-1 lockedm=-1
+  G285115: status=6() m=-1 lockedm=-1
+  G296388: status=6() m=-1 lockedm=-1
+  G293630: status=6() m=-1 lockedm=-1
+  G296361: status=6() m=-1 lockedm=-1
+  G297125: status=6() m=-1 lockedm=-1
+  G297566: status=6() m=-1 lockedm=-1
+  G297341: status=6() m=-1 lockedm=-1
+  G297312: status=6() m=-1 lockedm=-1
+  G294462: status=6() m=-1 lockedm=-1
+  G294743: status=6() m=-1 lockedm=-1
+  G297276: status=6() m=-1 lockedm=-1
+  G294645: status=6() m=-1 lockedm=-1
+  G296231: status=6() m=-1 lockedm=-1
+  G294066: status=6() m=-1 lockedm=-1
+  G296095: status=6() m=-1 lockedm=-1
+  G295423: status=6() m=-1 lockedm=-1
+  G292302: status=6() m=-1 lockedm=-1
+  G297183: status=6() m=-1 lockedm=-1
+  G295871: status=6() m=-1 lockedm=-1
+  G296726: status=6() m=-1 lockedm=-1
+  G296436: status=6() m=-1 lockedm=-1
+  G296907: status=6() m=-1 lockedm=-1
+  G296586: status=6() m=-1 lockedm=-1
+  G291752: status=6() m=-1 lockedm=-1
+  G297456: status=6() m=-1 lockedm=-1
+  G297334: status=6() m=-1 lockedm=-1
+  G296368: status=6() m=-1 lockedm=-1
+  G297595: status=6() m=-1 lockedm=-1
+  G297587: status=6() m=-1 lockedm=-1
+  G293982: status=6() m=-1 lockedm=-1
+  G296876: status=6() m=-1 lockedm=-1
+  G297210: status=6() m=-1 lockedm=-1
+  G297462: status=6() m=-1 lockedm=-1
+  G297052: status=6() m=-1 lockedm=-1
+  G220579: status=6() m=-1 lockedm=-1
+  G296248: status=6() m=-1 lockedm=-1
+  G294813: status=6() m=-1 lockedm=-1
+  G297263: status=6() m=-1 lockedm=-1
+  G295242: status=6() m=-1 lockedm=-1
+  G293703: status=6() m=-1 lockedm=-1
+  G297175: status=6() m=-1 lockedm=-1
+  G290518: status=6() m=-1 lockedm=-1
+  G295131: status=6() m=-1 lockedm=-1
+  G297188: status=6() m=-1 lockedm=-1
+  G294950: status=6() m=-1 lockedm=-1
+  G297626: status=4(chan send) m=-1 lockedm=-1
+  G291212: status=6() m=-1 lockedm=-1
+  G296911: status=6() m=-1 lockedm=-1
+  G294296: status=6() m=-1 lockedm=-1
+  G297395: status=6() m=-1 lockedm=-1
+  G296035: status=6() m=-1 lockedm=-1
+  G296415: status=6() m=-1 lockedm=-1
+  G295606: status=6() m=-1 lockedm=-1
+  G296438: status=6() m=-1 lockedm=-1
+  G296506: status=6() m=-1 lockedm=-1
+  G297368: status=6() m=-1 lockedm=-1
+  G296931: status=6() m=-1 lockedm=-1
+  G293303: status=6() m=-1 lockedm=-1
+  G285032: status=6() m=-1 lockedm=-1
+  G296752: status=6() m=-1 lockedm=-1
+  G297003: status=6() m=-1 lockedm=-1
+  G272035: status=6() m=-1 lockedm=-1
+  G296181: status=6() m=-1 lockedm=-1
+  G295981: status=6() m=-1 lockedm=-1
+  G290491: status=6() m=-1 lockedm=-1
+  G293504: status=6() m=-1 lockedm=-1
+  G297472: status=6() m=-1 lockedm=-1
+  G292688: status=6() m=-1 lockedm=-1
+  G297430: status=6() m=-1 lockedm=-1
+  G296219: status=6() m=-1 lockedm=-1
+  G272154: status=6() m=-1 lockedm=-1
+  G297284: status=6() m=-1 lockedm=-1
+  G291383: status=6() m=-1 lockedm=-1
+  G297522: status=6() m=-1 lockedm=-1
+  G285660: status=6() m=-1 lockedm=-1
+  G294416: status=6() m=-1 lockedm=-1
+  G297518: status=6() m=-1 lockedm=-1
+  G271251: status=6() m=-1 lockedm=-1
+  G294284: status=6() m=-1 lockedm=-1
+  G297259: status=6() m=-1 lockedm=-1
+  G271295: status=6() m=-1 lockedm=-1
+  G294886: status=6() m=-1 lockedm=-1
+  G295429: status=6() m=-1 lockedm=-1
+  G293187: status=6() m=-1 lockedm=-1
+  G293576: status=6() m=-1 lockedm=-1
+  G296331: status=6() m=-1 lockedm=-1
+  G292546: status=6() m=-1 lockedm=-1
+  G296281: status=6() m=-1 lockedm=-1
+  G292312: status=6() m=-1 lockedm=-1
+  G296792: status=6() m=-1 lockedm=-1
+  G294536: status=6() m=-1 lockedm=-1
+  G287181: status=6() m=-1 lockedm=-1
+  G295314: status=6() m=-1 lockedm=-1
+  G294583: status=6() m=-1 lockedm=-1
+  G297387: status=6() m=-1 lockedm=-1
+  G284638: status=6() m=-1 lockedm=-1
+  G297211: status=6() m=-1 lockedm=-1
+  G297136: status=6() m=-1 lockedm=-1
+  G292791: status=6() m=-1 lockedm=-1
+  G296578: status=6() m=-1 lockedm=-1
+  G296976: status=6() m=-1 lockedm=-1
+  G297296: status=6() m=-1 lockedm=-1
+  G293989: status=6() m=-1 lockedm=-1
+  G296292: status=6() m=-1 lockedm=-1
+  G297251: status=6() m=-1 lockedm=-1
+  G296094: status=6() m=-1 lockedm=-1
+  G297112: status=6() m=-1 lockedm=-1
+  G297370: status=6() m=-1 lockedm=-1
+  G294458: status=6() m=-1 lockedm=-1
+  G295599: status=6() m=-1 lockedm=-1
+  G293964: status=6() m=-1 lockedm=-1
+  G297315: status=6() m=-1 lockedm=-1
+  G297330: status=6() m=-1 lockedm=-1
+  G295419: status=6() m=-1 lockedm=-1
+  G297454: status=6() m=-1 lockedm=-1
+  G297629: status=6() m=-1 lockedm=-1
+  G291743: status=6() m=-1 lockedm=-1
+  G296421: status=6() m=-1 lockedm=-1
+  G296842: status=6() m=-1 lockedm=-1
+  G294188: status=6() m=-1 lockedm=-1
+  G297021: status=6() m=-1 lockedm=-1
+  G297167: status=6() m=-1 lockedm=-1
+  G295806: status=6() m=-1 lockedm=-1
+  G296916: status=6() m=-1 lockedm=-1
+  G295877: status=6() m=-1 lockedm=-1
+  G295334: status=6() m=-1 lockedm=-1
+  G292166: status=6() m=-1 lockedm=-1
+  G296304: status=6() m=-1 lockedm=-1
+  G296734: status=6() m=-1 lockedm=-1
+  G291605: status=6() m=-1 lockedm=-1
+  G297403: status=6() m=-1 lockedm=-1
+  G292074: status=6() m=-1 lockedm=-1
+  G287235: status=6() m=-1 lockedm=-1
+  G294648: status=6() m=-1 lockedm=-1
+  G293879: status=6() m=-1 lockedm=-1
+  G284667: status=6() m=-1 lockedm=-1
+  G295406: status=6() m=-1 lockedm=-1
+  G294364: status=6() m=-1 lockedm=-1
+  G296355: status=6() m=-1 lockedm=-1
+  G296034: status=6() m=-1 lockedm=-1
+  G295616: status=6() m=-1 lockedm=-1
+  G272022: status=6() m=-1 lockedm=-1
+  G296013: status=6() m=-1 lockedm=-1
+  G296223: status=6() m=-1 lockedm=-1
+  G284765: status=6() m=-1 lockedm=-1
+  G296718: status=6() m=-1 lockedm=-1
+  G289117: status=6() m=-1 lockedm=-1
+  G297398: status=6() m=-1 lockedm=-1
+  G297094: status=6() m=-1 lockedm=-1
+  G296882: status=6() m=-1 lockedm=-1
+  G297195: status=6() m=-1 lockedm=-1
+  G294353: status=6() m=-1 lockedm=-1
+  G297611: status=6() m=-1 lockedm=-1
+  G294053: status=6() m=-1 lockedm=-1
+  G220576: status=6() m=-1 lockedm=-1
+  G295770: status=6() m=-1 lockedm=-1
+  G294327: status=6() m=-1 lockedm=-1
+  G296790: status=6() m=-1 lockedm=-1
+  G297500: status=6() m=-1 lockedm=-1
+  G296884: status=6() m=-1 lockedm=-1
+  G297516: status=6() m=-1 lockedm=-1
+  G297214: status=6() m=-1 lockedm=-1
+  G296942: status=6() m=-1 lockedm=-1
+  G297526: status=6() m=-1 lockedm=-1
+  G292683: status=6() m=-1 lockedm=-1
+  G296515: status=6() m=-1 lockedm=-1
+  G296786: status=6() m=-1 lockedm=-1
+  G289953: status=6() m=-1 lockedm=-1
+  G282572: status=6() m=-1 lockedm=-1
+  G296533: status=6() m=-1 lockedm=-1
+  G297119: status=6() m=-1 lockedm=-1
+  G295239: status=6() m=-1 lockedm=-1
+  G296925: status=6() m=-1 lockedm=-1
+  G296600: status=6() m=-1 lockedm=-1
+  G286001: status=6() m=-1 lockedm=-1
+  G297531: status=6() m=-1 lockedm=-1
+  G295816: status=6() m=-1 lockedm=-1
+  G295636: status=6() m=-1 lockedm=-1
+  G295801: status=6() m=-1 lockedm=-1
+  G296753: status=6() m=-1 lockedm=-1
+  G292845: status=6() m=-1 lockedm=-1
+  G293487: status=6() m=-1 lockedm=-1
+  G296791: status=6() m=-1 lockedm=-1
+  G297349: status=6() m=-1 lockedm=-1
+  G296409: status=6() m=-1 lockedm=-1
+  G296314: status=6() m=-1 lockedm=-1
+  G297273: status=6() m=-1 lockedm=-1
+  G271564: status=6() m=-1 lockedm=-1
+  G297589: status=6() m=-1 lockedm=-1
+  G292271: status=6() m=-1 lockedm=-1
+  G291509: status=6() m=-1 lockedm=-1
+  G297572: status=6() m=-1 lockedm=-1
+  G297306: status=6() m=-1 lockedm=-1
+  G297410: status=6() m=-1 lockedm=-1
+  G296460: status=6() m=-1 lockedm=-1
+  G294225: status=6() m=-1 lockedm=-1
+  G294348: status=6() m=-1 lockedm=-1
+  G296444: status=6() m=-1 lockedm=-1
+  G293973: status=6() m=-1 lockedm=-1
+  G297604: status=6() m=-1 lockedm=-1
+  G296412: status=6() m=-1 lockedm=-1
+  G297596: status=6() m=-1 lockedm=-1
+  G297088: status=6() m=-1 lockedm=-1
+  G289576: status=6() m=-1 lockedm=-1
+  G296958: status=6() m=-1 lockedm=-1
+  G297563: status=6() m=-1 lockedm=-1
+  G294399: status=6() m=-1 lockedm=-1
+  G294430: status=6() m=-1 lockedm=-1
+  G292134: status=6() m=-1 lockedm=-1
+  G290995: status=6() m=-1 lockedm=-1
+  G296121: status=6() m=-1 lockedm=-1
+  G296921: status=6() m=-1 lockedm=-1
+  G285136: status=6() m=-1 lockedm=-1
+  G293448: status=6() m=-1 lockedm=-1
+  G297217: status=6() m=-1 lockedm=-1
+  G296198: status=6() m=-1 lockedm=-1
+  G293725: status=6() m=-1 lockedm=-1
+  G295691: status=6() m=-1 lockedm=-1
+  G295007: status=6() m=-1 lockedm=-1
+  G297378: status=6() m=-1 lockedm=-1
+  G294615: status=6() m=-1 lockedm=-1
+  G296178: status=6() m=-1 lockedm=-1
+  G291382: status=6() m=-1 lockedm=-1
+  G297283: status=6() m=-1 lockedm=-1
+  G286090: status=6() m=-1 lockedm=-1
+  G296456: status=6() m=-1 lockedm=-1
+  G297107: status=6() m=-1 lockedm=-1
+  G293890: status=6() m=-1 lockedm=-1
+  G297443: status=6() m=-1 lockedm=-1
+  G294130: status=6() m=-1 lockedm=-1
+  G294031: status=6() m=-1 lockedm=-1
+  G296960: status=6() m=-1 lockedm=-1
+  G293855: status=6() m=-1 lockedm=-1
+  G295610: status=6() m=-1 lockedm=-1
+  G297558: status=6() m=-1 lockedm=-1
+  G272165: status=6() m=-1 lockedm=-1
+  G293315: status=6() m=-1 lockedm=-1
+  G295843: status=6() m=-1 lockedm=-1
+  G295890: status=6() m=-1 lockedm=-1
+  G296592: status=6() m=-1 lockedm=-1
+  G295779: status=6() m=-1 lockedm=-1
+  G295542: status=6() m=-1 lockedm=-1
+  G293275: status=6() m=-1 lockedm=-1
+  G294858: status=6() m=-1 lockedm=-1
+  G294271: status=6() m=-1 lockedm=-1
+  G297222: status=6() m=-1 lockedm=-1
+  G296855: status=6() m=-1 lockedm=-1
+  G296098: status=6() m=-1 lockedm=-1
+  G293602: status=6() m=-1 lockedm=-1
+  G297406: status=6() m=-1 lockedm=-1
+  G287011: status=6() m=-1 lockedm=-1
+  G293783: status=6() m=-1 lockedm=-1
+  G290132: status=6() m=-1 lockedm=-1
+  G296895: status=6() m=-1 lockedm=-1
+  G284560: status=6() m=-1 lockedm=-1
+  G297590: status=6() m=-1 lockedm=-1
+  G293835: status=6() m=-1 lockedm=-1
+  G297360: status=6() m=-1 lockedm=-1
+  G297037: status=6() m=-1 lockedm=-1
+  G293706: status=6() m=-1 lockedm=-1
+  G295832: status=6() m=-1 lockedm=-1
+  G290262: status=6() m=-1 lockedm=-1
+  G291295: status=6() m=-1 lockedm=-1
+  G297631: status=4(chan send) m=-1 lockedm=-1
+  G296892: status=6() m=-1 lockedm=-1
+  G296589: status=6() m=-1 lockedm=-1
+  G290221: status=6() m=-1 lockedm=-1
+  G297322: status=6() m=-1 lockedm=-1
+  G285103: status=6() m=-1 lockedm=-1
+  G294351: status=6() m=-1 lockedm=-1
+  G296240: status=6() m=-1 lockedm=-1
+  G291385: status=6() m=-1 lockedm=-1
+  G296695: status=6() m=-1 lockedm=-1
+  G296851: status=6() m=-1 lockedm=-1
+  G292133: status=6() m=-1 lockedm=-1
+  G296288: status=6() m=-1 lockedm=-1
+  G282037: status=6() m=-1 lockedm=-1
+  G294889: status=6() m=-1 lockedm=-1
+  G294259: status=6() m=-1 lockedm=-1
+  G289383: status=6() m=-1 lockedm=-1
+  G292095: status=6() m=-1 lockedm=-1
+  G296530: status=6() m=-1 lockedm=-1
+  G294212: status=6() m=-1 lockedm=-1
+  G296234: status=6() m=-1 lockedm=-1
+  G296683: status=6() m=-1 lockedm=-1
+  G296374: status=6() m=-1 lockedm=-1
+  G292767: status=6() m=-1 lockedm=-1
+  G290533: status=6() m=-1 lockedm=-1
+  G282729: status=6() m=-1 lockedm=-1
+  G292387: status=6() m=-1 lockedm=-1
+  G292557: status=6() m=-1 lockedm=-1
+  G297561: status=6() m=-1 lockedm=-1
+  G295967: status=6() m=-1 lockedm=-1
+  G295505: status=6() m=-1 lockedm=-1
+  G294538: status=6() m=-1 lockedm=-1
+  G297623: status=4(chan send) m=-1 lockedm=-1
+  G294083: status=6() m=-1 lockedm=-1
+  G297285: status=6() m=-1 lockedm=-1
+  G294011: status=6() m=-1 lockedm=-1
+  G296983: status=6() m=-1 lockedm=-1
+  G297481: status=6() m=-1 lockedm=-1
+  G297507: status=6() m=-1 lockedm=-1
+  G296627: status=6() m=-1 lockedm=-1
+  G294301: status=6() m=-1 lockedm=-1
+  G296996: status=6() m=-1 lockedm=-1
+  G272582: status=6() m=-1 lockedm=-1
+  G297091: status=6() m=-1 lockedm=-1
+  G295975: status=6() m=-1 lockedm=-1
+  G295942: status=6() m=-1 lockedm=-1
+  G294030: status=6() m=-1 lockedm=-1
+  G291114: status=6() m=-1 lockedm=-1
+  G287372: status=6() m=-1 lockedm=-1
+  G295972: status=6() m=-1 lockedm=-1
+  G295259: status=6() m=-1 lockedm=-1
+  G297621: status=4(chan send) m=-1 lockedm=-1
+  G297321: status=6() m=-1 lockedm=-1
+  G297609: status=6() m=-1 lockedm=-1
+  G296853: status=6() m=-1 lockedm=-1
+  G296825: status=6() m=-1 lockedm=-1
+  G292491: status=6() m=-1 lockedm=-1
+  G293379: status=6() m=-1 lockedm=-1
+  G293678: status=6() m=-1 lockedm=-1
+  G293021: status=6() m=-1 lockedm=-1
+  G296973: status=6() m=-1 lockedm=-1
+  G296534: status=6() m=-1 lockedm=-1
+  G296612: status=6() m=-1 lockedm=-1
+  G295237: status=6() m=-1 lockedm=-1
+  G297361: status=6() m=-1 lockedm=-1
+  G295396: status=6() m=-1 lockedm=-1
+  G296798: status=6() m=-1 lockedm=-1
+  G297449: status=6() m=-1 lockedm=-1
+  G293657: status=6() m=-1 lockedm=-1
+  G296180: status=6() m=-1 lockedm=-1
+  G297293: status=6() m=-1 lockedm=-1
+  G297000: status=6() m=-1 lockedm=-1
+  G297485: status=6() m=-1 lockedm=-1
+  G297252: status=6() m=-1 lockedm=-1
+  G296815: status=6() m=-1 lockedm=-1
+  G297177: status=6() m=-1 lockedm=-1
+  G293464: status=6() m=-1 lockedm=-1
+  G294342: status=6() m=-1 lockedm=-1
+  G291258: status=6() m=-1 lockedm=-1
+  G297165: status=6() m=-1 lockedm=-1
+  G297192: status=6() m=-1 lockedm=-1
+  G288739: status=6() m=-1 lockedm=-1
+  G296647: status=6() m=-1 lockedm=-1
+  G297663: status=4(chan send) m=-1 lockedm=-1
+  G294406: status=6() m=-1 lockedm=-1
+  G292671: status=6() m=-1 lockedm=-1
+  G297012: status=6() m=-1 lockedm=-1
+  G297618: status=4(chan send) m=-1 lockedm=-1
+  G297513: status=6() m=-1 lockedm=-1
+  G285710: status=6() m=-1 lockedm=-1
+  G296561: status=6() m=-1 lockedm=-1
+  G295969: status=6() m=-1 lockedm=-1
+  G295740: status=6() m=-1 lockedm=-1
+  G291225: status=6() m=-1 lockedm=-1
+  G296033: status=6() m=-1 lockedm=-1
+  G296042: status=6() m=-1 lockedm=-1
+  G296204: status=6() m=-1 lockedm=-1
+  G285140: status=6() m=-1 lockedm=-1
+  G297484: status=6() m=-1 lockedm=-1
+  G284980: status=6() m=-1 lockedm=-1
+  G296711: status=6() m=-1 lockedm=-1
+  G291919: status=6() m=-1 lockedm=-1
+  G297004: status=6() m=-1 lockedm=-1
+  G295709: status=6() m=-1 lockedm=-1
+  G297308: status=6() m=-1 lockedm=-1
+  G292288: status=6() m=-1 lockedm=-1
+  G297226: status=6() m=-1 lockedm=-1
+  G296730: status=6() m=-1 lockedm=-1
+  G297480: status=6() m=-1 lockedm=-1
+  G294519: status=6() m=-1 lockedm=-1
+  G294501: status=6() m=-1 lockedm=-1
+  G287324: status=6() m=-1 lockedm=-1
+  G295917: status=6() m=-1 lockedm=-1
+  G291274: status=6() m=-1 lockedm=-1
+  G297464: status=6() m=-1 lockedm=-1
+  G297032: status=6() m=-1 lockedm=-1
+  G294712: status=6() m=-1 lockedm=-1
+  G297143: status=6() m=-1 lockedm=-1
+  G284955: status=6() m=-1 lockedm=-1
+  G297145: status=6() m=-1 lockedm=-1
+  G292882: status=6() m=-1 lockedm=-1
+  G294599: status=6() m=-1 lockedm=-1
+  G293001: status=6() m=-1 lockedm=-1
+  G294359: status=6() m=-1 lockedm=-1
+  G297078: status=6() m=-1 lockedm=-1
+  G272656: status=6() m=-1 lockedm=-1
+  G296038: status=6() m=-1 lockedm=-1
+  G292787: status=6() m=-1 lockedm=-1
+  G294228: status=6() m=-1 lockedm=-1
+  G286886: status=6() m=-1 lockedm=-1
+  G296136: status=6() m=-1 lockedm=-1
+  G297127: status=6() m=-1 lockedm=-1
+  G296666: status=6() m=-1 lockedm=-1
+  G286791: status=6() m=-1 lockedm=-1
+  G296399: status=6() m=-1 lockedm=-1
+  G294221: status=6() m=-1 lockedm=-1
+  G296504: status=6() m=-1 lockedm=-1
+  G295399: status=6() m=-1 lockedm=-1
+  G296555: status=6() m=-1 lockedm=-1
+  G297392: status=6() m=-1 lockedm=-1
+  G295459: status=6() m=-1 lockedm=-1
+  G296512: status=6() m=-1 lockedm=-1
+  G293843: status=6() m=-1 lockedm=-1
+  G292678: status=6() m=-1 lockedm=-1
+  G296563: status=6() m=-1 lockedm=-1
+  G296253: status=6() m=-1 lockedm=-1
+  G295778: status=6() m=-1 lockedm=-1
+  G296867: status=6() m=-1 lockedm=-1
+  G291441: status=6() m=-1 lockedm=-1
+  G296961: status=6() m=-1 lockedm=-1
+  G297594: status=6() m=-1 lockedm=-1
+  G295473: status=6() m=-1 lockedm=-1
+  G296080: status=6() m=-1 lockedm=-1
+  G284861: status=6() m=-1 lockedm=-1
+  G295693: status=6() m=-1 lockedm=-1
+  G271915: status=6() m=-1 lockedm=-1
+  G297557: status=6() m=-1 lockedm=-1
+  G292754: status=6() m=-1 lockedm=-1
+  G297588: status=6() m=-1 lockedm=-1
+  G297624: status=6() m=-1 lockedm=-1
+  G285357: status=6() m=-1 lockedm=-1
+  G294937: status=6() m=-1 lockedm=-1
+  G293054: status=6() m=-1 lockedm=-1
+  G290484: status=6() m=-1 lockedm=-1
+  G271324: status=6() m=-1 lockedm=-1
+  G294168: status=6() m=-1 lockedm=-1
+  G295551: status=6() m=-1 lockedm=-1
+  G297620: status=6() m=-1 lockedm=-1
+  G297641: status=4(chan send) m=-1 lockedm=-1
+  G296872: status=6() m=-1 lockedm=-1
+  G296311: status=6() m=-1 lockedm=-1
+  G294099: status=6() m=-1 lockedm=-1
+  G292637: status=6() m=-1 lockedm=-1
+  G293058: status=6() m=-1 lockedm=-1
+  G271670: status=6() m=-1 lockedm=-1
+  G296879: status=6() m=-1 lockedm=-1
+  G297453: status=6() m=-1 lockedm=-1
+  G293598: status=6() m=-1 lockedm=-1
+  G296829: status=6() m=-1 lockedm=-1
+  G296994: status=6() m=-1 lockedm=-1
+  G293984: status=6() m=-1 lockedm=-1
+  G296838: status=6() m=-1 lockedm=-1
+  G297126: status=6() m=-1 lockedm=-1
+  G295094: status=6() m=-1 lockedm=-1
+  G297324: status=6() m=-1 lockedm=-1
+  G293665: status=6() m=-1 lockedm=-1
+  G296920: status=6() m=-1 lockedm=-1
+  G293791: status=6() m=-1 lockedm=-1
+  G296014: status=6() m=-1 lockedm=-1
+  G296989: status=6() m=-1 lockedm=-1
+  G293600: status=6() m=-1 lockedm=-1
+  G290360: status=6() m=-1 lockedm=-1
+  G294347: status=6() m=-1 lockedm=-1
+  G296841: status=6() m=-1 lockedm=-1
+  G295854: status=6() m=-1 lockedm=-1
+  G283377: status=6() m=-1 lockedm=-1
+  G295862: status=6() m=-1 lockedm=-1
+  G289472: status=6() m=-1 lockedm=-1
+  G297444: status=6() m=-1 lockedm=-1
+  G296941: status=6() m=-1 lockedm=-1
+  G296805: status=6() m=-1 lockedm=-1
+  G294491: status=6() m=-1 lockedm=-1
+  G297421: status=6() m=-1 lockedm=-1
+  G285720: status=6() m=-1 lockedm=-1
+  G292822: status=6() m=-1 lockedm=-1
+  G292447: status=6() m=-1 lockedm=-1
+  G297180: status=6() m=-1 lockedm=-1
+  G271822: status=6() m=-1 lockedm=-1
+  G296733: status=6() m=-1 lockedm=-1
+  G294883: status=6() m=-1 lockedm=-1
+  G294466: status=6() m=-1 lockedm=-1
+  G293103: status=6() m=-1 lockedm=-1
+  G292055: status=6() m=-1 lockedm=-1
+  G297028: status=6() m=-1 lockedm=-1
+  G297329: status=6() m=-1 lockedm=-1
+  G296657: status=6() m=-1 lockedm=-1
+  G296541: status=6() m=-1 lockedm=-1
+  G291189: status=6() m=-1 lockedm=-1
+  G296763: status=6() m=-1 lockedm=-1
+  G297515: status=6() m=-1 lockedm=-1
+  G297654: status=4(chan send) m=-1 lockedm=-1
+  G297262: status=6() m=-1 lockedm=-1
+  G293562: status=6() m=-1 lockedm=-1
+  G296688: status=6() m=-1 lockedm=-1
+  G292941: status=6() m=-1 lockedm=-1
+  G295555: status=6() m=-1 lockedm=-1
+  G297576: status=6() m=-1 lockedm=-1
+  G295661: status=6() m=-1 lockedm=-1
+  G296832: status=6() m=-1 lockedm=-1
+  G297524: status=6() m=-1 lockedm=-1
+  G296559: status=6() m=-1 lockedm=-1
+  G293765: status=6() m=-1 lockedm=-1
+  G271766: status=6() m=-1 lockedm=-1
+  G296172: status=6() m=-1 lockedm=-1
+  G296774: status=6() m=-1 lockedm=-1
+  G297455: status=6() m=-1 lockedm=-1
+  G294901: status=6() m=-1 lockedm=-1
+  G220574: status=6() m=-1 lockedm=-1
+  G296139: status=6() m=-1 lockedm=-1
+  G297109: status=6() m=-1 lockedm=-1
+  G296539: status=6() m=-1 lockedm=-1
+  G295900: status=6() m=-1 lockedm=-1
+  G296457: status=6() m=-1 lockedm=-1
+  G292607: status=6() m=-1 lockedm=-1
+  G297600: status=6() m=-1 lockedm=-1
+  G292895: status=6() m=-1 lockedm=-1
+  G297282: status=6() m=-1 lockedm=-1
+  G294040: status=6() m=-1 lockedm=-1
+  G296531: status=6() m=-1 lockedm=-1
+  G297038: status=6() m=-1 lockedm=-1
+  G295312: status=6() m=-1 lockedm=-1
+  G284506: status=6() m=-1 lockedm=-1
+  G295948: status=6() m=-1 lockedm=-1
+  G291099: status=6() m=-1 lockedm=-1
+  G294309: status=6() m=-1 lockedm=-1
+  G282523: status=6() m=-1 lockedm=-1
+  G296376: status=6() m=-1 lockedm=-1
+  G296583: status=6() m=-1 lockedm=-1
+  G292953: status=6() m=-1 lockedm=-1
+  G296274: status=6() m=-1 lockedm=-1
+  G293722: status=6() m=-1 lockedm=-1
+  G271750: status=6() m=-1 lockedm=-1
+  G296927: status=6() m=-1 lockedm=-1
+  G291890: status=6() m=-1 lockedm=-1
+  G296237: status=6() m=-1 lockedm=-1
+  G294554: status=6() m=-1 lockedm=-1
+  G296821: status=6() m=-1 lockedm=-1
+  G295671: status=6() m=-1 lockedm=-1
+  G296669: status=6() m=-1 lockedm=-1
+  G297133: status=6() m=-1 lockedm=-1
+  G297194: status=6() m=-1 lockedm=-1
+  G294025: status=6() m=-1 lockedm=-1
+  G297132: status=6() m=-1 lockedm=-1
+  G296650: status=6() m=-1 lockedm=-1
+  G293885: status=6() m=-1 lockedm=-1
+  G292309: status=6() m=-1 lockedm=-1
+  G293179: status=6() m=-1 lockedm=-1
+  G286432: status=6() m=-1 lockedm=-1
+  G296732: status=6() m=-1 lockedm=-1
+  G294012: status=6() m=-1 lockedm=-1
+  G296525: status=6() m=-1 lockedm=-1
+  G296972: status=6() m=-1 lockedm=-1
+  G297203: status=6() m=-1 lockedm=-1
+  G295592: status=6() m=-1 lockedm=-1
+  G293998: status=6() m=-1 lockedm=-1
+  G294639: status=6() m=-1 lockedm=-1
+  G297156: status=6() m=-1 lockedm=-1
+  G296947: status=6() m=-1 lockedm=-1
+  G296663: status=6() m=-1 lockedm=-1
+  G293741: status=6() m=-1 lockedm=-1
+  G293134: status=6() m=-1 lockedm=-1
+  G296819: status=6() m=-1 lockedm=-1
+  G293218: status=6() m=-1 lockedm=-1
+  G297258: status=6() m=-1 lockedm=-1
+  G291283: status=6() m=-1 lockedm=-1
+  G295578: status=6() m=-1 lockedm=-1
+  G292827: status=6() m=-1 lockedm=-1
+  G291973: status=6() m=-1 lockedm=-1
+  G293512: status=6() m=-1 lockedm=-1
+  G272416: status=6() m=-1 lockedm=-1
+  G296363: status=6() m=-1 lockedm=-1
+  G295819: status=6() m=-1 lockedm=-1
+  G285880: status=6() m=-1 lockedm=-1
+  G284747: status=6() m=-1 lockedm=-1
+  G296194: status=6() m=-1 lockedm=-1
+  G293023: status=6() m=-1 lockedm=-1
+  G272073: status=6() m=-1 lockedm=-1
+  G297097: status=6() m=-1 lockedm=-1
+  G289217: status=6() m=-1 lockedm=-1
+  G297568: status=6() m=-1 lockedm=-1
+  G296852: status=6() m=-1 lockedm=-1
+  G295045: status=6() m=-1 lockedm=-1
+  G296678: status=6() m=-1 lockedm=-1
+  G296026: status=6() m=-1 lockedm=-1
+  G294091: status=6() m=-1 lockedm=-1
+  G294535: status=6() m=-1 lockedm=-1
+  G297570: status=6() m=-1 lockedm=-1
+  G296108: status=6() m=-1 lockedm=-1
+  G296762: status=6() m=-1 lockedm=-1
+  G290809: status=6() m=-1 lockedm=-1
+  G297610: status=6() m=-1 lockedm=-1
+  G285418: status=6() m=-1 lockedm=-1
+  G296149: status=6() m=-1 lockedm=-1
+  G296566: status=6() m=-1 lockedm=-1
+  G292852: status=6() m=-1 lockedm=-1
+  G296072: status=6() m=-1 lockedm=-1
+  G294855: status=6() m=-1 lockedm=-1
+  G297271: status=6() m=-1 lockedm=-1
+  G296040: status=6() m=-1 lockedm=-1
+  G296205: status=6() m=-1 lockedm=-1
+  G293220: status=6() m=-1 lockedm=-1
+  G296898: status=6() m=-1 lockedm=-1
+  G296865: status=6() m=-1 lockedm=-1
+  G296213: status=6() m=-1 lockedm=-1
+  G289996: status=6() m=-1 lockedm=-1
+  G296787: status=6() m=-1 lockedm=-1
+  G297229: status=6() m=-1 lockedm=-1
+  G287048: status=6() m=-1 lockedm=-1
+  G293921: status=6() m=-1 lockedm=-1
+  G291329: status=6() m=-1 lockedm=-1
+  G294180: status=6() m=-1 lockedm=-1
+  G291365: status=6() m=-1 lockedm=-1
+  G297348: status=6() m=-1 lockedm=-1
+  G290968: status=6() m=-1 lockedm=-1
+  G294219: status=6() m=-1 lockedm=-1
+  G297014: status=6() m=-1 lockedm=-1
+  G296889: status=6() m=-1 lockedm=-1
+  G293824: status=6() m=-1 lockedm=-1
+  G293391: status=6() m=-1 lockedm=-1
+  G296171: status=6() m=-1 lockedm=-1
+  G292032: status=6() m=-1 lockedm=-1
+  G295289: status=6() m=-1 lockedm=-1
+  G293234: status=6() m=-1 lockedm=-1
+  G297442: status=6() m=-1 lockedm=-1
+  G295013: status=6() m=-1 lockedm=-1
+  G289264: status=6() m=-1 lockedm=-1
+  G295990: status=6() m=-1 lockedm=-1
+  G285036: status=6() m=-1 lockedm=-1
+  G295962: status=6() m=-1 lockedm=-1
+  G295853: status=6() m=-1 lockedm=-1
+  G291789: status=6() m=-1 lockedm=-1
+  G294808: status=6() m=-1 lockedm=-1
+  G297605: status=6() m=-1 lockedm=-1
+  G296269: status=6() m=-1 lockedm=-1
+  G297474: status=6() m=-1 lockedm=-1
+  G296979: status=6() m=-1 lockedm=-1
+  G297325: status=6() m=-1 lockedm=-1
+  G297061: status=6() m=-1 lockedm=-1
+  G297148: status=6() m=-1 lockedm=-1
+  G295687: status=6() m=-1 lockedm=-1
+  G295583: status=6() m=-1 lockedm=-1
+  G297337: status=6() m=-1 lockedm=-1
+  G296736: status=6() m=-1 lockedm=-1
+  G289921: status=6() m=-1 lockedm=-1
+  G296535: status=6() m=-1 lockedm=-1
+  G294893: status=6() m=-1 lockedm=-1
+  G295384: status=6() m=-1 lockedm=-1
+  G295238: status=6() m=-1 lockedm=-1
+  G295161: status=6() m=-1 lockedm=-1
+  G297473: status=6() m=-1 lockedm=-1
+  G293768: status=6() m=-1 lockedm=-1
+  G296261: status=6() m=-1 lockedm=-1
+  G292753: status=6() m=-1 lockedm=-1
+  G295477: status=6() m=-1 lockedm=-1
+  G297187: status=6() m=-1 lockedm=-1
+  G292682: status=6() m=-1 lockedm=-1
+  G294621: status=6() m=-1 lockedm=-1
+  G296490: status=6() m=-1 lockedm=-1
+  G297264: status=6() m=-1 lockedm=-1
+  G295442: status=6() m=-1 lockedm=-1
+  G294674: status=6() m=-1 lockedm=-1
+  G297025: status=6() m=-1 lockedm=-1
+  G297073: status=6() m=-1 lockedm=-1
+  G296797: status=6() m=-1 lockedm=-1
+  G296645: status=6() m=-1 lockedm=-1
+  G294881: status=6() m=-1 lockedm=-1
+  G297491: status=6() m=-1 lockedm=-1
+  G296478: status=6() m=-1 lockedm=-1
+  G284827: status=6() m=-1 lockedm=-1
+  G297206: status=6() m=-1 lockedm=-1
+  G294145: status=6() m=-1 lockedm=-1
+  G296510: status=6() m=-1 lockedm=-1
+  G297001: status=6() m=-1 lockedm=-1
+  G296266: status=6() m=-1 lockedm=-1
+  G289468: status=6() m=-1 lockedm=-1
+  G297489: status=6() m=-1 lockedm=-1
+  G292157: status=6() m=-1 lockedm=-1
+  G290800: status=6() m=-1 lockedm=-1
+  G294159: status=6() m=-1 lockedm=-1
+  G297549: status=6() m=-1 lockedm=-1
+  G297579: status=6() m=-1 lockedm=-1
+  G297060: status=6() m=-1 lockedm=-1
+  G285992: status=6() m=-1 lockedm=-1
+  G296111: status=6() m=-1 lockedm=-1
+  G293041: status=6() m=-1 lockedm=-1
+  G294880: status=6() m=-1 lockedm=-1
+  G290910: status=6() m=-1 lockedm=-1
+  G296773: status=6() m=-1 lockedm=-1
+  G297289: status=6() m=-1 lockedm=-1
+  G297041: status=6() m=-1 lockedm=-1
+  G293868: status=6() m=-1 lockedm=-1
+  G296717: status=6() m=-1 lockedm=-1
+  G293515: status=6() m=-1 lockedm=-1
+  G290733: status=6() m=-1 lockedm=-1
+  G297149: status=6() m=-1 lockedm=-1
+  G293781: status=6() m=-1 lockedm=-1
+  G283707: status=6() m=-1 lockedm=-1
+  G295455: status=6() m=-1 lockedm=-1
+  G297380: status=6() m=-1 lockedm=-1
+  G297319: status=6() m=-1 lockedm=-1
+  G296959: status=6() m=-1 lockedm=-1
+  G294513: status=6() m=-1 lockedm=-1
+  G296414: status=6() m=-1 lockedm=-1
+  G294106: status=6() m=-1 lockedm=-1
+  G294731: status=6() m=-1 lockedm=-1
+  G286704: status=6() m=-1 lockedm=-1
+  G296900: status=6() m=-1 lockedm=-1
+  G297407: status=6() m=-1 lockedm=-1
+  G292561: status=6() m=-1 lockedm=-1
+  G297506: status=6() m=-1 lockedm=-1
+  G293960: status=6() m=-1 lockedm=-1
+  G297345: status=6() m=-1 lockedm=-1
+  G294160: status=6() m=-1 lockedm=-1
+  G293235: status=6() m=-1 lockedm=-1
+  G271555: status=6() m=-1 lockedm=-1
+  G294376: status=6() m=-1 lockedm=-1
+  G297384: status=6() m=-1 lockedm=-1
+  G284896: status=6() m=-1 lockedm=-1
+  G294708: status=6() m=-1 lockedm=-1
+  G296954: status=6() m=-1 lockedm=-1
+  G297573: status=6() m=-1 lockedm=-1
+  G294671: status=6() m=-1 lockedm=-1
+  G296526: status=6() m=-1 lockedm=-1
+  G295317: status=6() m=-1 lockedm=-1
+  G297459: status=6() m=-1 lockedm=-1
+  G291292: status=6() m=-1 lockedm=-1
+  G289414: status=6() m=-1 lockedm=-1
+  G294078: status=6() m=-1 lockedm=-1
+  G296806: status=6() m=-1 lockedm=-1
+  G296834: status=6() m=-1 lockedm=-1
+  G296238: status=6() m=-1 lockedm=-1
+  G285443: status=6() m=-1 lockedm=-1
+  G290035: status=6() m=-1 lockedm=-1
+  G294023: status=6() m=-1 lockedm=-1
+  G297529: status=6() m=-1 lockedm=-1
+  G296687: status=6() m=-1 lockedm=-1
+  G293494: status=6() m=-1 lockedm=-1
+  G294576: status=6() m=-1 lockedm=-1
+  G296757: status=6() m=-1 lockedm=-1
+  G285807: status=6() m=-1 lockedm=-1
+  G294179: status=6() m=-1 lockedm=-1
+  G297463: status=6() m=-1 lockedm=-1
+  G291089: status=6() m=-1 lockedm=-1
+  G296577: status=6() m=-1 lockedm=-1
+  G292931: status=6() m=-1 lockedm=-1
+  G296483: status=6() m=-1 lockedm=-1
+  G296796: status=6() m=-1 lockedm=-1
+  G297482: status=6() m=-1 lockedm=-1
+  G294978: status=6() m=-1 lockedm=-1
+  G296247: status=6() m=-1 lockedm=-1
+  G294558: status=6() m=-1 lockedm=-1
+  G294324: status=6() m=-1 lockedm=-1
+  G296514: status=6() m=-1 lockedm=-1
+  G297062: status=6() m=-1 lockedm=-1
+  G293419: status=6() m=-1 lockedm=-1
+  G297304: status=6() m=-1 lockedm=-1
+  G295278: status=6() m=-1 lockedm=-1
+  G295807: status=6() m=-1 lockedm=-1
+  G284653: status=6() m=-1 lockedm=-1
+  G297300: status=6() m=-1 lockedm=-1
+  G297193: status=6() m=-1 lockedm=-1
+  G296279: status=6() m=-1 lockedm=-1
+  G296871: status=6() m=-1 lockedm=-1
+  G296419: status=6() m=-1 lockedm=-1
+  G284530: status=6() m=-1 lockedm=-1
+  G293500: status=6() m=-1 lockedm=-1
+  G297151: status=6() m=-1 lockedm=-1
+  G293297: status=6() m=-1 lockedm=-1
+  G292233: status=6() m=-1 lockedm=-1
+  G293905: status=6() m=-1 lockedm=-1
+  G291833: status=6() m=-1 lockedm=-1
+  G295944: status=6() m=-1 lockedm=-1
+  G297085: status=6() m=-1 lockedm=-1
+  G285283: status=6() m=-1 lockedm=-1
+  G297657: status=4(chan send) m=-1 lockedm=-1
+  G293591: status=6() m=-1 lockedm=-1
+  G292828: status=6() m=-1 lockedm=-1
+  G297478: status=6() m=-1 lockedm=-1
+  G285741: status=6() m=-1 lockedm=-1
+  G283501: status=6() m=-1 lockedm=-1
+  G296621: status=6() m=-1 lockedm=-1
+  G283594: status=6() m=-1 lockedm=-1
+  G297447: status=6() m=-1 lockedm=-1
+  G297099: status=6() m=-1 lockedm=-1
+  G296955: status=6() m=-1 lockedm=-1
+  G295536: status=6() m=-1 lockedm=-1
+  G295950: status=6() m=-1 lockedm=-1
+  G296928: status=6() m=-1 lockedm=-1
+  G297537: status=6() m=-1 lockedm=-1
+  G296754: status=6() m=-1 lockedm=-1
+  G294485: status=6() m=-1 lockedm=-1
+  G292965: status=6() m=-1 lockedm=-1
+  G272020: status=6() m=-1 lockedm=-1
+  G297603: status=6() m=-1 lockedm=-1
+  G296572: status=6() m=-1 lockedm=-1
+  G294047: status=6() m=-1 lockedm=-1
+  G297371: status=6() m=-1 lockedm=-1
+  G291242: status=6() m=-1 lockedm=-1
+  G295945: status=6() m=-1 lockedm=-1
+  G294187: status=6() m=-1 lockedm=-1
+  G291433: status=6() m=-1 lockedm=-1
+  G286832: status=6() m=-1 lockedm=-1
+  G296089: status=6() m=-1 lockedm=-1
+  G297314: status=6() m=-1 lockedm=-1
+  G297639: status=6() m=-1 lockedm=-1
+  G295989: status=6() m=-1 lockedm=-1
+  G285346: status=6() m=-1 lockedm=-1
+  G297560: status=6() m=-1 lockedm=-1
+  G293912: status=6() m=-1 lockedm=-1
+  G297551: status=6() m=-1 lockedm=-1
+  G293638: status=6() m=-1 lockedm=-1
+  G296053: status=6() m=-1 lockedm=-1
+  G297521: status=6() m=-1 lockedm=-1
+  G293656: status=6() m=-1 lockedm=-1
+  G295891: status=6() m=-1 lockedm=-1
+  G297649: status=4(chan send) m=-1 lockedm=-1
+  G297643: status=4(chan send) m=-1 lockedm=-1
+  G297632: status=4(chan send) m=-1 lockedm=-1
+  G292854: status=6() m=-1 lockedm=-1
+  G296343: status=6() m=-1 lockedm=-1
+  G297645: status=4(chan send) m=-1 lockedm=-1
+  G290991: status=6() m=-1 lockedm=-1
+  G290002: status=6() m=-1 lockedm=-1
+  G296858: status=6() m=-1 lockedm=-1
+  G293127: status=6() m=-1 lockedm=-1
+  G287081: status=6() m=-1 lockedm=-1
+  G297179: status=6() m=-1 lockedm=-1
+  G297494: status=6() m=-1 lockedm=-1
+  G295991: status=6() m=-1 lockedm=-1
+  G295873: status=6() m=-1 lockedm=-1
+  G297658: status=6() m=-1 lockedm=-1
+  G296532: status=6() m=-1 lockedm=-1
+  G296814: status=6() m=-1 lockedm=-1
+  G295552: status=6() m=-1 lockedm=-1
+  G294311: status=6() m=-1 lockedm=-1
+  G295086: status=6() m=-1 lockedm=-1
+  G296890: status=6() m=-1 lockedm=-1
+  G296637: status=6() m=-1 lockedm=-1
+  G289836: status=6() m=-1 lockedm=-1
+  G293766: status=6() m=-1 lockedm=-1
+  G295764: status=6() m=-1 lockedm=-1
+  G297511: status=6() m=-1 lockedm=-1
+  G291170: status=6() m=-1 lockedm=-1
+  G294457: status=6() m=-1 lockedm=-1
+  G297201: status=6() m=-1 lockedm=-1
+  G295943: status=6() m=-1 lockedm=-1
+  G297255: status=6() m=-1 lockedm=-1
+  G294718: status=6() m=-1 lockedm=-1
+  G294344: status=6() m=-1 lockedm=-1
+  G296924: status=6() m=-1 lockedm=-1
+  G296748: status=6() m=-1 lockedm=-1
+  G294321: status=6() m=-1 lockedm=-1
+  G293011: status=6() m=-1 lockedm=-1
+  G297656: status=4(chan send) m=-1 lockedm=-1
+  G297417: status=6() m=-1 lockedm=-1
+  G297614: status=6() m=-1 lockedm=-1
+  G292751: status=6() m=-1 lockedm=-1
+  G296496: status=6() m=-1 lockedm=-1
+  G292858: status=6() m=-1 lockedm=-1
+  G295856: status=6() m=-1 lockedm=-1
+  G287263: status=6() m=-1 lockedm=-1
+  G296256: status=6() m=-1 lockedm=-1
+  G296217: status=6() m=-1 lockedm=-1
+  G296307: status=6() m=-1 lockedm=-1
+  G293650: status=6() m=-1 lockedm=-1
+  G295276: status=6() m=-1 lockedm=-1
+  G296380: status=6() m=-1 lockedm=-1
+  G297593: status=6() m=-1 lockedm=-1
+  G293687: status=6() m=-1 lockedm=-1
+  G290332: status=6() m=-1 lockedm=-1
+  G291762: status=6() m=-1 lockedm=-1
+  G296112: status=6() m=-1 lockedm=-1
+  G293740: status=6() m=-1 lockedm=-1
+  G293328: status=6() m=-1 lockedm=-1
+  G272643: status=6() m=-1 lockedm=-1
+  G293552: status=6() m=-1 lockedm=-1
+  G295675: status=6() m=-1 lockedm=-1
+  G292998: status=6() m=-1 lockedm=-1
+  G294266: status=6() m=-1 lockedm=-1
+  G297517: status=6() m=-1 lockedm=-1
+  G294379: status=6() m=-1 lockedm=-1
+  G296968: status=6() m=-1 lockedm=-1
+  G293872: status=6() m=-1 lockedm=-1
+  G297310: status=6() m=-1 lockedm=-1
+  G294049: status=6() m=-1 lockedm=-1
+  G293993: status=6() m=-1 lockedm=-1
+  G283530: status=6() m=-1 lockedm=-1
+  G285700: status=6() m=-1 lockedm=-1
+  G297186: status=6() m=-1 lockedm=-1
+  G295679: status=6() m=-1 lockedm=-1
+  G297221: status=6() m=-1 lockedm=-1
+  G297092: status=6() m=-1 lockedm=-1
+  G295961: status=6() m=-1 lockedm=-1
+  G284994: status=6() m=-1 lockedm=-1
+  G297191: status=6() m=-1 lockedm=-1
+  G295073: status=6() m=-1 lockedm=-1
+  G296665: status=6() m=-1 lockedm=-1
+  G294123: status=6() m=-1 lockedm=-1
+  G290433: status=6() m=-1 lockedm=-1
+  G296923: status=6() m=-1 lockedm=-1
+  G285805: status=6() m=-1 lockedm=-1
+  G291005: status=6() m=-1 lockedm=-1
+  G284830: status=6() m=-1 lockedm=-1
+  G296477: status=6() m=-1 lockedm=-1
+  G285208: status=6() m=-1 lockedm=-1
+  G291453: status=6() m=-1 lockedm=-1
+  G296454: status=6() m=-1 lockedm=-1
+  G289839: status=6() m=-1 lockedm=-1
+  G294094: status=6() m=-1 lockedm=-1
+  G294468: status=6() m=-1 lockedm=-1
+  G295922: status=6() m=-1 lockedm=-1
+  G296135: status=6() m=-1 lockedm=-1
+  G294417: status=6() m=-1 lockedm=-1
+  G297527: status=6() m=-1 lockedm=-1
+  G283887: status=6() m=-1 lockedm=-1
+  G297120: status=6() m=-1 lockedm=-1
+  G295158: status=6() m=-1 lockedm=-1
+  G296569: status=6() m=-1 lockedm=-1
+  G290673: status=6() m=-1 lockedm=-1
+  G293486: status=6() m=-1 lockedm=-1
+  G284282: status=6() m=-1 lockedm=-1
+  G296965: status=6() m=-1 lockedm=-1
+  G296723: status=6() m=-1 lockedm=-1
+  G297408: status=6() m=-1 lockedm=-1
+  G296151: status=6() m=-1 lockedm=-1
+  G294545: status=6() m=-1 lockedm=-1
+  G295411: status=6() m=-1 lockedm=-1
+  G294429: status=6() m=-1 lockedm=-1
+  G294280: status=6() m=-1 lockedm=-1
+  G297428: status=6() m=-1 lockedm=-1
+  G297637: status=6() m=-1 lockedm=-1
+  G297353: status=6() m=-1 lockedm=-1
+  G293573: status=6() m=-1 lockedm=-1
+  G297652: status=4(chan send) m=-1 lockedm=-1
+  G296995: status=6() m=-1 lockedm=-1
+  G293147: status=6() m=-1 lockedm=-1
+  G272468: status=6() m=-1 lockedm=-1
+  G294077: status=6() m=-1 lockedm=-1
+  G290209: status=6() m=-1 lockedm=-1
+  G272444: status=6() m=-1 lockedm=-1
+  G297139: status=6() m=-1 lockedm=-1
+  G285170: status=6() m=-1 lockedm=-1
+  G297170: status=6() m=-1 lockedm=-1
+  G294249: status=6() m=-1 lockedm=-1
+  G296981: status=6() m=-1 lockedm=-1
+  G284912: status=6() m=-1 lockedm=-1
+  G293070: status=6() m=-1 lockedm=-1
+  G297394: status=6() m=-1 lockedm=-1
+  G297272: status=6() m=-1 lockedm=-1
+  G297172: status=6() m=-1 lockedm=-1
+  G296894: status=6() m=-1 lockedm=-1
+  G291400: status=6() m=-1 lockedm=-1
+  G285309: status=6() m=-1 lockedm=-1
+  G296903: status=6() m=-1 lockedm=-1
+  G297268: status=6() m=-1 lockedm=-1
+  G297616: status=6() m=-1 lockedm=-1
+  G291178: status=6() m=-1 lockedm=-1
+  G293520: status=6() m=-1 lockedm=-1
+  G294477: status=6() m=-1 lockedm=-1
+  G297400: status=6() m=-1 lockedm=-1
+  G293035: status=6() m=-1 lockedm=-1
+  G291397: status=6() m=-1 lockedm=-1
+  G296115: status=6() m=-1 lockedm=-1
+  G296472: status=6() m=-1 lockedm=-1
+  G285234: status=6() m=-1 lockedm=-1
+  G293185: status=6() m=-1 lockedm=-1
+  G293382: status=6() m=-1 lockedm=-1
+  G297525: status=6() m=-1 lockedm=-1
+  G296508: status=6() m=-1 lockedm=-1
+  G291631: status=6() m=-1 lockedm=-1
+  G296298: status=6() m=-1 lockedm=-1
+  G294220: status=6() m=-1 lockedm=-1
+  G293056: status=6() m=-1 lockedm=-1
+  G283820: status=6() m=-1 lockedm=-1
+  G297431: status=6() m=-1 lockedm=-1
+  G290151: status=6() m=-1 lockedm=-1
+  G293528: status=6() m=-1 lockedm=-1
+  G296999: status=6() m=-1 lockedm=-1
+  G296606: status=6() m=-1 lockedm=-1
+  G296424: status=6() m=-1 lockedm=-1
+  G297439: status=6() m=-1 lockedm=-1
+  G296634: status=6() m=-1 lockedm=-1
+  G297440: status=6() m=-1 lockedm=-1
+  G295588: status=6() m=-1 lockedm=-1
+  G296891: status=6() m=-1 lockedm=-1
+  G295005: status=6() m=-1 lockedm=-1
+  G294103: status=6() m=-1 lockedm=-1
+  G295907: status=6() m=-1 lockedm=-1
+  G295930: status=6() m=-1 lockedm=-1
+  G294471: status=6() m=-1 lockedm=-1
+  G285484: status=6() m=-1 lockedm=-1
+  G292390: status=6() m=-1 lockedm=-1
+  G296028: status=6() m=-1 lockedm=-1
+  G296938: status=6() m=-1 lockedm=-1
+  G297108: status=6() m=-1 lockedm=-1
+  G295109: status=6() m=-1 lockedm=-1
+  G284590: status=6() m=-1 lockedm=-1
+  G297546: status=6() m=-1 lockedm=-1
+  G271389: status=6() m=-1 lockedm=-1
+  G297536: status=6() m=-1 lockedm=-1
+  G295469: status=6() m=-1 lockedm=-1
+  G297366: status=6() m=-1 lockedm=-1
+  G295174: status=6() m=-1 lockedm=-1
+  G282739: status=6() m=-1 lockedm=-1
+  G284444: status=6() m=-1 lockedm=-1
+  G296630: status=6() m=-1 lockedm=-1
+  G297457: status=6() m=-1 lockedm=-1
+  G295733: status=6() m=-1 lockedm=-1
+  G295899: status=6() m=-1 lockedm=-1
+  G293461: status=6() m=-1 lockedm=-1
+  G297401: status=6() m=-1 lockedm=-1
+  G297036: status=6() m=-1 lockedm=-1
+  G297505: status=6() m=-1 lockedm=-1
+  G297131: status=6() m=-1 lockedm=-1
+  G294320: status=6() m=-1 lockedm=-1
+  G297137: status=6() m=-1 lockedm=-1
+  G297619: status=6() m=-1 lockedm=-1
+  G296633: status=6() m=-1 lockedm=-1
+  G296738: status=6() m=-1 lockedm=-1
+  G293707: status=6() m=-1 lockedm=-1
+  G291464: status=6() m=-1 lockedm=-1
+  G293405: status=6() m=-1 lockedm=-1
+  G297608: status=6() m=-1 lockedm=-1
+  G285064: status=6() m=-1 lockedm=-1
+  G292793: status=6() m=-1 lockedm=-1
+  G293943: status=6() m=-1 lockedm=-1
+  G297446: status=6() m=-1 lockedm=-1
+  G297080: status=6() m=-1 lockedm=-1
+  G296917: status=6() m=-1 lockedm=-1
+  G294365: status=6() m=-1 lockedm=-1
+  G296332: status=6() m=-1 lockedm=-1
+  G295879: status=6() m=-1 lockedm=-1
+  G294355: status=6() m=-1 lockedm=-1
+  G293247: status=6() m=-1 lockedm=-1
+  G294629: status=6() m=-1 lockedm=-1
+  G297347: status=6() m=-1 lockedm=-1
+  G287101: status=6() m=-1 lockedm=-1
+  G293549: status=6() m=-1 lockedm=-1
+  G293545: status=6() m=-1 lockedm=-1
+  G296766: status=6() m=-1 lockedm=-1
+  G294961: status=6() m=-1 lockedm=-1
+  G293388: status=6() m=-1 lockedm=-1
+  G293288: status=6() m=-1 lockedm=-1
+  G297157: status=6() m=-1 lockedm=-1
+  G297575: status=6() m=-1 lockedm=-1
+  G292725: status=6() m=-1 lockedm=-1
+  G297198: status=6() m=-1 lockedm=-1
+  G286371: status=6() m=-1 lockedm=-1
+  G296653: status=6() m=-1 lockedm=-1
+  G295428: status=6() m=-1 lockedm=-1
+  G296527: status=6() m=-1 lockedm=-1
+  G293104: status=6() m=-1 lockedm=-1
+  G294612: status=6() m=-1 lockedm=-1
+  G297339: status=6() m=-1 lockedm=-1
+  G294042: status=6() m=-1 lockedm=-1
+  G282432: status=6() m=-1 lockedm=-1
+  G296706: status=6() m=-1 lockedm=-1
+  G294805: status=6() m=-1 lockedm=-1
+  G297121: status=6() m=-1 lockedm=-1
+  G297122: status=6() m=-1 lockedm=-1
+  G293332: status=6() m=-1 lockedm=-1
+  G295541: status=6() m=-1 lockedm=-1
+  G272484: status=6() m=-1 lockedm=-1
+  G285465: status=6() m=-1 lockedm=-1
+  G293899: status=6() m=-1 lockedm=-1
+  G285226: status=6() m=-1 lockedm=-1
+  G297503: status=6() m=-1 lockedm=-1
+  G296880: status=6() m=-1 lockedm=-1
+  G284799: status=6() m=-1 lockedm=-1
+  G293941: status=6() m=-1 lockedm=-1
+  G294911: status=6() m=-1 lockedm=-1
+  G295767: status=6() m=-1 lockedm=-1
+  G297476: status=6() m=-1 lockedm=-1
+  G293410: status=6() m=-1 lockedm=-1
+  G294199: status=6() m=-1 lockedm=-1
+  G291821: status=6() m=-1 lockedm=-1
+  G296567: status=6() m=-1 lockedm=-1
+  G296588: status=6() m=-1 lockedm=-1
+  G293305: status=6() m=-1 lockedm=-1
+  G296185: status=6() m=-1 lockedm=-1
+  G285717: status=6() m=-1 lockedm=-1
+  G293553: status=6() m=-1 lockedm=-1
+  G296492: status=6() m=-1 lockedm=-1
+  G293681: status=6() m=-1 lockedm=-1
+  G296632: status=6() m=-1 lockedm=-1
+  G294596: status=6() m=-1 lockedm=-1
+  G286475: status=6() m=-1 lockedm=-1
+  G294022: status=6() m=-1 lockedm=-1
+  G296290: status=6() m=-1 lockedm=-1
+  G297411: status=6() m=-1 lockedm=-1
+  G297423: status=6() m=-1 lockedm=-1
+  G297556: status=6() m=-1 lockedm=-1
+  G295682: status=6() m=-1 lockedm=-1
+  G271969: status=6() m=-1 lockedm=-1
+  G285265: status=6() m=-1 lockedm=-1
+  G296137: status=6() m=-1 lockedm=-1
+  G296651: status=6() m=-1 lockedm=-1
+  G296826: status=6() m=-1 lockedm=-1
+  G284723: status=6() m=-1 lockedm=-1
+  G297277: status=6() m=-1 lockedm=-1
+  G296455: status=6() m=-1 lockedm=-1
+  G293396: status=6() m=-1 lockedm=-1
+  G293472: status=6() m=-1 lockedm=-1
+  G297450: status=6() m=-1 lockedm=-1
+  G297338: status=6() m=-1 lockedm=-1
+  G293852: status=6() m=-1 lockedm=-1
+  G296313: status=6() m=-1 lockedm=-1
+  G297253: status=6() m=-1 lockedm=-1
+  G297309: status=6() m=-1 lockedm=-1
+  G296670: status=6() m=-1 lockedm=-1
+  G297396: status=6() m=-1 lockedm=-1
+  G296704: status=6() m=-1 lockedm=-1
+  G297567: status=6() m=-1 lockedm=-1
+  G295612: status=6() m=-1 lockedm=-1
+  G285910: status=6() m=-1 lockedm=-1
+  G285050: status=6() m=-1 lockedm=-1
+  G296482: status=6() m=-1 lockedm=-1
+  G293051: status=6() m=-1 lockedm=-1
+  G294788: status=6() m=-1 lockedm=-1
+  G293519: status=6() m=-1 lockedm=-1
+  G291746: status=6() m=-1 lockedm=-1
+  G297275: status=6() m=-1 lockedm=-1
+  G294641: status=6() m=-1 lockedm=-1
+  G297653: status=4(chan send) m=-1 lockedm=-1
+  G295545: status=6() m=-1 lockedm=-1
+  G296781: status=6() m=-1 lockedm=-1
+  G293243: status=6() m=-1 lockedm=-1
+  G271848: status=6() m=-1 lockedm=-1
+  G297606: status=6() m=-1 lockedm=-1
+  G297580: status=6() m=-1 lockedm=-1
+  G286912: status=6() m=-1 lockedm=-1
+  G294247: status=6() m=-1 lockedm=-1
+  G296658: status=6() m=-1 lockedm=-1
+  G295521: status=6() m=-1 lockedm=-1
+  G297104: status=6() m=-1 lockedm=-1
+  G294191: status=6() m=-1 lockedm=-1
+  G296962: status=6() m=-1 lockedm=-1
+  G297236: status=6() m=-1 lockedm=-1
+  G294392: status=6() m=-1 lockedm=-1
+  G296466: status=6() m=-1 lockedm=-1
+  G296521: status=6() m=-1 lockedm=-1
+  G296345: status=6() m=-1 lockedm=-1
+  G296635: status=6() m=-1 lockedm=-1
+  G296267: status=6() m=-1 lockedm=-1
+  G294231: status=6() m=-1 lockedm=-1
+  G295402: status=6() m=-1 lockedm=-1
+  G296997: status=6() m=-1 lockedm=-1
+  G294852: status=6() m=-1 lockedm=-1
+  G297302: status=6() m=-1 lockedm=-1
+  G297488: status=6() m=-1 lockedm=-1
+  G297355: status=6() m=-1 lockedm=-1
+  G296673: status=6() m=-1 lockedm=-1
+  G293154: status=6() m=-1 lockedm=-1
+  G297377: status=6() m=-1 lockedm=-1
+  G296163: status=6() m=-1 lockedm=-1
+  G291936: status=6() m=-1 lockedm=-1
+  G283070: status=6() m=-1 lockedm=-1
+  G293846: status=6() m=-1 lockedm=-1
+  G297117: status=6() m=-1 lockedm=-1
+  G296975: status=6() m=-1 lockedm=-1
+  G296126: status=6() m=-1 lockedm=-1
+  G294860: status=6() m=-1 lockedm=-1
+  G289340: status=6() m=-1 lockedm=-1
+  G297427: status=6() m=-1 lockedm=-1
+  G296167: status=6() m=-1 lockedm=-1
+  G297519: status=6() m=-1 lockedm=-1
+  G297470: status=6() m=-1 lockedm=-1
+  G297298: status=6() m=-1 lockedm=-1
+  G293201: status=6() m=-1 lockedm=-1
+  G290689: status=6() m=-1 lockedm=-1
+  G297586: status=6() m=-1 lockedm=-1
+  G294137: status=6() m=-1 lockedm=-1
+  G297644: status=4(chan send) m=-1 lockedm=-1
+  G297103: status=6() m=-1 lockedm=-1
+  G295866: status=6() m=-1 lockedm=-1
+  G293832: status=6() m=-1 lockedm=-1
+  G295727: status=6() m=-1 lockedm=-1
+  G296909: status=6() m=-1 lockedm=-1
+  G295707: status=6() m=-1 lockedm=-1
+  G285065: status=6() m=-1 lockedm=-1
+  G294172: status=6() m=-1 lockedm=-1
+  G297607: status=6() m=-1 lockedm=-1
+  G297294: status=6() m=-1 lockedm=-1
+  G294337: status=6() m=-1 lockedm=-1
+  G296988: status=6() m=-1 lockedm=-1
+  G297254: status=6() m=-1 lockedm=-1
+  G297134: status=6() m=-1 lockedm=-1
+  G293170: status=6() m=-1 lockedm=-1
+  G284901: status=6() m=-1 lockedm=-1
+  G294891: status=6() m=-1 lockedm=-1
+  G292370: status=6() m=-1 lockedm=-1
+  G272562: status=6() m=-1 lockedm=-1
+  G297354: status=6() m=-1 lockedm=-1
+  G295929: status=6() m=-1 lockedm=-1
+  G297086: status=6() m=-1 lockedm=-1
+  G297234: status=6() m=-1 lockedm=-1
+  G297415: status=6() m=-1 lockedm=-1
+  G297523: status=6() m=-1 lockedm=-1
+  G297105: status=6() m=-1 lockedm=-1
+  G292674: status=6() m=-1 lockedm=-1
+  G285052: status=6() m=-1 lockedm=-1
+  G293209: status=6() m=-1 lockedm=-1
+  G293946: status=6() m=-1 lockedm=-1
+  G296134: status=6() m=-1 lockedm=-1
+  G293353: status=6() m=-1 lockedm=-1
+  G296808: status=6() m=-1 lockedm=-1
+  G296445: status=6() m=-1 lockedm=-1
+  G296759: status=6() m=-1 lockedm=-1
+  G296844: status=6() m=-1 lockedm=-1
+  G293135: status=6() m=-1 lockedm=-1
+  G295602: status=6() m=-1 lockedm=-1
+  G293095: status=6() m=-1 lockedm=-1
+  G297256: status=6() m=-1 lockedm=-1
+  G296196: status=6() m=-1 lockedm=-1
+  G297365: status=6() m=-1 lockedm=-1
+  G272340: status=6() m=-1 lockedm=-1
+  G297662: status=6() m=-1 lockedm=-1
+  G297422: status=6() m=-1 lockedm=-1
+  G272233: status=6() m=-1 lockedm=-1
+  G296069: status=6() m=-1 lockedm=-1
+  G293133: status=6() m=-1 lockedm=-1
+  G295838: status=6() m=-1 lockedm=-1
+  G293351: status=6() m=-1 lockedm=-1
+  G297598: status=6() m=-1 lockedm=-1
+  G297295: status=6() m=-1 lockedm=-1
+  G296447: status=6() m=-1 lockedm=-1
+  G296783: status=6() m=-1 lockedm=-1
+  G297267: status=6() m=-1 lockedm=-1
+  G297367: status=6() m=-1 lockedm=-1
+  G296760: status=6() m=-1 lockedm=-1
+  G297228: status=6() m=-1 lockedm=-1
+  G296788: status=6() m=-1 lockedm=-1
+  G294968: status=6() m=-1 lockedm=-1
+  G295353: status=6() m=-1 lockedm=-1
+  G292618: status=6() m=-1 lockedm=-1
+  G296433: status=6() m=-1 lockedm=-1
+  G293489: status=6() m=-1 lockedm=-1
+  G295118: status=6() m=-1 lockedm=-1
+  G284842: status=6() m=-1 lockedm=-1
+  G295844: status=6() m=-1 lockedm=-1
+  G296831: status=6() m=-1 lockedm=-1
+  G284663: status=6() m=-1 lockedm=-1
+  G284491: status=6() m=-1 lockedm=-1
+  G290600: status=6() m=-1 lockedm=-1
+  G271874: status=6() m=-1 lockedm=-1
+  G297244: status=6() m=-1 lockedm=-1
+  G297332: status=6() m=-1 lockedm=-1
+  G293216: status=6() m=-1 lockedm=-1
+  G297039: status=6() m=-1 lockedm=-1
+  G297199: status=6() m=-1 lockedm=-1
+  G293976: status=6() m=-1 lockedm=-1
+  G293293: status=6() m=-1 lockedm=-1
+  G294132: status=6() m=-1 lockedm=-1
+  G297190: status=6() m=-1 lockedm=-1
+  G296295: status=6() m=-1 lockedm=-1
+  G286073: status=6() m=-1 lockedm=-1
+  G297274: status=6() m=-1 lockedm=-1
+  G297326: status=6() m=-1 lockedm=-1
+  G289508: status=6() m=-1 lockedm=-1
+  G297548: status=6() m=-1 lockedm=-1
+  G296824: status=6() m=-1 lockedm=-1
+  G295680: status=6() m=-1 lockedm=-1
+  G295397: status=6() m=-1 lockedm=-1
+  G295018: status=6() m=-1 lockedm=-1
+  G294798: status=6() m=-1 lockedm=-1
+  G296470: status=6() m=-1 lockedm=-1
+  G286355: status=6() m=-1 lockedm=-1
+  G294999: status=6() m=-1 lockedm=-1
+  G297486: status=6() m=-1 lockedm=-1
+  G292609: status=6() m=-1 lockedm=-1
+  G272620: status=6() m=-1 lockedm=-1
+  G296804: status=6() m=-1 lockedm=-1
+  G295619: status=6() m=-1 lockedm=-1
+  G297389: status=6() m=-1 lockedm=-1
+  G293416: status=6() m=-1 lockedm=-1
+  G296837: status=6() m=-1 lockedm=-1
+  G289342: status=6() m=-1 lockedm=-1
+  G295685: status=6() m=-1 lockedm=-1
+  G271160: status=6() m=-1 lockedm=-1
+  G297646: status=4(chan send) m=-1 lockedm=-1
+  G282078: status=6() m=-1 lockedm=-1
+  G293263: status=6() m=-1 lockedm=-1
+  G292696: status=6() m=-1 lockedm=-1
+  G297162: status=6() m=-1 lockedm=-1
+  G296270: status=6() m=-1 lockedm=-1
+  G297630: status=4(chan send) m=-1 lockedm=-1
+  G297591: status=6() m=-1 lockedm=-1
+  G296255: status=6() m=-1 lockedm=-1
+  G293269: status=6() m=-1 lockedm=-1
+  G295103: status=6() m=-1 lockedm=-1
+  G220491: status=6() m=-1 lockedm=-1
+  G296593: status=6() m=-1 lockedm=-1
+  G294279: status=6() m=-1 lockedm=-1
+  G296896: status=6() m=-1 lockedm=-1
+  G286521: status=6() m=-1 lockedm=-1
+  G297018: status=6() m=-1 lockedm=-1
+  G297426: status=6() m=-1 lockedm=-1
+  G296039: status=6() m=-1 lockedm=-1
+  G296629: status=6() m=-1 lockedm=-1
+  G297633: status=6() m=-1 lockedm=-1
+  G296346: status=6() m=-1 lockedm=-1
+  G296383: status=6() m=-1 lockedm=-1
+  G296306: status=6() m=-1 lockedm=-1
+  G293771: status=6() m=-1 lockedm=-1
+  G296922: status=6() m=-1 lockedm=-1
+  G297178: status=6() m=-1 lockedm=-1
+  G272405: status=6() m=-1 lockedm=-1
+  G296722: status=6() m=-1 lockedm=-1
+  G297535: status=6() m=-1 lockedm=-1
+  G296402: status=6() m=-1 lockedm=-1
+  G297261: status=6() m=-1 lockedm=-1
+  G295185: status=6() m=-1 lockedm=-1
+  G297160: status=6() m=-1 lockedm=-1
+  G294683: status=6() m=-1 lockedm=-1
+  G290624: status=6() m=-1 lockedm=-1
+  G297492: status=6() m=-1 lockedm=-1
+  G296272: status=6() m=-1 lockedm=-1
+  G297002: status=6() m=-1 lockedm=-1
+  G295350: status=6() m=-1 lockedm=-1
+  G297508: status=6() m=-1 lockedm=-1
+  G291461: status=6() m=-1 lockedm=-1
+  G294735: status=6() m=-1 lockedm=-1
+  G296315: status=6() m=-1 lockedm=-1
+  G295798: status=6() m=-1 lockedm=-1
+  G295624: status=6() m=-1 lockedm=-1
+  G296873: status=6() m=-1 lockedm=-1
+  G284524: status=6() m=-1 lockedm=-1
+  G296404: status=6() m=-1 lockedm=-1
+  G294126: status=6() m=-1 lockedm=-1
+  G296764: status=6() m=-1 lockedm=-1
+  G297574: status=6() m=-1 lockedm=-1
+  G295966: status=6() m=-1 lockedm=-1
+  G290679: status=6() m=-1 lockedm=-1
+  G289382: status=6() m=-1 lockedm=-1
+  G290092: status=6() m=-1 lockedm=-1
+  G285848: status=6() m=-1 lockedm=-1
+  G297540: status=6() m=-1 lockedm=-1
+  G294346: status=6() m=-1 lockedm=-1
+  G296887: status=6() m=-1 lockedm=-1
+  G297451: status=6() m=-1 lockedm=-1
+  G284965: status=6() m=-1 lockedm=-1
+  G292921: status=6() m=-1 lockedm=-1
+  G296845: status=6() m=-1 lockedm=-1
+  G297425: status=6() m=-1 lockedm=-1
+  G296861: status=6() m=-1 lockedm=-1
+  G297659: status=6() m=-1 lockedm=-1
+  G282124: status=6() m=-1 lockedm=-1
+  G296974: status=6() m=-1 lockedm=-1
+  G282847: status=6() m=-1 lockedm=-1
+  G296971: status=6() m=-1 lockedm=-1
+  G290950: status=6() m=-1 lockedm=-1
+  G295728: status=6() m=-1 lockedm=-1
+  G294174: status=6() m=-1 lockedm=-1
+  G296751: status=6() m=-1 lockedm=-1
+  G285009: status=6() m=-1 lockedm=-1
+  G292158: status=6() m=-1 lockedm=-1
+  G296611: status=6() m=-1 lockedm=-1
+  G297625: status=4(chan send) m=-1 lockedm=-1
+  G297562: status=6() m=-1 lockedm=-1
+  G297318: status=6() m=-1 lockedm=-1
+  G295250: status=6() m=-1 lockedm=-1
+  G285920: status=6() m=-1 lockedm=-1
+  G297054: status=6() m=-1 lockedm=-1
+  G294723: status=6() m=-1 lockedm=-1
+  G293634: status=6() m=-1 lockedm=-1
+  G297612: status=6() m=-1 lockedm=-1
+  G297243: status=6() m=-1 lockedm=-1
+  G297499: status=6() m=-1 lockedm=-1
+  G294975: status=6() m=-1 lockedm=-1
+  G296618: status=6() m=-1 lockedm=-1
+  G296949: status=6() m=-1 lockedm=-1
+  G271431: status=6() m=-1 lockedm=-1
+  G297235: status=6() m=-1 lockedm=-1
+  G272434: status=6() m=-1 lockedm=-1
+  G294084: status=6() m=-1 lockedm=-1
+  G296449: status=6() m=-1 lockedm=-1
+  G292379: status=6() m=-1 lockedm=-1
+  G297343: status=6() m=-1 lockedm=-1
+  G289619: status=6() m=-1 lockedm=-1
+  G293925: status=6() m=-1 lockedm=-1
+  G295059: status=6() m=-1 lockedm=-1
+  G297650: status=6() m=-1 lockedm=-1
+  G297648: status=4(chan send) m=-1 lockedm=-1
+  G295531: status=6() m=-1 lockedm=-1
+  G291239: status=6() m=-1 lockedm=-1
+  G296032: status=6() m=-1 lockedm=-1
+  G292927: status=6() m=-1 lockedm=-1
+  G287145: status=6() m=-1 lockedm=-1
+  G295934: status=6() m=-1 lockedm=-1
+  G294152: status=6() m=-1 lockedm=-1
+  G293164: status=6() m=-1 lockedm=-1
+  G296065: status=6() m=-1 lockedm=-1
+  G293967: status=6() m=-1 lockedm=-1
+  G295813: status=6() m=-1 lockedm=-1
+  G297543: status=6() m=-1 lockedm=-1
+  G293679: status=6() m=-1 lockedm=-1
+  G297171: status=6() m=-1 lockedm=-1
+  G297250: status=6() m=-1 lockedm=-1
+  G297458: status=6() m=-1 lockedm=-1
+  G294756: status=6() m=-1 lockedm=-1
+  G297232: status=6() m=-1 lockedm=-1
+  G284404: status=6() m=-1 lockedm=-1
+  G296373: status=6() m=-1 lockedm=-1
+  G297504: status=6() m=-1 lockedm=-1
+  G296656: status=6() m=-1 lockedm=-1
+  G294447: status=6() m=-1 lockedm=-1
+  G294092: status=6() m=-1 lockedm=-1
+  G292758: status=6() m=-1 lockedm=-1
+  G294791: status=6() m=-1 lockedm=-1
+  G295768: status=6() m=-1 lockedm=-1
+  G296746: status=6() m=-1 lockedm=-1
+  G297533: status=6() m=-1 lockedm=-1
+  G297376: status=6() m=-1 lockedm=-1
+  G293996: status=6() m=-1 lockedm=-1
+  G297075: status=6() m=-1 lockedm=-1
+  G297260: status=6() m=-1 lockedm=-1
+  G297204: status=6() m=-1 lockedm=-1
+  G297636: status=4(chan send) m=-1 lockedm=-1
+  G295888: status=6() m=-1 lockedm=-1
+  G296229: status=6() m=-1 lockedm=-1
+  G293864: status=6() m=-1 lockedm=-1
+  G297059: status=6() m=-1 lockedm=-1
+  G294520: status=6() m=-1 lockedm=-1
+  G297550: status=6() m=-1 lockedm=-1
+  G297007: status=6() m=-1 lockedm=-1
+  G297429: status=6() m=-1 lockedm=-1
+  G297089: status=6() m=-1 lockedm=-1
+  G296422: status=6() m=-1 lockedm=-1
+  G297046: status=6() m=-1 lockedm=-1
+  G297441: status=6() m=-1 lockedm=-1
+  G296810: status=6() m=-1 lockedm=-1
+  G296379: status=6() m=-1 lockedm=-1
+  G295704: status=6() m=-1 lockedm=-1
+  G296156: status=6() m=-1 lockedm=-1
+  G295805: status=6() m=-1 lockedm=-1
+  G293213: status=6() m=-1 lockedm=-1
+  G297102: status=6() m=-1 lockedm=-1
+  G297182: status=6() m=-1 lockedm=-1
+  G296505: status=6() m=-1 lockedm=-1
+  G293067: status=6() m=-1 lockedm=-1
+  G297487: status=6() m=-1 lockedm=-1
+  G286030: status=6() m=-1 lockedm=-1
+  G290859: status=6() m=-1 lockedm=-1
+  G295804: status=6() m=-1 lockedm=-1
+  G297585: status=6() m=-1 lockedm=-1
+  G297011: status=6() m=-1 lockedm=-1
+  G297647: status=2() m=34 lockedm=-1
+  G297613: status=6() m=-1 lockedm=-1
+  G296741: status=6() m=-1 lockedm=-1
+  G297627: status=6() m=-1 lockedm=-1
+  G297599: status=6() m=-1 lockedm=-1
+  G293675: status=6() m=-1 lockedm=-1
+  G293271: status=6() m=-1 lockedm=-1
+  G297155: status=6() m=-1 lockedm=-1
+  G289204: status=6() m=-1 lockedm=-1
+  G297207: status=6() m=-1 lockedm=-1
+  G297168: status=6() m=-1 lockedm=-1
+  G294776: status=6() m=-1 lockedm=-1
+  G297622: status=4(chan send) m=-1 lockedm=-1
+  G291668: status=6() m=-1 lockedm=-1
+  G297270: status=6() m=-1 lockedm=-1
+  G297542: status=6() m=-1 lockedm=-1
+  G286406: status=6() m=-1 lockedm=-1
+  G296799: status=6() m=-1 lockedm=-1
+  G291367: status=6() m=-1 lockedm=-1
+  G297577: status=6() m=-1 lockedm=-1
+  G291522: status=6() m=-1 lockedm=-1
+  G296681: status=6() m=-1 lockedm=-1
+  G297081: status=6() m=-1 lockedm=-1
+  G295815: status=6() m=-1 lockedm=-1
+  G295388: status=6() m=-1 lockedm=-1
+  G288922: status=6() m=-1 lockedm=-1
+  G293022: status=6() m=-1 lockedm=-1
+  G297373: status=6() m=-1 lockedm=-1
+  G297538: status=6() m=-1 lockedm=-1
+  G293760: status=6() m=-1 lockedm=-1
+  G296638: status=6() m=-1 lockedm=-1
+  G294419: status=6() m=-1 lockedm=-1
+  G296236: status=6() m=-1 lockedm=-1
+  G296127: status=6() m=-1 lockedm=-1
+  G297146: status=6() m=-1 lockedm=-1
+  G297541: status=6() m=-1 lockedm=-1
+  G297340: status=6() m=-1 lockedm=-1
+  G271617: status=6() m=-1 lockedm=-1
+  G297379: status=6() m=-1 lockedm=-1
+  G293914: status=6() m=-1 lockedm=-1
+  G295781: status=6() m=-1 lockedm=-1
+  G293762: status=6() m=-1 lockedm=-1
+  G295802: status=6() m=-1 lockedm=-1
+  G293420: status=6() m=-1 lockedm=-1
+  G296905: status=6() m=-1 lockedm=-1
+  G282458: status=6() m=-1 lockedm=-1
+  G294960: status=6() m=-1 lockedm=-1
+  G289054: status=6() m=-1 lockedm=-1
+  G293071: status=6() m=-1 lockedm=-1
+  G296020: status=6() m=-1 lockedm=-1
+  G297534: status=6() m=-1 lockedm=-1
+  G297565: status=6() m=-1 lockedm=-1
+  G297158: status=6() m=-1 lockedm=-1
+  G294987: status=6() m=-1 lockedm=-1
+  G296952: status=6() m=-1 lockedm=-1
+  G296993: status=6() m=-1 lockedm=-1
+  G293443: status=6() m=-1 lockedm=-1
+  G296144: status=6() m=-1 lockedm=-1
+  G294217: status=6() m=-1 lockedm=-1
+  G296937: status=6() m=-1 lockedm=-1
+  G294341: status=6() m=-1 lockedm=-1
+  G296056: status=6() m=-1 lockedm=-1
+  G291950: status=6() m=-1 lockedm=-1
+  G297027: status=6() m=-1 lockedm=-1
+  G294282: status=6() m=-1 lockedm=-1
+  G297305: status=6() m=-1 lockedm=-1
+  G297241: status=6() m=-1 lockedm=-1
+  G295557: status=6() m=-1 lockedm=-1
+  G293579: status=6() m=-1 lockedm=-1
+  G297597: status=6() m=-1 lockedm=-1
+  G292925: status=6() m=-1 lockedm=-1
+  G293629: status=6() m=-1 lockedm=-1
+  G296707: status=6() m=-1 lockedm=-1
+  G292743: status=6() m=-1 lockedm=-1
+  G296179: status=6() m=-1 lockedm=-1
+  G297628: status=1(stack growth) m=-1 lockedm=-1
+  G294118: status=6() m=-1 lockedm=-1
+  G292350: status=6() m=-1 lockedm=-1
+  G294006: status=6() m=-1 lockedm=-1
+  G297452: status=6() m=-1 lockedm=-1
+  G296811: status=6() m=-1 lockedm=-1
+  G297279: status=6() m=-1 lockedm=-1
+  G296816: status=6() m=-1 lockedm=-1
+  G297638: status=4(chan send) m=-1 lockedm=-1
+  G296300: status=6() m=-1 lockedm=-1
+  G296235: status=6() m=-1 lockedm=-1
+  G293524: status=6() m=-1 lockedm=-1
+  G297050: status=6() m=-1 lockedm=-1
+  G297483: status=6() m=-1 lockedm=-1
+  G295855: status=6() m=-1 lockedm=-1
+  G295041: status=6() m=-1 lockedm=-1
+  G290196: status=6() m=-1 lockedm=-1
+  G292497: status=6() m=-1 lockedm=-1
+  G294082: status=6() m=-1 lockedm=-1
+  G289139: status=6() m=-1 lockedm=-1
+  G293992: status=6() m=-1 lockedm=-1
+  G271936: status=6() m=-1 lockedm=-1
+  G296484: status=6() m=-1 lockedm=-1
+  G296883: status=6() m=-1 lockedm=-1
+  G296350: status=6() m=-1 lockedm=-1
+  G296648: status=6() m=-1 lockedm=-1
+  G297101: status=6() m=-1 lockedm=-1
+  G286642: status=6() m=-1 lockedm=-1
+  G296926: status=6() m=-1 lockedm=-1
+  G293931: status=6() m=-1 lockedm=-1
+  G296160: status=6() m=-1 lockedm=-1
+  G295244: status=6() m=-1 lockedm=-1
+  G284893: status=6() m=-1 lockedm=-1
+  G297357: status=6() m=-1 lockedm=-1
+  G294175: status=6() m=-1 lockedm=-1
+  G295413: status=6() m=-1 lockedm=-1
+  G296411: status=6() m=-1 lockedm=-1
+  G292900: status=6() m=-1 lockedm=-1
+  G297057: status=6() m=-1 lockedm=-1
+  G297328: status=6() m=-1 lockedm=-1
+  G292894: status=6() m=-1 lockedm=-1
+  G296403: status=6() m=-1 lockedm=-1
+  G296548: status=6() m=-1 lockedm=-1
+  G292507: status=6() m=-1 lockedm=-1
+  G296077: status=6() m=-1 lockedm=-1
+  G293803: status=6() m=-1 lockedm=-1
+  G293631: status=6() m=-1 lockedm=-1
+  G293427: status=6() m=-1 lockedm=-1
+  G285836: status=6() m=-1 lockedm=-1
+  G284801: status=6() m=-1 lockedm=-1
+  G297660: status=4(chan send) m=-1 lockedm=-1
+  G296516: status=6() m=-1 lockedm=-1
+  G289882: status=6() m=-1 lockedm=-1
+  G294870: status=6() m=-1 lockedm=-1
+  G297419: status=6() m=-1 lockedm=-1
+  G297375: status=6() m=-1 lockedm=-1
+  G297053: status=6() m=-1 lockedm=-1
+  G296518: status=6() m=-1 lockedm=-1
+  G292591: status=6() m=-1 lockedm=-1
+  G294374: status=6() m=-1 lockedm=-1
+  G294939: status=6() m=-1 lockedm=-1
+  G285933: status=6() m=-1 lockedm=-1
+  G285606: status=6() m=-1 lockedm=-1
+  G292811: status=6() m=-1 lockedm=-1
+  G294356: status=6() m=-1 lockedm=-1
+  G296698: status=6() m=-1 lockedm=-1
+  G296437: status=6() m=-1 lockedm=-1
+  G295540: status=6() m=-1 lockedm=-1
+  G296568: status=6() m=-1 lockedm=-1
+  G291222: status=6() m=-1 lockedm=-1
+  G297040: status=6() m=-1 lockedm=-1
+  G297498: status=6() m=-1 lockedm=-1
+  G283629: status=6() m=-1 lockedm=-1
+  G293344: status=6() m=-1 lockedm=-1
+  G291145: status=6() m=-1 lockedm=-1
+  G292829: status=6() m=-1 lockedm=-1
+  G291426: status=6() m=-1 lockedm=-1
+  G292079: status=6() m=-1 lockedm=-1
+  G292161: status=6() m=-1 lockedm=-1
+  G294511: status=6() m=-1 lockedm=-1
+  G295941: status=6() m=-1 lockedm=-1
+  G290742: status=6() m=-1 lockedm=-1
+  G296283: status=6() m=-1 lockedm=-1
+  G294081: status=6() m=-1 lockedm=-1
+  G296591: status=6() m=-1 lockedm=-1
+  G293616: status=6() m=-1 lockedm=-1
+  G295173: status=6() m=-1 lockedm=-1
+  G296003: status=6() m=-1 lockedm=-1
+  G284595: status=6() m=-1 lockedm=-1
+  G293971: status=6() m=-1 lockedm=-1
+  G297414: status=6() m=-1 lockedm=-1
+  G292414: status=6() m=-1 lockedm=-1
+  G292463: status=6() m=-1 lockedm=-1
+  G295351: status=6() m=-1 lockedm=-1
+  G296573: status=6() m=-1 lockedm=-1
+  G296367: status=6() m=-1 lockedm=-1
+  G297393: status=6() m=-1 lockedm=-1
+  G297409: status=6() m=-1 lockedm=-1
+  G292464: status=6() m=-1 lockedm=-1
+  G295998: status=6() m=-1 lockedm=-1
+  G292153: status=6() m=-1 lockedm=-1
+  G296956: status=6() m=-1 lockedm=-1
+  G290173: status=6() m=-1 lockedm=-1
+  G296200: status=6() m=-1 lockedm=-1
+  G285384: status=6() m=-1 lockedm=-1
+  G272189: status=6() m=-1 lockedm=-1
+  G297552: status=6() m=-1 lockedm=-1
+  G297497: status=6() m=-1 lockedm=-1
+  G296201: status=6() m=-1 lockedm=-1
+  G297390: status=6() m=-1 lockedm=-1
+  G297559: status=6() m=-1 lockedm=-1
+  G296625: status=6() m=-1 lockedm=-1
+  G291871: status=6() m=-1 lockedm=-1
+  G296769: status=6() m=-1 lockedm=-1
+  G294859: status=6() m=-1 lockedm=-1
+  G297265: status=6() m=-1 lockedm=-1
+  G288953: status=6() m=-1 lockedm=-1
+  G296614: status=6() m=-1 lockedm=-1
+  G296511: status=6() m=-1 lockedm=-1
+  G271744: status=6() m=-1 lockedm=-1
+  G295514: status=6() m=-1 lockedm=-1
+  G294252: status=6() m=-1 lockedm=-1
+  G292995: status=6() m=-1 lockedm=-1
+  G290239: status=6() m=-1 lockedm=-1
+  G297087: status=6() m=-1 lockedm=-1
+  G294667: status=6() m=-1 lockedm=-1
+  G272713: status=6() m=-1 lockedm=-1
+  G271187: status=6() m=-1 lockedm=-1
+  G297405: status=6() m=-1 lockedm=-1
+  G285991: status=6() m=-1 lockedm=-1
+  G290474: status=6() m=-1 lockedm=-1
+  G290896: status=6() m=-1 lockedm=-1
+  G296596: status=6() m=-1 lockedm=-1
+  G293341: status=6() m=-1 lockedm=-1
+  G285509: status=6() m=-1 lockedm=-1
+  G294281: status=6() m=-1 lockedm=-1
+  G297336: status=6() m=-1 lockedm=-1
+  G296772: status=6() m=-1 lockedm=-1
+  G291422: status=6() m=-1 lockedm=-1
+  G297350: status=6() m=-1 lockedm=-1
+  G297592: status=6() m=-1 lockedm=-1
+  G295716: status=6() m=-1 lockedm=-1
+  G296325: status=6() m=-1 lockedm=-1
+  G294202: status=6() m=-1 lockedm=-1
+  G296375: status=6() m=-1 lockedm=-1
+  G294751: status=6() m=-1 lockedm=-1
+  G295924: status=6() m=-1 lockedm=-1
+  G292366: status=6() m=-1 lockedm=-1
+  G284720: status=6() m=-1 lockedm=-1
+  G296349: status=6() m=-1 lockedm=-1
+  G295141: status=6() m=-1 lockedm=-1
+  G297022: status=6() m=-1 lockedm=-1
+  G297316: status=6() m=-1 lockedm=-1
+  G295703: status=6() m=-1 lockedm=-1
+  G293387: status=6() m=-1 lockedm=-1
+  G296084: status=6() m=-1 lockedm=-1
+  G297049: status=6() m=-1 lockedm=-1
+  G295629: status=6() m=-1 lockedm=-1
+  G294865: status=6() m=-1 lockedm=-1
+  G295049: status=6() m=-1 lockedm=-1
+  G297202: status=6() m=-1 lockedm=-1
+  G296082: status=6() m=-1 lockedm=-1
+  G295937: status=6() m=-1 lockedm=-1
+  G294550: status=6() m=-1 lockedm=-1
+  G297601: status=6() m=-1 lockedm=-1
+  G296624: status=6() m=-1 lockedm=-1
+  G272547: status=6() m=-1 lockedm=-1
+  G296523: status=6() m=-1 lockedm=-1
+  G297445: status=6() m=-1 lockedm=-1
+  G291763: status=6() m=-1 lockedm=-1
+  G284637: status=6() m=-1 lockedm=-1
+  G297079: status=6() m=-1 lockedm=-1
+  G296023: status=6() m=-1 lockedm=-1
+  G292492: status=6() m=-1 lockedm=-1
+  G293390: status=6() m=-1 lockedm=-1
+  G296982: status=6() m=-1 lockedm=-1
+  G272089: status=6() m=-1 lockedm=-1
+  G296631: status=6() m=-1 lockedm=-1
+  G297237: status=6() m=-1 lockedm=-1
+  G295837: status=6() m=-1 lockedm=-1
+  G297635: status=4(chan send) m=-1 lockedm=-1
+  G296303: status=6() m=-1 lockedm=-1
+  G297664: status=6() m=-1 lockedm=-1
+  G295267: status=6() m=-1 lockedm=-1
+  G294904: status=6() m=-1 lockedm=-1
+  G293922: status=6() m=-1 lockedm=-1
+  G296297: status=6() m=-1 lockedm=-1
+  G296918: status=6() m=-1 lockedm=-1
+  G295635: status=6() m=-1 lockedm=-1
+  G294201: status=6() m=-1 lockedm=-1
+  G296273: status=6() m=-1 lockedm=-1
+  G296617: status=6() m=-1 lockedm=-1
+  G295051: status=6() m=-1 lockedm=-1
+  G295202: status=6() m=-1 lockedm=-1
+  G296986: status=6() m=-1 lockedm=-1
+  G271858: status=6() m=-1 lockedm=-1
+  G292434: status=6() m=-1 lockedm=-1
+  G293635: status=6() m=-1 lockedm=-1
+  G293408: status=6() m=-1 lockedm=-1
+  G297045: status=6() m=-1 lockedm=-1
+  G296607: status=6() m=-1 lockedm=-1
+  G297402: status=6() m=-1 lockedm=-1
+  G293557: status=6() m=-1 lockedm=-1
+  G296679: status=6() m=-1 lockedm=-1
+  G295460: status=6() m=-1 lockedm=-1
+  G284737: status=6() m=-1 lockedm=-1
+  G294602: status=6() m=-1 lockedm=-1
+  G294166: status=6() m=-1 lockedm=-1
+  G297242: status=6() m=-1 lockedm=-1
+  G294724: status=6() m=-1 lockedm=-1
+  G294506: status=6() m=-1 lockedm=-1
+  G297468: status=6() m=-1 lockedm=-1
+  G293646: status=6() m=-1 lockedm=-1
+  G294587: status=6() m=-1 lockedm=-1
+  G296992: status=6() m=-1 lockedm=-1
+  G294338: status=6() m=-1 lockedm=-1
+  G294497: status=6() m=-1 lockedm=-1
+  G294571: status=6() m=-1 lockedm=-1
+  G295954: status=6() m=-1 lockedm=-1
+  G286094: status=6() m=-1 lockedm=-1
+  G297110: status=6() m=-1 lockedm=-1
+  G292949: status=6() m=-1 lockedm=-1
+  G296140: status=6() m=-1 lockedm=-1
+  G294543: status=6() m=-1 lockedm=-1
+  G296164: status=6() m=-1 lockedm=-1
+  G296910: status=6() m=-1 lockedm=-1
+  G296854: status=6() m=-1 lockedm=-1
+  G294142: status=6() m=-1 lockedm=-1
+  G293934: status=6() m=-1 lockedm=-1
+  G297584: status=6() m=-1 lockedm=-1
+  G296692: status=6() m=-1 lockedm=-1
+  G297083: status=6() m=-1 lockedm=-1
+  G297581: status=6() m=-1 lockedm=-1
+  G295851: status=6() m=-1 lockedm=-1
+  G295982: status=6() m=-1 lockedm=-1
+  G292987: status=6() m=-1 lockedm=-1
+  G296359: status=6() m=-1 lockedm=-1
+  G296410: status=6() m=-1 lockedm=-1
+  G296830: status=6() m=-1 lockedm=-1
+  G288380: status=6() m=-1 lockedm=-1
+  G296498: status=6() m=-1 lockedm=-1
+  G296168: status=6() m=-1 lockedm=-1
+  G296425: status=6() m=-1 lockedm=-1
+  G290404: status=6() m=-1 lockedm=-1
+  G297281: status=6() m=-1 lockedm=-1
+  G296353: status=6() m=-1 lockedm=-1
+  G297642: status=6() m=-1 lockedm=-1
+  G297287: status=6() m=-1 lockedm=-1
+  G297051: status=6() m=-1 lockedm=-1
+  G293844: status=6() m=-1 lockedm=-1
+  G297005: status=6() m=-1 lockedm=-1
+  G297448: status=6() m=-1 lockedm=-1
+  G297150: status=6() m=-1 lockedm=-1
+  G297311: status=6() m=-1 lockedm=-1
+  G297069: status=6() m=-1 lockedm=-1
+  G286494: status=6() m=-1 lockedm=-1
+  G295658: status=6() m=-1 lockedm=-1
+  G297223: status=6() m=-1 lockedm=-1
+  G286461: status=6() m=-1 lockedm=-1
+  G297215: status=6() m=-1 lockedm=-1
+  G296929: status=6() m=-1 lockedm=-1
+  G295745: status=6() m=-1 lockedm=-1
+  G285003: status=6() m=-1 lockedm=-1
+  G296073: status=6() m=-1 lockedm=-1
+  G297372: status=6() m=-1 lockedm=-1
+  G296755: status=6() m=-1 lockedm=-1
+  G296719: status=6() m=-1 lockedm=-1
+  G293865: status=6() m=-1 lockedm=-1
+  G297545: status=6() m=-1 lockedm=-1
+  G285885: status=6() m=-1 lockedm=-1
+  G272224: status=6() m=-1 lockedm=-1
+  G289842: status=6() m=-1 lockedm=-1
+  G297466: status=6() m=-1 lockedm=-1
+  G297196: status=6() m=-1 lockedm=-1
+  G297205: status=6() m=-1 lockedm=-1
+  G293889: status=6() m=-1 lockedm=-1
+  G297154: status=6() m=-1 lockedm=-1
+  G296936: status=6() m=-1 lockedm=-1
+  G272724: status=6() m=-1 lockedm=-1
+  G297161: status=6() m=-1 lockedm=-1
+  G297655: status=4(chan send) m=-1 lockedm=-1
+  G294043: status=6() m=-1 lockedm=-1
+  G297220: status=6() m=-1 lockedm=-1
+  G297583: status=6() m=-1 lockedm=-1
+  G297651: status=4(chan send) m=-1 lockedm=-1
+  G272752: status=6() m=-1 lockedm=-1
+  G293662: status=6() m=-1 lockedm=-1
+  G271948: status=6() m=-1 lockedm=-1
+  G282964: status=6() m=-1 lockedm=-1
+  G297033: status=6() m=-1 lockedm=-1
+  G297461: status=6() m=-1 lockedm=-1
+  G297496: status=6() m=-1 lockedm=-1
+  G294087: status=6() m=-1 lockedm=-1
+  G293131: status=6() m=-1 lockedm=-1
+  G294241: status=6() m=-1 lockedm=-1
+  G294499: status=6() m=-1 lockedm=-1
+  G285845: status=6() m=-1 lockedm=-1
+  G293228: status=6() m=-1 lockedm=-1
+  G287124: status=6() m=-1 lockedm=-1
+  G292262: status=6() m=-1 lockedm=-1
+  G297512: status=6() m=-1 lockedm=-1
+  G294770: status=6() m=-1 lockedm=-1
+  G287790: status=6() m=-1 lockedm=-1
+  G291070: status=6() m=-1 lockedm=-1
+  G294181: status=6() m=-1 lockedm=-1
+  G297286: status=6() m=-1 lockedm=-1
+  G297602: status=6() m=-1 lockedm=-1
+  G297617: status=4(chan send) m=-1 lockedm=-1
+  G297245: status=6() m=-1 lockedm=-1
+  G291349: status=6() m=-1 lockedm=-1
+  G287625: status=6() m=-1 lockedm=-1
+  G297249: status=6() m=-1 lockedm=-1
+  G291514: status=6() m=-1 lockedm=-1
+  G297141: status=6() m=-1 lockedm=-1
+  G297477: status=6() m=-1 lockedm=-1
+  G296489: status=6() m=-1 lockedm=-1
+  G290631: status=6() m=-1 lockedm=-1
+  G296407: status=6() m=-1 lockedm=-1
+  G297009: status=6() m=-1 lockedm=-1
+  G294164: status=6() m=-1 lockedm=-1
+  G296322: status=6() m=-1 lockedm=-1
+  G297418: status=6() m=-1 lockedm=-1
+  G297640: status=4(chan send) m=-1 lockedm=-1
+  G294945: status=6() m=-1 lockedm=-1
+  G293238: status=6() m=-1 lockedm=-1
+  G297391: status=6() m=-1 lockedm=-1
+  G292782: status=6() m=-1 lockedm=-1
+  G296857: status=6() m=-1 lockedm=-1
+  G297479: status=6() m=-1 lockedm=-1
+  G271790: status=6() m=-1 lockedm=-1
+  G286848: status=6() m=-1 lockedm=-1
+  G295775: status=6() m=-1 lockedm=-1
+  G297213: status=6() m=-1 lockedm=-1
+  G294567: status=6() m=-1 lockedm=-1
+  G297197: status=6() m=-1 lockedm=-1
+  G297520: status=6() m=-1 lockedm=-1
+  G293186: status=6() m=-1 lockedm=-1
+  G297084: status=6() m=-1 lockedm=-1
+  G283905: status=6() m=-1 lockedm=-1
+  G291690: status=6() m=-1 lockedm=-1
+  G297364: status=6() m=-1 lockedm=-1
+  G294098: status=6() m=-1 lockedm=-1
+  G294540: status=6() m=-1 lockedm=-1
+  G292635: status=6() m=-1 lockedm=-1
+  G297335: status=6() m=-1 lockedm=-1
+  G296680: status=6() m=-1 lockedm=-1
+  G296576: status=6() m=-1 lockedm=-1
+  G297634: status=4(chan send) m=-1 lockedm=-1
+  G295561: status=6() m=-1 lockedm=-1
+  G293586: status=6() m=-1 lockedm=-1
+  G296827: status=6() m=-1 lockedm=-1
+  G292567: status=6() m=-1 lockedm=-1
+  G290272: status=6() m=-1 lockedm=-1
+  G296696: status=6() m=-1 lockedm=-1
+  G297435: status=6() m=-1 lockedm=-1
+  G297661: status=4(chan send) m=-1 lockedm=-1
+  G296542: status=6() m=-1 lockedm=-1
+  G294734: status=6() m=-1 lockedm=-1
+  G296227: status=6() m=-1 lockedm=-1
+  G296250: status=6() m=-1 lockedm=-1
+  G285555: status=6() m=-1 lockedm=-1
+  G284956: status=6() m=-1 lockedm=-1
+  G294847: status=6() m=-1 lockedm=-1
+  G296225: status=6() m=-1 lockedm=-1
+  G294992: status=6() m=-1 lockedm=-1
+  G297490: status=6() m=-1 lockedm=-1
+  G293087: status=6() m=-1 lockedm=-1
+  G296913: status=6() m=-1 lockedm=-1
+  G292815: status=6() m=-1 lockedm=-1
+  G296093: status=6() m=-1 lockedm=-1
+  G296067: status=6() m=-1 lockedm=-1
+  G297043: status=6() m=-1 lockedm=-1
+  G295279: status=6() m=-1 lockedm=-1
+  G296970: status=6() m=-1 lockedm=-1
+  G296768: status=6() m=-1 lockedm=-1
+  G297076: status=6() m=-1 lockedm=-1
+  G295951: status=6() m=-1 lockedm=-1
+  G293458: status=6() m=-1 lockedm=-1
+  G297571: status=6() m=-1 lockedm=-1
+  G291970: status=6() m=-1 lockedm=-1
+  G296529: status=6() m=-1 lockedm=-1
+  G296870: status=6() m=-1 lockedm=-1
+  G295920: status=6() m=-1 lockedm=-1
+  G297240: status=6() m=-1 lockedm=-1
+  G297471: status=6() m=-1 lockedm=-1
+  G290670: status=6() m=-1 lockedm=-1
+  G297420: status=6() m=-1 lockedm=-1
+  G297412: status=6() m=-1 lockedm=-1
+  G220650: status=6() m=-1 lockedm=-1
+  G294442: status=6() m=-1 lockedm=-1
+  G296776: status=6() m=-1 lockedm=-1
+  G297200: status=6() m=-1 lockedm=-1
+  G297320: status=6() m=-1 lockedm=-1
+  G296344: status=6() m=-1 lockedm=-1
+  G292771: status=6() m=-1 lockedm=-1
+  G295912: status=6() m=-1 lockedm=-1
+  G297501: status=6() m=-1 lockedm=-1
+  G295432: status=6() m=-1 lockedm=-1
+  G296750: status=6() m=-1 lockedm=-1
+  G296950: status=6() m=-1 lockedm=-1
+  G297432: status=6() m=-1 lockedm=-1
+  G297017: status=6() m=-1 lockedm=-1
+  G296004: status=6() m=-1 lockedm=-1
+  G286915: status=6() m=-1 lockedm=-1
+  G297184: status=6() m=-1 lockedm=-1
+  G297359: status=6() m=-1 lockedm=-1
+  G296107: status=6() m=-1 lockedm=-1
+  G293469: status=6() m=-1 lockedm=-1
+  G296509: status=6() m=-1 lockedm=-1
+  G296420: status=6() m=-1 lockedm=-1
+  G291072: status=6() m=-1 lockedm=-1
+  G296330: status=6() m=-1 lockedm=-1
+  G295304: status=6() m=-1 lockedm=-1
+  G282802: status=6() m=-1 lockedm=-1
+  G297346: status=6() m=-1 lockedm=-1
+  G290883: status=6() m=-1 lockedm=-1
+  G292448: status=6() m=-1 lockedm=-1
+  G297532: status=6() m=-1 lockedm=-1
+  G295016: status=6() m=-1 lockedm=-1
+  G296930: status=6() m=-1 lockedm=-1
+  G297174: status=6() m=-1 lockedm=-1
+  G297116: status=6() m=-1 lockedm=-1
+  G297115: status=6() m=-1 lockedm=-1
+  G296697: status=6() m=-1 lockedm=-1
+  G294897: status=6() m=-1 lockedm=-1
+  G293259: status=6() m=-1 lockedm=-1
+  G296365: status=6() m=-1 lockedm=-1
+  G296157: status=6() m=-1 lockedm=-1
+  G293274: status=6() m=-1 lockedm=-1
+  G294039: status=6() m=-1 lockedm=-1
+  G290421: status=6() m=-1 lockedm=-1
+  G296662: status=6() m=-1 lockedm=-1
+  G286158: status=6() m=-1 lockedm=-1
+  G295947: status=6() m=-1 lockedm=-1
+  G290734: status=6() m=-1 lockedm=-1
+  G297077: status=6() m=-1 lockedm=-1
+  G297056: status=6() m=-1 lockedm=-1
+  G295918: status=6() m=-1 lockedm=-1
+  G295077: status=6() m=-1 lockedm=-1
+  G294278: status=6() m=-1 lockedm=-1
+  G297071: status=6() m=-1 lockedm=-1
+  G297227: status=6() m=-1 lockedm=-1
+  G297382: status=6() m=-1 lockedm=-1
+  G290045: status=6() m=-1 lockedm=-1
+  G292230: status=6() m=-1 lockedm=-1
+  G296328: status=6() m=-1 lockedm=-1
+  G294316: status=6() m=-1 lockedm=-1
+  G294119: status=6() m=-1 lockedm=-1
+  G297399: status=6() m=-1 lockedm=-1
+  G295440: status=6() m=-1 lockedm=-1
+  G290640: status=6() m=-1 lockedm=-1
+  G296749: status=6() m=-1 lockedm=-1
+  G291354: status=6() m=-1 lockedm=-1
+  G293607: status=6() m=-1 lockedm=-1
+  G272682: status=6() m=-1 lockedm=-1
+  G291289: status=6() m=-1 lockedm=-1
+  G293480: status=6() m=-1 lockedm=-1
+  G291974: status=6() m=-1 lockedm=-1
+  G297292: status=6() m=-1 lockedm=-1
+  G291435: status=6() m=-1 lockedm=-1
+  G272589: status=6() m=-1 lockedm=-1
+  G289954: status=6() m=-1 lockedm=-1
+  G293542: status=6() m=-1 lockedm=-1
+  G296616: status=6() m=-1 lockedm=-1
+  G296652: status=6() m=-1 lockedm=-1
+  G294396: status=6() m=-1 lockedm=-1
+  G297578: status=6() m=-1 lockedm=-1
+  G293988: status=6() m=-1 lockedm=-1
+  G295985: status=6() m=-1 lockedm=-1
+  G285328: status=6() m=-1 lockedm=-1
+  G297098: status=6() m=-1 lockedm=-1
+  G294248: status=6() m=-1 lockedm=-1
+  G293752: status=6() m=-1 lockedm=-1
+  G296187: status=6() m=-1 lockedm=-1
+  G296293: status=6() m=-1 lockedm=-1
+  G297555: status=6() m=-1 lockedm=-1
+  G291505: status=6() m=-1 lockedm=-1
+  G297582: status=6() m=-1 lockedm=-1
+  G293807: status=6() m=-1 lockedm=-1
+  G297416: status=6() m=-1 lockedm=-1
+  G296935: status=6() m=-1 lockedm=-1
+  G291991: status=6() m=-1 lockedm=-1
+  G292981: status=6() m=-1 lockedm=-1
+  G296643: status=6() m=-1 lockedm=-1
+  G294854: status=6() m=-1 lockedm=-1
+  G294044: status=6() m=-1 lockedm=-1
+  G284684: status=6() m=-1 lockedm=-1
+  G297530: status=6() m=-1 lockedm=-1
+  G294268: status=6() m=-1 lockedm=-1
+  G271508: status=6() m=-1 lockedm=-1
+  G297233: status=6() m=-1 lockedm=-1
+  G297351: status=6() m=-1 lockedm=-1
+  G292512: status=6() m=-1 lockedm=-1
+  G294487: status=6() m=-1 lockedm=-1
+  G297123: status=6() m=-1 lockedm=-1
+  G297323: status=6() m=-1 lockedm=-1
+  G295204: status=6() m=-1 lockedm=-1
+  G297369: status=6() m=-1 lockedm=-1
+  G296009: status=6() m=-1 lockedm=-1
+  G293459: status=6() m=-1 lockedm=-1
+  G297173: status=6() m=-1 lockedm=-1
+  G297569: status=6() m=-1 lockedm=-1
+  G292992: status=6() m=-1 lockedm=-1
+  G293963: status=6() m=-1 lockedm=-1
+  G285216: status=6() m=-1 lockedm=-1
+  G291815: status=6() m=-1 lockedm=-1
+  G297185: status=6() m=-1 lockedm=-1
+  G272316: status=6() m=-1 lockedm=-1
+  G285788: status=6() m=-1 lockedm=-1
+  G296333: status=6() m=-1 lockedm=-1
+  G291623: status=6() m=-1 lockedm=-1
+  G289902: status=6() m=-1 lockedm=-1
+  G295996: status=6() m=-1 lockedm=-1
+  G293786: status=6() m=-1 lockedm=-1
+  G296823: status=6() m=-1 lockedm=-1
+  G294773: status=6() m=-1 lockedm=-1
+  G296727: status=6() m=-1 lockedm=-1
+  G295062: status=6() m=-1 lockedm=-1
+  G296919: status=6() m=-1 lockedm=-1
+  G297181: status=6() m=-1 lockedm=-1
+  G272299: status=6() m=-1 lockedm=-1
+  G292007: status=6() m=-1 lockedm=-1
+  G292937: status=6() m=-1 lockedm=-1
+  G289657: status=6() m=-1 lockedm=-1
+  G285664: status=6() m=-1 lockedm=-1
+  G295603: status=6() m=-1 lockedm=-1
+  G289022: status=6() m=-1 lockedm=-1
+  G295398: status=6() m=-1 lockedm=-1
+  G293069: status=6() m=-1 lockedm=-1
+  G297433: status=6() m=-1 lockedm=-1
+  G294711: status=6() m=-1 lockedm=-1
+  G292868: status=6() m=-1 lockedm=-1
+  G297299: status=6() m=-1 lockedm=-1
+  G295501: status=6() m=-1 lockedm=-1
+  G293819: status=6() m=-1 lockedm=-1
+  G297564: status=6() m=-1 lockedm=-1
+  G284877: status=6() m=-1 lockedm=-1
+  G296186: status=6() m=-1 lockedm=-1
+fatal error: bad g->status in ready
 
 runtime stack:
-runtime.throw(0x563667)
-	/usr/local/go/src/runtime/panic.go:491 +0xad
-acquirep(0xc208069b00)
-	/usr/local/go/src/runtime/proc.c:2747 +0x10d
-stopm()
-	/usr/local/go/src/runtime/proc.c:1186 +0x1b2
-findrunnable(0xc208069b00)
-	/usr/local/go/src/runtime/proc.c:1487 +0x562
-schedule()
-	/usr/local/go/src/runtime/proc.c:1575 +0x151
-runtime.park_m(0xc208000120)
-	/usr/local/go/src/runtime/proc.c:1654 +0x113
-runtime.mcall(0x42ee64)
-	/usr/local/go/src/runtime/asm_amd64.s:186 +0x5a
+runtime.throw(0x562f53)
+	/usr/local/go/src/runtime/panic.go:491 +0xad fp=0xc20d9a1f98 sp=0xc20d9a1f68
+runtime.ready(0xc208000120)
+	/usr/local/go/src/runtime/proc.c:225 +0x6c fp=0xc20d9a1fb8 sp=0xc20d9a1f98
+runtime.ready_m()
+	/usr/local/go/src/runtime/proc.c:244 +0x55 fp=0xc20d9a1fd0 sp=0xc20d9a1fb8
+runtime.onM(0xc208062d00)
+	/usr/local/go/src/runtime/asm_amd64.s:257 +0x68 fp=0xc20d9a1fd8 sp=0xc20d9a1fd0
+runtime.mstart()
+	/usr/local/go/src/runtime/proc.c:818 fp=0xc20d9a1fe0 sp=0xc20d9a1fd8
 
-goroutine 1 [chan receive]:
+goroutine 297647 [running]:
+runtime.switchtoM()
+	/usr/local/go/src/runtime/asm_amd64.s:198 fp=0xc216ff3698 sp=0xc216ff3690
+runtime.goready(0xc208000120)
+	/usr/local/go/src/runtime/proc.go:142 +0x58 fp=0xc216ff36b8 sp=0xc216ff3698
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc216ff37bf, 0xc216ff3701, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:151 +0x2a8 fp=0xc216ff3760 sp=0xc216ff36b8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc216ff37bf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc216ff3798 sp=0xc216ff3760
+main.func·002()
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc216ff37e0 sp=0xc216ff3798
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc216ff37e8 sp=0xc216ff37e0
+created by main.(*TaskPool).Start
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
+
+goroutine 1 [runnable]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d50, 0xc)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc20801f568 sp=0xc20801f538
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d50, 0xc)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc20801f590 sp=0xc20801f568
+runtime.chanrecv(0x4a55c0, 0xc21ef774a0, 0x0, 0x403801, 0x4a0000)
+	/usr/local/go/src/runtime/chan.go:410 +0x452 fp=0xc20801f630 sp=0xc20801f590
+runtime.chanrecv1(0x4a55c0, 0xc21ef774a0, 0x0)
+	/usr/local/go/src/runtime/chan.go:311 +0x2b fp=0xc20801f660 sp=0xc20801f630
 main.(*TaskPool).Stop(0xc208020020)
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:65 +0x66
-main.sparselu_par_call(0xc2080a2000, 0x9dd1, 0x9dd1)
-	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe-chan.go:102 +0x2b3
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:61 +0x66 fp=0xc20801f688 sp=0xc20801f660
+main.sparselu_par_call(0xc2080ae000, 0x9dd1, 0x9dd1)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe-chan.go:102 +0x2b3 fp=0xc20801f700 sp=0xc20801f688
 main.main()
-	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe-chan.go:121 +0x12f
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe-chan.go:121 +0x12f fp=0xc20801f798 sp=0xc20801f700
+runtime.main()
+	/usr/local/go/src/runtime/proc.go:63 +0xf3 fp=0xc20801f7e0 sp=0xc20801f798
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc20801f7e8 sp=0xc20801f7e0
 
-goroutine 236397 [runnable]:
+goroutine 2 [force gc (idle), 1 minutes]:
+runtime.gopark(0x430a10, 0x565700, 0x4f2990, 0xf)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc20801c798 sp=0xc20801c768
+runtime.goparkunlock(0x565700, 0x4f2990, 0xf)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc20801c7c0 sp=0xc20801c798
+runtime.forcegchelper()
+	/usr/local/go/src/runtime/proc.go:99 +0xce fp=0xc20801c7e0 sp=0xc20801c7c0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc20801c7e8 sp=0xc20801c7e0
+created by runtime.init·4
+	/usr/local/go/src/runtime/proc.go:87 +0x25
+
+goroutine 3 [GC sweep wait]:
+runtime.gopark(0x430a10, 0x56c9f0, 0x4efd30, 0xd)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc20801ff98 sp=0xc20801ff68
+runtime.goparkunlock(0x56c9f0, 0x4efd30, 0xd)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc20801ffc0 sp=0xc20801ff98
+runtime.bgsweep()
+	/usr/local/go/src/runtime/mgc0.go:98 +0xbc fp=0xc20801ffe0 sp=0xc20801ffc0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc20801ffe8 sp=0xc20801ffe0
+created by gc
+	/usr/local/go/src/runtime/mgc0.c:1386
+
+goroutine 4 [finalizer wait, 1 minutes]:
+runtime.gopark(0x430a10, 0x56c9e8, 0x4f23f0, 0xe)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc20801b730 sp=0xc20801b700
+runtime.goparkunlock(0x56c9e8, 0x4f23f0, 0xe)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc20801b758 sp=0xc20801b730
+runtime.runfinq()
+	/usr/local/go/src/runtime/malloc.go:727 +0xba fp=0xc20801b7e0 sp=0xc20801b758
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc20801b7e8 sp=0xc20801b7e0
+created by runtime.createfing
+	/usr/local/go/src/runtime/malloc.go:707 +0x5e
+
+goroutine 297626 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc217000e90 sp=0xc217000e60
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc217000eb8 sp=0xc217000e90
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc217000fbf, 0xc217000f01, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc217000f60 sp=0xc217000eb8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc217000fbf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc217000f98 sp=0xc217000f60
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc217000fe0 sp=0xc217000f98
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc217000fe8 sp=0xc217000fe0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236370 [runnable]:
+goroutine 297631 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc216f07690 sp=0xc216f07660
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc216f076b8 sp=0xc216f07690
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc216f077bf, 0xc216f07701, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc216f07760 sp=0xc216f076b8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc216f077bf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc216f07798 sp=0xc216f07760
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc216f077e0 sp=0xc216f07798
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc216f077e8 sp=0xc216f077e0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236378 [runnable]:
+goroutine 297623 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc2171dde90 sp=0xc2171dde60
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc2171ddeb8 sp=0xc2171dde90
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc2171ddfbf, 0xc2171ddf01, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc2171ddf60 sp=0xc2171ddeb8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc2171ddfbf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc2171ddf98 sp=0xc2171ddf60
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc2171ddfe0 sp=0xc2171ddf98
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2171ddfe8 sp=0xc2171ddfe0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236391 [runnable]:
+goroutine 297621 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc217396e90 sp=0xc217396e60
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc217396eb8 sp=0xc217396e90
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc217396fbf, 0xc217396f01, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc217396f60 sp=0xc217396eb8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc217396fbf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc217396f98 sp=0xc217396f60
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc217396fe0 sp=0xc217396f98
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc217396fe8 sp=0xc217396fe0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236404 [runnable]:
+goroutine 297663 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc21705e690 sp=0xc21705e660
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc21705e6b8 sp=0xc21705e690
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc21705e7bf, 0xc21705e701, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc21705e760 sp=0xc21705e6b8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc21705e7bf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc21705e798 sp=0xc21705e760
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc21705e7e0 sp=0xc21705e798
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc21705e7e8 sp=0xc21705e7e0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236372 [runnable]:
+goroutine 297618 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc217330690 sp=0xc217330660
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc2173306b8 sp=0xc217330690
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc2173307bf, 0xc217330701, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc217330760 sp=0xc2173306b8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc2173307bf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc217330798 sp=0xc217330760
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc2173307e0 sp=0xc217330798
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2173307e8 sp=0xc2173307e0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236401 [runnable]:
+goroutine 297641 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc2171bde90 sp=0xc2171bde60
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc2171bdeb8 sp=0xc2171bde90
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc2171bdfbf, 0xc2171bdf01, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc2171bdf60 sp=0xc2171bdeb8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc2171bdfbf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc2171bdf98 sp=0xc2171bdf60
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc2171bdfe0 sp=0xc2171bdf98
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2171bdfe8 sp=0xc2171bdfe0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236416 [running]:
-	goroutine running on other thread; stack unavailable
-created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
-
-goroutine 236402 [runnable]:
+goroutine 297654 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc210e53e90 sp=0xc210e53e60
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc210e53eb8 sp=0xc210e53e90
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc210e53fbf, 0xc210e53f01, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc210e53f60 sp=0xc210e53eb8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc210e53fbf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc210e53f98 sp=0xc210e53f60
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc210e53fe0 sp=0xc210e53f98
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc210e53fe8 sp=0xc210e53fe0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236383 [runnable]:
+goroutine 297657 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc216fade90 sp=0xc216fade60
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc216fadeb8 sp=0xc216fade90
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc216fadfbf, 0xc216fadf01, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc216fadf60 sp=0xc216fadeb8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc216fadfbf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc216fadf98 sp=0xc216fadf60
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc216fadfe0 sp=0xc216fadf98
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc216fadfe8 sp=0xc216fadfe0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236388 [runnable]:
+goroutine 297649 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc217398e90 sp=0xc217398e60
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc217398eb8 sp=0xc217398e90
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc217398fbf, 0xc217398f01, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc217398f60 sp=0xc217398eb8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc217398fbf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc217398f98 sp=0xc217398f60
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc217398fe0 sp=0xc217398f98
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc217398fe8 sp=0xc217398fe0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236396 [runnable]:
+goroutine 297643 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc216f4d690 sp=0xc216f4d660
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc216f4d6b8 sp=0xc216f4d690
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc216f4d7bf, 0xc216f4d701, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc216f4d760 sp=0xc216f4d6b8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc216f4d7bf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc216f4d798 sp=0xc216f4d760
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc216f4d7e0 sp=0xc216f4d798
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc216f4d7e8 sp=0xc216f4d7e0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236376 [runnable]:
+goroutine 297632 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc212e0be90 sp=0xc212e0be60
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc212e0beb8 sp=0xc212e0be90
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc212e0bfbf, 0xc212e0bf01, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc212e0bf60 sp=0xc212e0beb8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc212e0bfbf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc212e0bf98 sp=0xc212e0bf60
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc212e0bfe0 sp=0xc212e0bf98
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc212e0bfe8 sp=0xc212e0bfe0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236389 [runnable]:
+goroutine 297645 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc217003e90 sp=0xc217003e60
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc217003eb8 sp=0xc217003e90
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc217003fbf, 0xc217003f01, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc217003f60 sp=0xc217003eb8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc217003fbf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc217003f98 sp=0xc217003f60
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc217003fe0 sp=0xc217003f98
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc217003fe8 sp=0xc217003fe0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236377 [runnable]:
+goroutine 297656 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc211ea2690 sp=0xc211ea2660
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc211ea26b8 sp=0xc211ea2690
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc211ea27bf, 0xc211ea2701, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc211ea2760 sp=0xc211ea26b8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc211ea27bf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc211ea2798 sp=0xc211ea2760
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc211ea27e0 sp=0xc211ea2798
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc211ea27e8 sp=0xc211ea27e0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236374 [runnable]:
+goroutine 297652 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc2173b5690 sp=0xc2173b5660
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc2173b56b8 sp=0xc2173b5690
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc2173b57bf, 0xc2173b5701, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc2173b5760 sp=0xc2173b56b8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc2173b57bf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc2173b5798 sp=0xc2173b5760
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc2173b57e0 sp=0xc2173b5798
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2173b57e8 sp=0xc2173b57e0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236385 [runnable]:
+goroutine 297653 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc2107a5690 sp=0xc2107a5660
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc2107a56b8 sp=0xc2107a5690
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc2107a57bf, 0xc2107a5701, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc2107a5760 sp=0xc2107a56b8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc2107a57bf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc2107a5798 sp=0xc2107a5760
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc2107a57e0 sp=0xc2107a5798
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2107a57e8 sp=0xc2107a57e0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236371 [runnable]:
+goroutine 297644 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc21727ce90 sp=0xc21727ce60
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc21727ceb8 sp=0xc21727ce90
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc21727cfbf, 0xc21727cf01, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc21727cf60 sp=0xc21727ceb8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc21727cfbf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc21727cf98 sp=0xc21727cf60
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc21727cfe0 sp=0xc21727cf98
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc21727cfe8 sp=0xc21727cfe0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236392 [runnable]:
+goroutine 297646 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc216fbfe90 sp=0xc216fbfe60
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc216fbfeb8 sp=0xc216fbfe90
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc216fbffbf, 0xc216fbff01, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc216fbff60 sp=0xc216fbfeb8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc216fbffbf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc216fbff98 sp=0xc216fbff60
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc216fbffe0 sp=0xc216fbff98
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc216fbffe8 sp=0xc216fbffe0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236399 [runnable]:
+goroutine 297630 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc2173ab690 sp=0xc2173ab660
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc2173ab6b8 sp=0xc2173ab690
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc2173ab7bf, 0xc2173ab701, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc2173ab760 sp=0xc2173ab6b8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc2173ab7bf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc2173ab798 sp=0xc2173ab760
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc2173ab7e0 sp=0xc2173ab798
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2173ab7e8 sp=0xc2173ab7e0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236393 [runnable]:
+goroutine 297625 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc2110f8e90 sp=0xc2110f8e60
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc2110f8eb8 sp=0xc2110f8e90
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc2110f8fbf, 0xc2110f8f01, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc2110f8f60 sp=0xc2110f8eb8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc2110f8fbf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc2110f8f98 sp=0xc2110f8f60
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc2110f8fe0 sp=0xc2110f8f98
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2110f8fe8 sp=0xc2110f8fe0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236379 [runnable]:
+goroutine 297648 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc213538e90 sp=0xc213538e60
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc213538eb8 sp=0xc213538e90
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc213538fbf, 0xc213538f01, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc213538f60 sp=0xc213538eb8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc213538fbf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc213538f98 sp=0xc213538f60
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc213538fe0 sp=0xc213538f98
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc213538fe8 sp=0xc213538fe0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236381 [runnable]:
+goroutine 297636 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc2109a6690 sp=0xc2109a6660
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc2109a66b8 sp=0xc2109a6690
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc2109a67bf, 0xc2109a6701, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc2109a6760 sp=0xc2109a66b8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc2109a67bf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc2109a6798 sp=0xc2109a6760
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc2109a67e0 sp=0xc2109a6798
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2109a67e8 sp=0xc2109a67e0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236411 [runnable]:
+goroutine 297622 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc213434e90 sp=0xc213434e60
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc213434eb8 sp=0xc213434e90
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc213434fbf, 0xc213434f01, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc213434f60 sp=0xc213434eb8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc213434fbf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc213434f98 sp=0xc213434f60
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc213434fe0 sp=0xc213434f98
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc213434fe8 sp=0xc213434fe0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236386 [runnable]:
+goroutine 297628 [runnable]:
+runtime.chanrecv(0x4a5620, 0xc21ef77440, 0xc2173f4fc0, 0x401f01, 0x101)
+	/usr/local/go/src/runtime/chan.go:325 fp=0xc2173f4f68 sp=0xc2173f4f60
+runtime.chanrecv2(0x4a5620, 0xc21ef77440, 0xc2173f4fc0, 0x1)
+	/usr/local/go/src/runtime/chan.go:316 +0x2b fp=0xc2173f4f98 sp=0xc2173f4f68
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:50 +0x5c fp=0xc2173f4fe0 sp=0xc2173f4f98
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2173f4fe8 sp=0xc2173f4fe0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236398 [runnable]:
+goroutine 297638 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc215529690 sp=0xc215529660
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc2155296b8 sp=0xc215529690
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc2155297bf, 0xc215529701, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc215529760 sp=0xc2155296b8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc2155297bf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc215529798 sp=0xc215529760
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc2155297e0 sp=0xc215529798
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2155297e8 sp=0xc2155297e0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236380 [runnable]:
+goroutine 297660 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc217044e90 sp=0xc217044e60
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc217044eb8 sp=0xc217044e90
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc217044fbf, 0xc217044f01, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc217044f60 sp=0xc217044eb8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc217044fbf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc217044f98 sp=0xc217044f60
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc217044fe0 sp=0xc217044f98
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc217044fe8 sp=0xc217044fe0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236369 [runnable]:
+goroutine 297635 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc21719ae90 sp=0xc21719ae60
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc21719aeb8 sp=0xc21719ae90
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc21719afbf, 0xc21719af01, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc21719af60 sp=0xc21719aeb8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc21719afbf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc21719af98 sp=0xc21719af60
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc21719afe0 sp=0xc21719af98
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc21719afe8 sp=0xc21719afe0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236384 [runnable]:
+goroutine 297655 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc211108690 sp=0xc211108660
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc2111086b8 sp=0xc211108690
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc2111087bf, 0xc211108701, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc211108760 sp=0xc2111086b8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc2111087bf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc211108798 sp=0xc211108760
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc2111087e0 sp=0xc211108798
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2111087e8 sp=0xc2111087e0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236373 [runnable]:
+goroutine 297651 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc213b51e90 sp=0xc213b51e60
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc213b51eb8 sp=0xc213b51e90
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc213b51fbf, 0xc213b51f01, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc213b51f60 sp=0xc213b51eb8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc213b51fbf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc213b51f98 sp=0xc213b51f60
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc213b51fe0 sp=0xc213b51f98
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc213b51fe8 sp=0xc213b51fe0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236412 [runnable]:
+goroutine 297617 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc215527690 sp=0xc215527660
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc2155276b8 sp=0xc215527690
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc2155277bf, 0xc215527701, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc215527760 sp=0xc2155276b8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc2155277bf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc215527798 sp=0xc215527760
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc2155277e0 sp=0xc215527798
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2155277e8 sp=0xc2155277e0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236394 [runnable]:
+goroutine 297640 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc215c5b690 sp=0xc215c5b660
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc215c5b6b8 sp=0xc215c5b690
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc215c5b7bf, 0xc215c5b701, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc215c5b760 sp=0xc215c5b6b8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc215c5b7bf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc215c5b798 sp=0xc215c5b760
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc215c5b7e0 sp=0xc215c5b798
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc215c5b7e8 sp=0xc215c5b7e0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 
-goroutine 236400 [runnable]:
+goroutine 297634 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc21713ae90 sp=0xc21713ae60
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc21713aeb8 sp=0xc21713ae90
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc21713afbf, 0xc21713af01, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc21713af60 sp=0xc21713aeb8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc21713afbf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc21713af98 sp=0xc21713af60
 main.func·002()
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x5c
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc21713afe0 sp=0xc21713af98
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc21713afe8 sp=0xc21713afe0
 created by main.(*TaskPool).Start
-	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:58 +0x231
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
+
+goroutine 297661 [chan send]:
+runtime.gopark(0x430a10, 0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc211a1ae90 sp=0xc211a1ae60
+runtime.goparkunlock(0xc21ef774f8, 0x4f1d70, 0x9)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc211a1aeb8 sp=0xc211a1ae90
+runtime.chansend(0x4a55c0, 0xc21ef774a0, 0xc211a1afbf, 0xc211a1af01, 0x401f44, 0x1)
+	/usr/local/go/src/runtime/chan.go:174 +0x481 fp=0xc211a1af60 sp=0xc211a1aeb8
+runtime.chansend1(0x4a55c0, 0xc21ef774a0, 0xc211a1afbf)
+	/usr/local/go/src/runtime/chan.go:68 +0x43 fp=0xc211a1af98 sp=0xc211a1af60
+main.func·002()
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:53 +0xa4 fp=0xc211a1afe0 sp=0xc211a1af98
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc211a1afe8 sp=0xc211a1afe0
+created by main.(*TaskPool).Start
+	/home/stsimon/golang-parallel/src/benchmarks/taskpool-simple-queue-chan.go:54 +0x231
 exit status 2

@@ -9,10 +9,10 @@ package main
 
 import (
 	"flag"
-	"strconv"
-	"os"
 	"fmt"
+	"os"
 	"runtime"
+	"strconv"
 )
 
 var pool = NewTaskPool()

@@ -61,13 +61,13 @@ func genmat(M []*[][]float32) {
  * bmod:
  **********************************************************************/
 func bmod(row [][]float32, col [][]float32, inner [][]float32) {
-        for i := 0; i < submatrixSize; i++ {
-                for j := 0; j < submatrixSize; j++ {
-                        for k := 0; k < submatrixSize; k++ {
-                                inner[i][j] = inner[i][j] - row[i][k]*col[k][j]
-                        }
-                }
-        }
+	for i := 0; i < submatrixSize; i++ {
+		for j := 0; j < submatrixSize; j++ {
+			for k := 0; k < submatrixSize; k++ {
+				inner[i][j] = inner[i][j] - row[i][k]*col[k][j]
+			}
+		}
+	}
 }
 
 func sparselu_init(pBENCH *[]*[][]float32, pass string) {
@@ -95,7 +95,7 @@ func sparselu_par_call(BENCH []*[][]float32) {
 								}
 								BENCH[ii*matrixSize+jj] = &subMatrix
 							}
-                            bmod(*BENCH[ii*matrixSize+kk], *BENCH[kk*matrixSize+jj], *BENCH[ii*matrixSize+jj])
+							bmod(*BENCH[ii*matrixSize+kk], *BENCH[kk*matrixSize+jj], *BENCH[ii*matrixSize+jj])
 						})
 					}
 				}

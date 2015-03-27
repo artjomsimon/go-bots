@@ -1,0 +1,3094 @@
+acquirep: p->m=0xc20dc50000(41) p->status=1
+SCHED 0ms: gomaxprocs=47 idleprocs=10 threads=49 spinningthreads=1 idlethreads=11 runqueue=0 gcwaiting=0 nmidlelocked=0 stopwait=0 sysmonwait=0
+  P0: status=1 schedtick=7029 syscalltick=0 m=46 runqsize=0 gfreecnt=62
+  P1: status=1 schedtick=7941 syscalltick=0 m=47 runqsize=0 gfreecnt=36
+  P2: status=1 schedtick=8062 syscalltick=0 m=15 runqsize=0 gfreecnt=44
+  P3: status=1 schedtick=7137 syscalltick=0 m=22 runqsize=0 gfreecnt=9
+  P4: status=1 schedtick=6901 syscalltick=0 m=19 runqsize=0 gfreecnt=46
+  P5: status=1 schedtick=6999 syscalltick=0 m=40 runqsize=0 gfreecnt=38
+  P6: status=1 schedtick=6957 syscalltick=0 m=43 runqsize=0 gfreecnt=40
+  P7: status=1 schedtick=6941 syscalltick=0 m=26 runqsize=0 gfreecnt=39
+  P8: status=1 schedtick=7375 syscalltick=0 m=35 runqsize=0 gfreecnt=45
+  P9: status=1 schedtick=6993 syscalltick=0 m=32 runqsize=0 gfreecnt=36
+  P10: status=1 schedtick=6913 syscalltick=0 m=28 runqsize=0 gfreecnt=58
+  P11: status=1 schedtick=7016 syscalltick=0 m=45 runqsize=0 gfreecnt=36
+  P12: status=1 schedtick=6947 syscalltick=0 m=2 runqsize=0 gfreecnt=48
+  P13: status=1 schedtick=6971 syscalltick=0 m=6 runqsize=2 gfreecnt=40
+  P14: status=1 schedtick=7025 syscalltick=0 m=16 runqsize=0 gfreecnt=40
+  P15: status=1 schedtick=6961 syscalltick=0 m=12 runqsize=0 gfreecnt=40
+  P16: status=1 schedtick=6948 syscalltick=0 m=8 runqsize=0 gfreecnt=57
+  P17: status=1 schedtick=6948 syscalltick=0 m=39 runqsize=0 gfreecnt=26
+  P18: status=1 schedtick=6908 syscalltick=0 m=34 runqsize=6 gfreecnt=61
+  P19: status=1 schedtick=7011 syscalltick=0 m=30 runqsize=0 gfreecnt=41
+  P20: status=1 schedtick=7100 syscalltick=0 m=18 runqsize=0 gfreecnt=36
+  P21: status=1 schedtick=6904 syscalltick=0 m=31 runqsize=0 gfreecnt=44
+  P22: status=1 schedtick=6910 syscalltick=0 m=48 runqsize=0 gfreecnt=58
+  P23: status=1 schedtick=7034 syscalltick=0 m=27 runqsize=0 gfreecnt=12
+  P24: status=1 schedtick=6927 syscalltick=0 m=23 runqsize=0 gfreecnt=59
+  P25: status=1 schedtick=6966 syscalltick=0 m=17 runqsize=0 gfreecnt=29
+  P26: status=1 schedtick=6961 syscalltick=0 m=42 runqsize=0 gfreecnt=49
+  P27: status=1 schedtick=6946 syscalltick=0 m=0 runqsize=0 gfreecnt=34
+  P28: status=1 schedtick=7149 syscalltick=0 m=33 runqsize=0 gfreecnt=49
+  P29: status=1 schedtick=6951 syscalltick=0 m=41 runqsize=0 gfreecnt=35
+  P30: status=1 schedtick=7598 syscalltick=0 m=37 runqsize=0 gfreecnt=60
+  P31: status=1 schedtick=6989 syscalltick=0 m=11 runqsize=6 gfreecnt=61
+  P32: status=1 schedtick=7014 syscalltick=0 m=7 runqsize=0 gfreecnt=45
+  P33: status=1 schedtick=6930 syscalltick=0 m=9 runqsize=0 gfreecnt=14
+  P34: status=1 schedtick=6961 syscalltick=0 m=3 runqsize=0 gfreecnt=42
+  P35: status=1 schedtick=6974 syscalltick=0 m=38 runqsize=0 gfreecnt=27
+  P36: status=1 schedtick=6958 syscalltick=0 m=21 runqsize=0 gfreecnt=38
+  P37: status=1 schedtick=6995 syscalltick=0 m=14 runqsize=6 gfreecnt=16
+  P38: status=1 schedtick=6884 syscalltick=0 m=29 runqsize=26 gfreecnt=15
+  P39: status=1 schedtick=7157 syscalltick=0 m=10 runqsize=0 gfreecnt=48
+  P40: status=1 schedtick=6964 syscalltick=0 m=13 runqsize=0 gfreecnt=34
+  P41: status=1 schedtick=6915 syscalltick=0 m=5 runqsize=0 gfreecnt=40
+  P42: status=1 schedtick=6939 syscalltick=0 m=44 runqsize=0 gfreecnt=62
+  P43: status=1 schedtick=6973 syscalltick=0 m=24 runqsize=0 gfreecnt=50
+  P44: status=1 schedtick=7021 syscalltick=0 m=36 runqsize=0 gfreecnt=39
+  P45: status=0 schedtick=6949 syscalltick=0 m=-1 runqsize=0 gfreecnt=27
+  P46: status=1 schedtick=8564 syscalltick=0 m=25 runqsize=0 gfreecnt=45
+  M48: p=22 curg=306663 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M47: p=1 curg=306668 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M46: p=0 curg=306669 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M45: p=-1 curg=-1 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M44: p=42 curg=306664 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M43: p=6 curg=306672 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M42: p=26 curg=306662 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M41: p=-1 curg=-1 mallocing=0 throwing=1 gcing=0 locks=2 dying=1 helpgc=0 spinning=1 blocked=0 lockedg=-1
+  M40: p=-1 curg=-1 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M39: p=17 curg=323333 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M38: p=35 curg=323337 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M37: p=30 curg=306660 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M36: p=-1 curg=-1 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M35: p=8 curg=323397 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M34: p=18 curg=323391 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M33: p=28 curg=323332 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M32: p=9 curg=323330 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M31: p=21 curg=323336 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M30: p=19 curg=306670 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M29: p=38 curg=323370 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M28: p=10 curg=323339 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M27: p=23 curg=323395 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M26: p=7 curg=323342 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M25: p=46 curg=323340 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M24: p=43 curg=323331 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M23: p=-1 curg=-1 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M22: p=3 curg=306661 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M21: p=-1 curg=-1 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M20: p=-1 curg=-1 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M19: p=4 curg=323335 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M18: p=20 curg=323341 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M17: p=25 curg=306671 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M16: p=14 curg=323329 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M15: p=2 curg=323338 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M14: p=37 curg=323377 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M13: p=40 curg=323334 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M12: p=-1 curg=-1 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M11: p=31 curg=323384 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M10: p=39 curg=323396 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M9: p=33 curg=323380 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M8: p=16 curg=306666 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M7: p=32 curg=306665 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M6: p=13 curg=323394 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M5: p=41 curg=323283 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M4: p=-1 curg=-1 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M3: p=34 curg=323234 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M2: p=12 curg=306667 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M1: p=-1 curg=-1 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  M0: p=-1 curg=-1 mallocing=0 throwing=0 gcing=0 locks=0 dying=0 helpgc=0 spinning=0 blocked=0 lockedg=-1
+  G1: status=4(semacquire) m=-1 lockedm=-1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G3: status=4(GC sweep wait) m=-1 lockedm=-1
+  G4: status=4(finalizer wait) m=-1 lockedm=-1
+  G318812: status=6() m=-1 lockedm=-1
+  G323338: status=2() m=15 lockedm=-1
+  G307143: status=6() m=-1 lockedm=-1
+  G309731: status=6() m=-1 lockedm=-1
+  G322161: status=6() m=-1 lockedm=-1
+  G309295: status=6() m=-1 lockedm=-1
+  G322629: status=6() m=-1 lockedm=-1
+  G310172: status=6() m=-1 lockedm=-1
+  G323253: status=6() m=-1 lockedm=-1
+  G321443: status=6() m=-1 lockedm=-1
+  G321418: status=6() m=-1 lockedm=-1
+  G320027: status=6() m=-1 lockedm=-1
+  G318768: status=6() m=-1 lockedm=-1
+  G313586: status=6() m=-1 lockedm=-1
+  G316405: status=6() m=-1 lockedm=-1
+  G323279: status=6() m=-1 lockedm=-1
+  G323019: status=6() m=-1 lockedm=-1
+  G323369: status=1() m=-1 lockedm=-1
+  G320436: status=6() m=-1 lockedm=-1
+  G316700: status=6() m=-1 lockedm=-1
+  G315531: status=6() m=-1 lockedm=-1
+  G320701: status=6() m=-1 lockedm=-1
+  G315263: status=6() m=-1 lockedm=-1
+  G309759: status=6() m=-1 lockedm=-1
+  G313248: status=6() m=-1 lockedm=-1
+  G317412: status=6() m=-1 lockedm=-1
+  G317679: status=6() m=-1 lockedm=-1
+  G317087: status=6() m=-1 lockedm=-1
+  G303844: status=6() m=-1 lockedm=-1
+  G314972: status=6() m=-1 lockedm=-1
+  G322501: status=6() m=-1 lockedm=-1
+  G322824: status=6() m=-1 lockedm=-1
+  G319300: status=6() m=-1 lockedm=-1
+  G322193: status=6() m=-1 lockedm=-1
+  G318479: status=6() m=-1 lockedm=-1
+  G303641: status=6() m=-1 lockedm=-1
+  G317947: status=6() m=-1 lockedm=-1
+  G323103: status=6() m=-1 lockedm=-1
+  G319013: status=6() m=-1 lockedm=-1
+  G320820: status=6() m=-1 lockedm=-1
+  G312527: status=6() m=-1 lockedm=-1
+  G323084: status=6() m=-1 lockedm=-1
+  G319147: status=6() m=-1 lockedm=-1
+  G322642: status=6() m=-1 lockedm=-1
+  G319137: status=6() m=-1 lockedm=-1
+  G318694: status=6() m=-1 lockedm=-1
+  G317455: status=6() m=-1 lockedm=-1
+  G322560: status=6() m=-1 lockedm=-1
+  G322395: status=6() m=-1 lockedm=-1
+  G323171: status=6() m=-1 lockedm=-1
+  G323267: status=6() m=-1 lockedm=-1
+  G323277: status=6() m=-1 lockedm=-1
+  G322039: status=6() m=-1 lockedm=-1
+  G323370: status=2() m=29 lockedm=-1
+  G313036: status=6() m=-1 lockedm=-1
+  G322585: status=6() m=-1 lockedm=-1
+  G304629: status=6() m=-1 lockedm=-1
+  G309561: status=6() m=-1 lockedm=-1
+  G322955: status=6() m=-1 lockedm=-1
+  G317907: status=6() m=-1 lockedm=-1
+  G322766: status=6() m=-1 lockedm=-1
+  G319787: status=6() m=-1 lockedm=-1
+  G322591: status=6() m=-1 lockedm=-1
+  G323372: status=1() m=-1 lockedm=-1
+  G318913: status=6() m=-1 lockedm=-1
+  G316356: status=6() m=-1 lockedm=-1
+  G320325: status=6() m=-1 lockedm=-1
+  G323212: status=6() m=-1 lockedm=-1
+  G322854: status=6() m=-1 lockedm=-1
+  G322386: status=6() m=-1 lockedm=-1
+  G320991: status=6() m=-1 lockedm=-1
+  G317316: status=6() m=-1 lockedm=-1
+  G321457: status=6() m=-1 lockedm=-1
+  G323281: status=6() m=-1 lockedm=-1
+  G315080: status=6() m=-1 lockedm=-1
+  G317505: status=6() m=-1 lockedm=-1
+  G323102: status=6() m=-1 lockedm=-1
+  G316109: status=6() m=-1 lockedm=-1
+  G322759: status=6() m=-1 lockedm=-1
+  G323285: status=6() m=-1 lockedm=-1
+  G316258: status=6() m=-1 lockedm=-1
+  G322006: status=6() m=-1 lockedm=-1
+  G323138: status=6() m=-1 lockedm=-1
+  G311271: status=6() m=-1 lockedm=-1
+  G321381: status=6() m=-1 lockedm=-1
+  G310038: status=6() m=-1 lockedm=-1
+  G322681: status=6() m=-1 lockedm=-1
+  G314435: status=6() m=-1 lockedm=-1
+  G322101: status=6() m=-1 lockedm=-1
+  G322964: status=6() m=-1 lockedm=-1
+  G318189: status=6() m=-1 lockedm=-1
+  G319963: status=6() m=-1 lockedm=-1
+  G322014: status=6() m=-1 lockedm=-1
+  G318121: status=6() m=-1 lockedm=-1
+  G318539: status=6() m=-1 lockedm=-1
+  G322045: status=6() m=-1 lockedm=-1
+  G322660: status=6() m=-1 lockedm=-1
+  G322336: status=6() m=-1 lockedm=-1
+  G320142: status=6() m=-1 lockedm=-1
+  G322704: status=6() m=-1 lockedm=-1
+  G322886: status=6() m=-1 lockedm=-1
+  G321891: status=6() m=-1 lockedm=-1
+  G323270: status=6() m=-1 lockedm=-1
+  G319268: status=6() m=-1 lockedm=-1
+  G319476: status=6() m=-1 lockedm=-1
+  G322615: status=6() m=-1 lockedm=-1
+  G322133: status=6() m=-1 lockedm=-1
+  G323373: status=2() m=22 lockedm=-1
+  G321288: status=6() m=-1 lockedm=-1
+  G204337: status=6() m=-1 lockedm=-1
+  G315035: status=6() m=-1 lockedm=-1
+  G317121: status=6() m=-1 lockedm=-1
+  G316107: status=6() m=-1 lockedm=-1
+  G318450: status=6() m=-1 lockedm=-1
+  G321741: status=6() m=-1 lockedm=-1
+  G312145: status=6() m=-1 lockedm=-1
+  G319328: status=6() m=-1 lockedm=-1
+  G322541: status=6() m=-1 lockedm=-1
+  G322330: status=6() m=-1 lockedm=-1
+  G322207: status=6() m=-1 lockedm=-1
+  G322717: status=6() m=-1 lockedm=-1
+  G321730: status=6() m=-1 lockedm=-1
+  G319837: status=6() m=-1 lockedm=-1
+  G321617: status=6() m=-1 lockedm=-1
+  G314986: status=6() m=-1 lockedm=-1
+  G309864: status=6() m=-1 lockedm=-1
+  G322706: status=6() m=-1 lockedm=-1
+  G322893: status=6() m=-1 lockedm=-1
+  G319562: status=6() m=-1 lockedm=-1
+  G322500: status=6() m=-1 lockedm=-1
+  G321452: status=6() m=-1 lockedm=-1
+  G287168: status=6() m=-1 lockedm=-1
+  G322960: status=6() m=-1 lockedm=-1
+  G299101: status=6() m=-1 lockedm=-1
+  G317383: status=6() m=-1 lockedm=-1
+  G322505: status=6() m=-1 lockedm=-1
+  G323137: status=6() m=-1 lockedm=-1
+  G309777: status=6() m=-1 lockedm=-1
+  G322072: status=6() m=-1 lockedm=-1
+  G318683: status=6() m=-1 lockedm=-1
+  G323078: status=6() m=-1 lockedm=-1
+  G322223: status=6() m=-1 lockedm=-1
+  G322424: status=6() m=-1 lockedm=-1
+  G316308: status=6() m=-1 lockedm=-1
+  G322183: status=6() m=-1 lockedm=-1
+  G312703: status=6() m=-1 lockedm=-1
+  G205358: status=6() m=-1 lockedm=-1
+  G321696: status=6() m=-1 lockedm=-1
+  G322700: status=6() m=-1 lockedm=-1
+  G310580: status=6() m=-1 lockedm=-1
+  G322927: status=6() m=-1 lockedm=-1
+  G322444: status=6() m=-1 lockedm=-1
+  G313802: status=6() m=-1 lockedm=-1
+  G323075: status=6() m=-1 lockedm=-1
+  G323123: status=6() m=-1 lockedm=-1
+  G321831: status=6() m=-1 lockedm=-1
+  G316245: status=6() m=-1 lockedm=-1
+  G317678: status=6() m=-1 lockedm=-1
+  G308072: status=6() m=-1 lockedm=-1
+  G321790: status=6() m=-1 lockedm=-1
+  G310276: status=6() m=-1 lockedm=-1
+  G322043: status=6() m=-1 lockedm=-1
+  G323182: status=6() m=-1 lockedm=-1
+  G322910: status=6() m=-1 lockedm=-1
+  G318555: status=6() m=-1 lockedm=-1
+  G315786: status=6() m=-1 lockedm=-1
+  G319203: status=6() m=-1 lockedm=-1
+  G323192: status=6() m=-1 lockedm=-1
+  G322749: status=6() m=-1 lockedm=-1
+  G320061: status=6() m=-1 lockedm=-1
+  G310459: status=6() m=-1 lockedm=-1
+  G316465: status=6() m=-1 lockedm=-1
+  G320997: status=6() m=-1 lockedm=-1
+  G322685: status=6() m=-1 lockedm=-1
+  G323217: status=6() m=-1 lockedm=-1
+  G322770: status=6() m=-1 lockedm=-1
+  G311968: status=6() m=-1 lockedm=-1
+  G322375: status=6() m=-1 lockedm=-1
+  G307147: status=6() m=-1 lockedm=-1
+  G320144: status=6() m=-1 lockedm=-1
+  G312330: status=6() m=-1 lockedm=-1
+  G312524: status=6() m=-1 lockedm=-1
+  G312607: status=6() m=-1 lockedm=-1
+  G318124: status=6() m=-1 lockedm=-1
+  G315737: status=6() m=-1 lockedm=-1
+  G311460: status=6() m=-1 lockedm=-1
+  G318302: status=6() m=-1 lockedm=-1
+  G323333: status=6() m=-1 lockedm=-1
+  G323383: status=2() m=7 lockedm=-1
+  G319723: status=6() m=-1 lockedm=-1
+  G322659: status=6() m=-1 lockedm=-1
+  G322332: status=6() m=-1 lockedm=-1
+  G323273: status=6() m=-1 lockedm=-1
+  G318022: status=6() m=-1 lockedm=-1
+  G322141: status=6() m=-1 lockedm=-1
+  G311499: status=6() m=-1 lockedm=-1
+  G321922: status=6() m=-1 lockedm=-1
+  G318263: status=6() m=-1 lockedm=-1
+  G323017: status=6() m=-1 lockedm=-1
+  G316687: status=6() m=-1 lockedm=-1
+  G121743: status=6() m=-1 lockedm=-1
+  G321704: status=6() m=-1 lockedm=-1
+  G321139: status=6() m=-1 lockedm=-1
+  G303866: status=6() m=-1 lockedm=-1
+  G322428: status=6() m=-1 lockedm=-1
+  G322748: status=6() m=-1 lockedm=-1
+  G303707: status=6() m=-1 lockedm=-1
+  G321062: status=6() m=-1 lockedm=-1
+  G321670: status=6() m=-1 lockedm=-1
+  G322881: status=6() m=-1 lockedm=-1
+  G323396: status=6() m=-1 lockedm=-1
+  G322542: status=6() m=-1 lockedm=-1
+  G320175: status=6() m=-1 lockedm=-1
+  G323204: status=6() m=-1 lockedm=-1
+  G313146: status=6() m=-1 lockedm=-1
+  G321156: status=6() m=-1 lockedm=-1
+  G303294: status=6() m=-1 lockedm=-1
+  G314801: status=6() m=-1 lockedm=-1
+  G323247: status=6() m=-1 lockedm=-1
+  G322949: status=6() m=-1 lockedm=-1
+  G322862: status=6() m=-1 lockedm=-1
+  G319987: status=6() m=-1 lockedm=-1
+  G322891: status=6() m=-1 lockedm=-1
+  G320162: status=6() m=-1 lockedm=-1
+  G316852: status=6() m=-1 lockedm=-1
+  G322321: status=6() m=-1 lockedm=-1
+  G321493: status=6() m=-1 lockedm=-1
+  G321969: status=6() m=-1 lockedm=-1
+  G322509: status=6() m=-1 lockedm=-1
+  G310191: status=6() m=-1 lockedm=-1
+  G320269: status=6() m=-1 lockedm=-1
+  G323133: status=6() m=-1 lockedm=-1
+  G308257: status=6() m=-1 lockedm=-1
+  G318908: status=6() m=-1 lockedm=-1
+  G303499: status=6() m=-1 lockedm=-1
+  G322743: status=6() m=-1 lockedm=-1
+  G321888: status=6() m=-1 lockedm=-1
+  G318871: status=6() m=-1 lockedm=-1
+  G322016: status=6() m=-1 lockedm=-1
+  G316636: status=6() m=-1 lockedm=-1
+  G321883: status=6() m=-1 lockedm=-1
+  G318467: status=6() m=-1 lockedm=-1
+  G317398: status=6() m=-1 lockedm=-1
+  G319343: status=6() m=-1 lockedm=-1
+  G321814: status=6() m=-1 lockedm=-1
+  G317855: status=6() m=-1 lockedm=-1
+  G322757: status=6() m=-1 lockedm=-1
+  G323109: status=6() m=-1 lockedm=-1
+  G313507: status=6() m=-1 lockedm=-1
+  G316949: status=6() m=-1 lockedm=-1
+  G316328: status=6() m=-1 lockedm=-1
+  G204336: status=6() m=-1 lockedm=-1
+  G323041: status=6() m=-1 lockedm=-1
+  G122129: status=6() m=-1 lockedm=-1
+  G303803: status=6() m=-1 lockedm=-1
+  G323040: status=6() m=-1 lockedm=-1
+  G322930: status=6() m=-1 lockedm=-1
+  G304463: status=6() m=-1 lockedm=-1
+  G321482: status=6() m=-1 lockedm=-1
+  G314868: status=6() m=-1 lockedm=-1
+  G323044: status=6() m=-1 lockedm=-1
+  G322921: status=6() m=-1 lockedm=-1
+  G322907: status=6() m=-1 lockedm=-1
+  G319400: status=6() m=-1 lockedm=-1
+  G319709: status=6() m=-1 lockedm=-1
+  G323330: status=6() m=-1 lockedm=-1
+  G323255: status=6() m=-1 lockedm=-1
+  G315181: status=6() m=-1 lockedm=-1
+  G121860: status=6() m=-1 lockedm=-1
+  G322885: status=6() m=-1 lockedm=-1
+  G320948: status=6() m=-1 lockedm=-1
+  G312470: status=6() m=-1 lockedm=-1
+  G323015: status=6() m=-1 lockedm=-1
+  G323385: status=1() m=-1 lockedm=-1
+  G319373: status=6() m=-1 lockedm=-1
+  G317373: status=6() m=-1 lockedm=-1
+  G320438: status=6() m=-1 lockedm=-1
+  G322874: status=6() m=-1 lockedm=-1
+  G323306: status=6() m=-1 lockedm=-1
+  G323197: status=6() m=-1 lockedm=-1
+  G318108: status=6() m=-1 lockedm=-1
+  G323136: status=6() m=-1 lockedm=-1
+  G316079: status=6() m=-1 lockedm=-1
+  G318621: status=6() m=-1 lockedm=-1
+  G318980: status=6() m=-1 lockedm=-1
+  G321757: status=6() m=-1 lockedm=-1
+  G321236: status=6() m=-1 lockedm=-1
+  G322466: status=6() m=-1 lockedm=-1
+  G315050: status=6() m=-1 lockedm=-1
+  G318954: status=6() m=-1 lockedm=-1
+  G322340: status=6() m=-1 lockedm=-1
+  G323309: status=6() m=-1 lockedm=-1
+  G323280: status=6() m=-1 lockedm=-1
+  G319697: status=6() m=-1 lockedm=-1
+  G316905: status=6() m=-1 lockedm=-1
+  G321685: status=6() m=-1 lockedm=-1
+  G322694: status=6() m=-1 lockedm=-1
+  G320747: status=6() m=-1 lockedm=-1
+  G316105: status=6() m=-1 lockedm=-1
+  G322917: status=6() m=-1 lockedm=-1
+  G323118: status=6() m=-1 lockedm=-1
+  G319306: status=6() m=-1 lockedm=-1
+  G318507: status=6() m=-1 lockedm=-1
+  G322943: status=6() m=-1 lockedm=-1
+  G314760: status=6() m=-1 lockedm=-1
+  G321777: status=6() m=-1 lockedm=-1
+  G318618: status=6() m=-1 lockedm=-1
+  G321864: status=6() m=-1 lockedm=-1
+  G322296: status=6() m=-1 lockedm=-1
+  G322818: status=6() m=-1 lockedm=-1
+  G323008: status=6() m=-1 lockedm=-1
+  G317852: status=6() m=-1 lockedm=-1
+  G323076: status=6() m=-1 lockedm=-1
+  G318418: status=6() m=-1 lockedm=-1
+  G316876: status=6() m=-1 lockedm=-1
+  G320177: status=6() m=-1 lockedm=-1
+  G322477: status=6() m=-1 lockedm=-1
+  G322889: status=6() m=-1 lockedm=-1
+  G323312: status=6() m=-1 lockedm=-1
+  G313596: status=6() m=-1 lockedm=-1
+  G321291: status=6() m=-1 lockedm=-1
+  G322082: status=6() m=-1 lockedm=-1
+  G320329: status=6() m=-1 lockedm=-1
+  G314949: status=6() m=-1 lockedm=-1
+  G323250: status=6() m=-1 lockedm=-1
+  G321629: status=6() m=-1 lockedm=-1
+  G321551: status=6() m=-1 lockedm=-1
+  G308366: status=6() m=-1 lockedm=-1
+  G320315: status=6() m=-1 lockedm=-1
+  G321302: status=6() m=-1 lockedm=-1
+  G317504: status=6() m=-1 lockedm=-1
+  G323119: status=6() m=-1 lockedm=-1
+  G318383: status=6() m=-1 lockedm=-1
+  G316980: status=6() m=-1 lockedm=-1
+  G315815: status=6() m=-1 lockedm=-1
+  G319187: status=6() m=-1 lockedm=-1
+  G322866: status=6() m=-1 lockedm=-1
+  G318061: status=6() m=-1 lockedm=-1
+  G322512: status=6() m=-1 lockedm=-1
+  G323246: status=6() m=-1 lockedm=-1
+  G321878: status=6() m=-1 lockedm=-1
+  G323166: status=6() m=-1 lockedm=-1
+  G311595: status=6() m=-1 lockedm=-1
+  G321088: status=6() m=-1 lockedm=-1
+  G323283: status=6() m=-1 lockedm=-1
+  G316505: status=6() m=-1 lockedm=-1
+  G316633: status=6() m=-1 lockedm=-1
+  G315144: status=6() m=-1 lockedm=-1
+  G320202: status=6() m=-1 lockedm=-1
+  G323046: status=6() m=-1 lockedm=-1
+  G313291: status=6() m=-1 lockedm=-1
+  G319790: status=6() m=-1 lockedm=-1
+  G321071: status=6() m=-1 lockedm=-1
+  G320316: status=6() m=-1 lockedm=-1
+  G313748: status=6() m=-1 lockedm=-1
+  G322208: status=6() m=-1 lockedm=-1
+  G322083: status=6() m=-1 lockedm=-1
+  G320893: status=6() m=-1 lockedm=-1
+  G322563: status=6() m=-1 lockedm=-1
+  G318028: status=6() m=-1 lockedm=-1
+  G321444: status=6() m=-1 lockedm=-1
+  G320380: status=6() m=-1 lockedm=-1
+  G315270: status=6() m=-1 lockedm=-1
+  G310521: status=6() m=-1 lockedm=-1
+  G322116: status=6() m=-1 lockedm=-1
+  G319189: status=6() m=-1 lockedm=-1
+  G316989: status=6() m=-1 lockedm=-1
+  G320457: status=6() m=-1 lockedm=-1
+  G322679: status=6() m=-1 lockedm=-1
+  G319420: status=6() m=-1 lockedm=-1
+  G316006: status=6() m=-1 lockedm=-1
+  G304457: status=6() m=-1 lockedm=-1
+  G321336: status=6() m=-1 lockedm=-1
+  G311266: status=6() m=-1 lockedm=-1
+  G313903: status=6() m=-1 lockedm=-1
+  G323346: status=2() m=26 lockedm=-1
+  G318237: status=6() m=-1 lockedm=-1
+  G322467: status=6() m=-1 lockedm=-1
+  G323183: status=6() m=-1 lockedm=-1
+  G310233: status=6() m=-1 lockedm=-1
+  G320229: status=6() m=-1 lockedm=-1
+  G322919: status=6() m=-1 lockedm=-1
+  G313498: status=6() m=-1 lockedm=-1
+  G321721: status=6() m=-1 lockedm=-1
+  G321611: status=6() m=-1 lockedm=-1
+  G320289: status=6() m=-1 lockedm=-1
+  G320875: status=6() m=-1 lockedm=-1
+  G291462: status=6() m=-1 lockedm=-1
+  G322475: status=6() m=-1 lockedm=-1
+  G310011: status=6() m=-1 lockedm=-1
+  G312702: status=6() m=-1 lockedm=-1
+  G312094: status=6() m=-1 lockedm=-1
+  G323130: status=6() m=-1 lockedm=-1
+  G311521: status=6() m=-1 lockedm=-1
+  G322769: status=6() m=-1 lockedm=-1
+  G322435: status=6() m=-1 lockedm=-1
+  G319281: status=6() m=-1 lockedm=-1
+  G317948: status=6() m=-1 lockedm=-1
+  G316653: status=6() m=-1 lockedm=-1
+  G321165: status=6() m=-1 lockedm=-1
+  G204613: status=6() m=-1 lockedm=-1
+  G311702: status=6() m=-1 lockedm=-1
+  G315236: status=6() m=-1 lockedm=-1
+  G323240: status=6() m=-1 lockedm=-1
+  G319180: status=6() m=-1 lockedm=-1
+  G323139: status=6() m=-1 lockedm=-1
+  G322628: status=6() m=-1 lockedm=-1
+  G321097: status=6() m=-1 lockedm=-1
+  G313974: status=6() m=-1 lockedm=-1
+  G316648: status=6() m=-1 lockedm=-1
+  G319402: status=6() m=-1 lockedm=-1
+  G323031: status=6() m=-1 lockedm=-1
+  G312040: status=6() m=-1 lockedm=-1
+  G321159: status=6() m=-1 lockedm=-1
+  G323335: status=6() m=-1 lockedm=-1
+  G322755: status=6() m=-1 lockedm=-1
+  G322279: status=6() m=-1 lockedm=-1
+  G321982: status=6() m=-1 lockedm=-1
+  G323033: status=6() m=-1 lockedm=-1
+  G323156: status=6() m=-1 lockedm=-1
+  G317554: status=6() m=-1 lockedm=-1
+  G312816: status=6() m=-1 lockedm=-1
+  G321758: status=6() m=-1 lockedm=-1
+  G317908: status=6() m=-1 lockedm=-1
+  G318788: status=6() m=-1 lockedm=-1
+  G322292: status=6() m=-1 lockedm=-1
+  G322471: status=6() m=-1 lockedm=-1
+  G322366: status=6() m=-1 lockedm=-1
+  G323135: status=6() m=-1 lockedm=-1
+  G319202: status=6() m=-1 lockedm=-1
+  G320795: status=6() m=-1 lockedm=-1
+  G320602: status=6() m=-1 lockedm=-1
+  G321558: status=6() m=-1 lockedm=-1
+  G313634: status=6() m=-1 lockedm=-1
+  G321032: status=6() m=-1 lockedm=-1
+  G322724: status=6() m=-1 lockedm=-1
+  G322620: status=6() m=-1 lockedm=-1
+  G319575: status=6() m=-1 lockedm=-1
+  G319614: status=6() m=-1 lockedm=-1
+  G322860: status=6() m=-1 lockedm=-1
+  G322365: status=6() m=-1 lockedm=-1
+  G321750: status=6() m=-1 lockedm=-1
+  G322191: status=6() m=-1 lockedm=-1
+  G321723: status=6() m=-1 lockedm=-1
+  G321305: status=6() m=-1 lockedm=-1
+  G316899: status=6() m=-1 lockedm=-1
+  G321254: status=6() m=-1 lockedm=-1
+  G310118: status=6() m=-1 lockedm=-1
+  G310203: status=6() m=-1 lockedm=-1
+  G322780: status=6() m=-1 lockedm=-1
+  G320901: status=6() m=-1 lockedm=-1
+  G319730: status=6() m=-1 lockedm=-1
+  G322113: status=6() m=-1 lockedm=-1
+  G321095: status=6() m=-1 lockedm=-1
+  G321103: status=6() m=-1 lockedm=-1
+  G311463: status=6() m=-1 lockedm=-1
+  G320000: status=6() m=-1 lockedm=-1
+  G316755: status=6() m=-1 lockedm=-1
+  G322282: status=6() m=-1 lockedm=-1
+  G322827: status=6() m=-1 lockedm=-1
+  G323371: status=6() m=-1 lockedm=-1
+  G322139: status=6() m=-1 lockedm=-1
+  G323079: status=6() m=-1 lockedm=-1
+  G319493: status=6() m=-1 lockedm=-1
+  G323048: status=6() m=-1 lockedm=-1
+  G321781: status=6() m=-1 lockedm=-1
+  G322828: status=6() m=-1 lockedm=-1
+  G320718: status=6() m=-1 lockedm=-1
+  G317850: status=6() m=-1 lockedm=-1
+  G320716: status=6() m=-1 lockedm=-1
+  G321796: status=6() m=-1 lockedm=-1
+  G319078: status=6() m=-1 lockedm=-1
+  G318063: status=6() m=-1 lockedm=-1
+  G321175: status=6() m=-1 lockedm=-1
+  G317189: status=6() m=-1 lockedm=-1
+  G121996: status=6() m=-1 lockedm=-1
+  G323374: status=2() m=35 lockedm=-1
+  G321941: status=6() m=-1 lockedm=-1
+  G323361: status=2() m=11 lockedm=-1
+  G323287: status=6() m=-1 lockedm=-1
+  G306669: status=6() m=-1 lockedm=-1
+  G317600: status=6() m=-1 lockedm=-1
+  G323186: status=6() m=-1 lockedm=-1
+  G323254: status=6() m=-1 lockedm=-1
+  G313059: status=6() m=-1 lockedm=-1
+  G321795: status=6() m=-1 lockedm=-1
+  G319298: status=6() m=-1 lockedm=-1
+  G306662: status=6() m=-1 lockedm=-1
+  G320109: status=6() m=-1 lockedm=-1
+  G321759: status=6() m=-1 lockedm=-1
+  G319649: status=6() m=-1 lockedm=-1
+  G301148: status=6() m=-1 lockedm=-1
+  G306668: status=6() m=-1 lockedm=-1
+  G318445: status=6() m=-1 lockedm=-1
+  G322763: status=6() m=-1 lockedm=-1
+  G317983: status=6() m=-1 lockedm=-1
+  G323331: status=6() m=-1 lockedm=-1
+  G323106: status=6() m=-1 lockedm=-1
+  G315280: status=6() m=-1 lockedm=-1
+  G322280: status=6() m=-1 lockedm=-1
+  G312961: status=6() m=-1 lockedm=-1
+  G322656: status=6() m=-1 lockedm=-1
+  G321955: status=6() m=-1 lockedm=-1
+  G323276: status=6() m=-1 lockedm=-1
+  G320049: status=6() m=-1 lockedm=-1
+  G321432: status=6() m=-1 lockedm=-1
+  G322662: status=6() m=-1 lockedm=-1
+  G317712: status=6() m=-1 lockedm=-1
+  G313489: status=6() m=-1 lockedm=-1
+  G321392: status=6() m=-1 lockedm=-1
+  G305091: status=6() m=-1 lockedm=-1
+  G316682: status=6() m=-1 lockedm=-1
+  G320959: status=6() m=-1 lockedm=-1
+  G304026: status=6() m=-1 lockedm=-1
+  G322940: status=6() m=-1 lockedm=-1
+  G302651: status=6() m=-1 lockedm=-1
+  G322652: status=6() m=-1 lockedm=-1
+  G323108: status=6() m=-1 lockedm=-1
+  G317652: status=6() m=-1 lockedm=-1
+  G318524: status=6() m=-1 lockedm=-1
+  G318032: status=6() m=-1 lockedm=-1
+  G321610: status=6() m=-1 lockedm=-1
+  G321202: status=6() m=-1 lockedm=-1
+  G323188: status=6() m=-1 lockedm=-1
+  G320173: status=6() m=-1 lockedm=-1
+  G323257: status=6() m=-1 lockedm=-1
+  G312935: status=6() m=-1 lockedm=-1
+  G323165: status=6() m=-1 lockedm=-1
+  G320221: status=6() m=-1 lockedm=-1
+  G319743: status=6() m=-1 lockedm=-1
+  G314469: status=6() m=-1 lockedm=-1
+  G322384: status=6() m=-1 lockedm=-1
+  G322859: status=6() m=-1 lockedm=-1
+  G323358: status=6() m=-1 lockedm=-1
+  G316947: status=6() m=-1 lockedm=-1
+  G316235: status=6() m=-1 lockedm=-1
+  G320208: status=6() m=-1 lockedm=-1
+  G320642: status=6() m=-1 lockedm=-1
+  G323235: status=6() m=-1 lockedm=-1
+  G323274: status=6() m=-1 lockedm=-1
+  G322968: status=6() m=-1 lockedm=-1
+  G319206: status=6() m=-1 lockedm=-1
+  G319464: status=6() m=-1 lockedm=-1
+  G318208: status=6() m=-1 lockedm=-1
+  G317018: status=6() m=-1 lockedm=-1
+  G321489: status=6() m=-1 lockedm=-1
+  G320573: status=6() m=-1 lockedm=-1
+  G318020: status=6() m=-1 lockedm=-1
+  G320658: status=6() m=-1 lockedm=-1
+  G312663: status=6() m=-1 lockedm=-1
+  G322896: status=6() m=-1 lockedm=-1
+  G320679: status=6() m=-1 lockedm=-1
+  G321341: status=6() m=-1 lockedm=-1
+  G322842: status=6() m=-1 lockedm=-1
+  G322531: status=6() m=-1 lockedm=-1
+  G203999: status=6() m=-1 lockedm=-1
+  G318348: status=6() m=-1 lockedm=-1
+  G321004: status=6() m=-1 lockedm=-1
+  G321951: status=6() m=-1 lockedm=-1
+  G322144: status=6() m=-1 lockedm=-1
+  G322877: status=6() m=-1 lockedm=-1
+  G321211: status=6() m=-1 lockedm=-1
+  G323367: status=6() m=-1 lockedm=-1
+  G319414: status=6() m=-1 lockedm=-1
+  G319318: status=6() m=-1 lockedm=-1
+  G321898: status=6() m=-1 lockedm=-1
+  G323388: status=6() m=-1 lockedm=-1
+  G317796: status=6() m=-1 lockedm=-1
+  G205387: status=6() m=-1 lockedm=-1
+  G320773: status=6() m=-1 lockedm=-1
+  G318200: status=6() m=-1 lockedm=-1
+  G316846: status=6() m=-1 lockedm=-1
+  G319352: status=6() m=-1 lockedm=-1
+  G313108: status=6() m=-1 lockedm=-1
+  G318731: status=6() m=-1 lockedm=-1
+  G321835: status=6() m=-1 lockedm=-1
+  G322345: status=6() m=-1 lockedm=-1
+  G319958: status=6() m=-1 lockedm=-1
+  G313145: status=6() m=-1 lockedm=-1
+  G313274: status=6() m=-1 lockedm=-1
+  G314602: status=6() m=-1 lockedm=-1
+  G319148: status=6() m=-1 lockedm=-1
+  G322382: status=6() m=-1 lockedm=-1
+  G323184: status=6() m=-1 lockedm=-1
+  G318835: status=6() m=-1 lockedm=-1
+  G322354: status=6() m=-1 lockedm=-1
+  G319953: status=6() m=-1 lockedm=-1
+  G313828: status=6() m=-1 lockedm=-1
+  G321667: status=6() m=-1 lockedm=-1
+  G322419: status=6() m=-1 lockedm=-1
+  G322931: status=6() m=-1 lockedm=-1
+  G318396: status=6() m=-1 lockedm=-1
+  G322105: status=6() m=-1 lockedm=-1
+  G306672: status=6() m=-1 lockedm=-1
+  G321695: status=6() m=-1 lockedm=-1
+  G314914: status=6() m=-1 lockedm=-1
+  G321390: status=6() m=-1 lockedm=-1
+  G322075: status=6() m=-1 lockedm=-1
+  G313534: status=6() m=-1 lockedm=-1
+  G319014: status=6() m=-1 lockedm=-1
+  G323159: status=6() m=-1 lockedm=-1
+  G320191: status=6() m=-1 lockedm=-1
+  G317083: status=6() m=-1 lockedm=-1
+  G318697: status=6() m=-1 lockedm=-1
+  G322049: status=6() m=-1 lockedm=-1
+  G313218: status=6() m=-1 lockedm=-1
+  G318549: status=6() m=-1 lockedm=-1
+  G322776: status=6() m=-1 lockedm=-1
+  G317027: status=6() m=-1 lockedm=-1
+  G312266: status=6() m=-1 lockedm=-1
+  G322965: status=6() m=-1 lockedm=-1
+  G321727: status=6() m=-1 lockedm=-1
+  G323392: status=6() m=-1 lockedm=-1
+  G323300: status=6() m=-1 lockedm=-1
+  G323390: status=6() m=-1 lockedm=-1
+  G322537: status=6() m=-1 lockedm=-1
+  G314142: status=6() m=-1 lockedm=-1
+  G319195: status=6() m=-1 lockedm=-1
+  G322557: status=6() m=-1 lockedm=-1
+  G312416: status=6() m=-1 lockedm=-1
+  G316456: status=6() m=-1 lockedm=-1
+  G319737: status=6() m=-1 lockedm=-1
+  G323196: status=6() m=-1 lockedm=-1
+  G323061: status=6() m=-1 lockedm=-1
+  G323178: status=6() m=-1 lockedm=-1
+  G309643: status=6() m=-1 lockedm=-1
+  G321268: status=6() m=-1 lockedm=-1
+  G322797: status=6() m=-1 lockedm=-1
+  G320995: status=6() m=-1 lockedm=-1
+  G323128: status=6() m=-1 lockedm=-1
+  G322826: status=6() m=-1 lockedm=-1
+  G310750: status=6() m=-1 lockedm=-1
+  G321896: status=6() m=-1 lockedm=-1
+  G323350: status=6() m=-1 lockedm=-1
+  G317188: status=6() m=-1 lockedm=-1
+  G304647: status=6() m=-1 lockedm=-1
+  G323241: status=6() m=-1 lockedm=-1
+  G323213: status=6() m=-1 lockedm=-1
+  G319229: status=6() m=-1 lockedm=-1
+  G316807: status=6() m=-1 lockedm=-1
+  G320742: status=6() m=-1 lockedm=-1
+  G321907: status=6() m=-1 lockedm=-1
+  G321787: status=6() m=-1 lockedm=-1
+  G317848: status=6() m=-1 lockedm=-1
+  G313025: status=6() m=-1 lockedm=-1
+  G323022: status=6() m=-1 lockedm=-1
+  G322975: status=6() m=-1 lockedm=-1
+  G314746: status=6() m=-1 lockedm=-1
+  G320943: status=6() m=-1 lockedm=-1
+  G322070: status=6() m=-1 lockedm=-1
+  G321130: status=6() m=-1 lockedm=-1
+  G322320: status=6() m=-1 lockedm=-1
+  G322226: status=6() m=-1 lockedm=-1
+  G322552: status=6() m=-1 lockedm=-1
+  G323278: status=6() m=-1 lockedm=-1
+  G322751: status=6() m=-1 lockedm=-1
+  G323347: status=6() m=-1 lockedm=-1
+  G305240: status=6() m=-1 lockedm=-1
+  G318925: status=6() m=-1 lockedm=-1
+  G122010: status=6() m=-1 lockedm=-1
+  G316979: status=6() m=-1 lockedm=-1
+  G322378: status=6() m=-1 lockedm=-1
+  G321506: status=6() m=-1 lockedm=-1
+  G318390: status=6() m=-1 lockedm=-1
+  G307146: status=6() m=-1 lockedm=-1
+  G322632: status=6() m=-1 lockedm=-1
+  G322667: status=6() m=-1 lockedm=-1
+  G323169: status=6() m=-1 lockedm=-1
+  G322319: status=6() m=-1 lockedm=-1
+  G322899: status=6() m=-1 lockedm=-1
+  G303389: status=6() m=-1 lockedm=-1
+  G321980: status=6() m=-1 lockedm=-1
+  G322655: status=6() m=-1 lockedm=-1
+  G323129: status=6() m=-1 lockedm=-1
+  G319133: status=6() m=-1 lockedm=-1
+  G322534: status=6() m=-1 lockedm=-1
+  G323364: status=6() m=-1 lockedm=-1
+  G320630: status=6() m=-1 lockedm=-1
+  G323368: status=6() m=-1 lockedm=-1
+  G320884: status=6() m=-1 lockedm=-1
+  G322914: status=6() m=-1 lockedm=-1
+  G322324: status=6() m=-1 lockedm=-1
+  G321613: status=6() m=-1 lockedm=-1
+  G303221: status=6() m=-1 lockedm=-1
+  G310828: status=6() m=-1 lockedm=-1
+  G317253: status=6() m=-1 lockedm=-1
+  G322258: status=6() m=-1 lockedm=-1
+  G321312: status=6() m=-1 lockedm=-1
+  G306671: status=6() m=-1 lockedm=-1
+  G317208: status=6() m=-1 lockedm=-1
+  G323093: status=6() m=-1 lockedm=-1
+  G322795: status=6() m=-1 lockedm=-1
+  G322631: status=6() m=-1 lockedm=-1
+  G322474: status=6() m=-1 lockedm=-1
+  G322835: status=6() m=-1 lockedm=-1
+  G322150: status=6() m=-1 lockedm=-1
+  G322830: status=6() m=-1 lockedm=-1
+  G315965: status=6() m=-1 lockedm=-1
+  G311936: status=6() m=-1 lockedm=-1
+  G323363: status=6() m=-1 lockedm=-1
+  G322455: status=6() m=-1 lockedm=-1
+  G308436: status=6() m=-1 lockedm=-1
+  G306660: status=6() m=-1 lockedm=-1
+  G320842: status=6() m=-1 lockedm=-1
+  G322198: status=6() m=-1 lockedm=-1
+  G322645: status=6() m=-1 lockedm=-1
+  G317149: status=6() m=-1 lockedm=-1
+  G121995: status=6() m=-1 lockedm=-1
+  G320559: status=6() m=-1 lockedm=-1
+  G323263: status=6() m=-1 lockedm=-1
+  G304294: status=6() m=-1 lockedm=-1
+  G317363: status=6() m=-1 lockedm=-1
+  G323024: status=6() m=-1 lockedm=-1
+  G322520: status=6() m=-1 lockedm=-1
+  G322647: status=6() m=-1 lockedm=-1
+  G320123: status=6() m=-1 lockedm=-1
+  G321206: status=6() m=-1 lockedm=-1
+  G323099: status=6() m=-1 lockedm=-1
+  G322287: status=6() m=-1 lockedm=-1
+  G319949: status=6() m=-1 lockedm=-1
+  G322718: status=6() m=-1 lockedm=-1
+  G320200: status=6() m=-1 lockedm=-1
+  G320346: status=6() m=-1 lockedm=-1
+  G322616: status=6() m=-1 lockedm=-1
+  G318814: status=6() m=-1 lockedm=-1
+  G303764: status=6() m=-1 lockedm=-1
+  G322742: status=6() m=-1 lockedm=-1
+  G322417: status=6() m=-1 lockedm=-1
+  G316824: status=6() m=-1 lockedm=-1
+  G322756: status=6() m=-1 lockedm=-1
+  G322707: status=6() m=-1 lockedm=-1
+  G320560: status=6() m=-1 lockedm=-1
+  G322779: status=6() m=-1 lockedm=-1
+  G321590: status=6() m=-1 lockedm=-1
+  G316640: status=6() m=-1 lockedm=-1
+  G321734: status=6() m=-1 lockedm=-1
+  G321343: status=6() m=-1 lockedm=-1
+  G322846: status=6() m=-1 lockedm=-1
+  G323356: status=6() m=-1 lockedm=-1
+  G322214: status=6() m=-1 lockedm=-1
+  G317599: status=6() m=-1 lockedm=-1
+  G204474: status=6() m=-1 lockedm=-1
+  G323275: status=6() m=-1 lockedm=-1
+  G317088: status=6() m=-1 lockedm=-1
+  G205213: status=6() m=-1 lockedm=-1
+  G204952: status=6() m=-1 lockedm=-1
+  G321788: status=6() m=-1 lockedm=-1
+  G314790: status=6() m=-1 lockedm=-1
+  G319988: status=6() m=-1 lockedm=-1
+  G321285: status=6() m=-1 lockedm=-1
+  G323028: status=6() m=-1 lockedm=-1
+  G316904: status=6() m=-1 lockedm=-1
+  G323351: status=2() m=42 lockedm=-1
+  G316596: status=6() m=-1 lockedm=-1
+  G320908: status=6() m=-1 lockedm=-1
+  G323175: status=6() m=-1 lockedm=-1
+  G321416: status=6() m=-1 lockedm=-1
+  G323058: status=6() m=-1 lockedm=-1
+  G311667: status=6() m=-1 lockedm=-1
+  G317322: status=6() m=-1 lockedm=-1
+  G318295: status=6() m=-1 lockedm=-1
+  G319387: status=6() m=-1 lockedm=-1
+  G320775: status=6() m=-1 lockedm=-1
+  G316290: status=6() m=-1 lockedm=-1
+  G319375: status=6() m=-1 lockedm=-1
+  G319251: status=6() m=-1 lockedm=-1
+  G319192: status=6() m=-1 lockedm=-1
+  G323301: status=6() m=-1 lockedm=-1
+  G311387: status=6() m=-1 lockedm=-1
+  G311864: status=6() m=-1 lockedm=-1
+  G322971: status=6() m=-1 lockedm=-1
+  G322519: status=6() m=-1 lockedm=-1
+  G313327: status=6() m=-1 lockedm=-1
+  G322008: status=6() m=-1 lockedm=-1
+  G317352: status=6() m=-1 lockedm=-1
+  G321698: status=6() m=-1 lockedm=-1
+  G315274: status=6() m=-1 lockedm=-1
+  G312623: status=6() m=-1 lockedm=-1
+  G318969: status=6() m=-1 lockedm=-1
+  G319719: status=6() m=-1 lockedm=-1
+  G323096: status=6() m=-1 lockedm=-1
+  G204942: status=6() m=-1 lockedm=-1
+  G323164: status=6() m=-1 lockedm=-1
+  G320891: status=6() m=-1 lockedm=-1
+  G320942: status=6() m=-1 lockedm=-1
+  G322879: status=6() m=-1 lockedm=-1
+  G320635: status=6() m=-1 lockedm=-1
+  G323179: status=6() m=-1 lockedm=-1
+  G322834: status=6() m=-1 lockedm=-1
+  G317395: status=6() m=-1 lockedm=-1
+  G320171: status=6() m=-1 lockedm=-1
+  G322856: status=6() m=-1 lockedm=-1
+  G323360: status=6() m=-1 lockedm=-1
+  G312777: status=6() m=-1 lockedm=-1
+  G321767: status=6() m=-1 lockedm=-1
+  G318354: status=6() m=-1 lockedm=-1
+  G312599: status=6() m=-1 lockedm=-1
+  G321577: status=6() m=-1 lockedm=-1
+  G310076: status=6() m=-1 lockedm=-1
+  G318780: status=6() m=-1 lockedm=-1
+  G311673: status=6() m=-1 lockedm=-1
+  G309271: status=6() m=-1 lockedm=-1
+  G323201: status=6() m=-1 lockedm=-1
+  G323211: status=6() m=-1 lockedm=-1
+  G308054: status=6() m=-1 lockedm=-1
+  G322672: status=6() m=-1 lockedm=-1
+  G205312: status=6() m=-1 lockedm=-1
+  G313371: status=6() m=-1 lockedm=-1
+  G320485: status=6() m=-1 lockedm=-1
+  G310914: status=6() m=-1 lockedm=-1
+  G322186: status=6() m=-1 lockedm=-1
+  G320975: status=6() m=-1 lockedm=-1
+  G323020: status=6() m=-1 lockedm=-1
+  G316250: status=6() m=-1 lockedm=-1
+  G319299: status=6() m=-1 lockedm=-1
+  G320800: status=6() m=-1 lockedm=-1
+  G321829: status=6() m=-1 lockedm=-1
+  G321815: status=6() m=-1 lockedm=-1
+  G322423: status=6() m=-1 lockedm=-1
+  G321976: status=6() m=-1 lockedm=-1
+  G322922: status=6() m=-1 lockedm=-1
+  G313267: status=6() m=-1 lockedm=-1
+  G322535: status=6() m=-1 lockedm=-1
+  G321490: status=6() m=-1 lockedm=-1
+  G322752: status=6() m=-1 lockedm=-1
+  G317066: status=6() m=-1 lockedm=-1
+  G323339: status=6() m=-1 lockedm=-1
+  G321222: status=6() m=-1 lockedm=-1
+  G312438: status=6() m=-1 lockedm=-1
+  G322640: status=6() m=-1 lockedm=-1
+  G323329: status=6() m=-1 lockedm=-1
+  G317827: status=6() m=-1 lockedm=-1
+  G319852: status=6() m=-1 lockedm=-1
+  G322371: status=6() m=-1 lockedm=-1
+  G321754: status=6() m=-1 lockedm=-1
+  G303674: status=6() m=-1 lockedm=-1
+  G313042: status=6() m=-1 lockedm=-1
+  G320111: status=6() m=-1 lockedm=-1
+  G321937: status=6() m=-1 lockedm=-1
+  G306664: status=6() m=-1 lockedm=-1
+  G314634: status=6() m=-1 lockedm=-1
+  G316351: status=6() m=-1 lockedm=-1
+  G321538: status=6() m=-1 lockedm=-1
+  G313322: status=6() m=-1 lockedm=-1
+  G322831: status=6() m=-1 lockedm=-1
+  G316106: status=6() m=-1 lockedm=-1
+  G323264: status=6() m=-1 lockedm=-1
+  G322621: status=6() m=-1 lockedm=-1
+  G322099: status=6() m=-1 lockedm=-1
+  G322011: status=6() m=-1 lockedm=-1
+  G319285: status=6() m=-1 lockedm=-1
+  G322819: status=6() m=-1 lockedm=-1
+  G322945: status=6() m=-1 lockedm=-1
+  G323293: status=6() m=-1 lockedm=-1
+  G321138: status=6() m=-1 lockedm=-1
+  G319351: status=6() m=-1 lockedm=-1
+  G320887: status=6() m=-1 lockedm=-1
+  G204012: status=6() m=-1 lockedm=-1
+  G322926: status=6() m=-1 lockedm=-1
+  G306661: status=6() m=-1 lockedm=-1
+  G322976: status=6() m=-1 lockedm=-1
+  G321464: status=6() m=-1 lockedm=-1
+  G319882: status=6() m=-1 lockedm=-1
+  G317677: status=6() m=-1 lockedm=-1
+  G319602: status=6() m=-1 lockedm=-1
+  G320677: status=6() m=-1 lockedm=-1
+  G320627: status=6() m=-1 lockedm=-1
+  G301321: status=6() m=-1 lockedm=-1
+  G316528: status=6() m=-1 lockedm=-1
+  G317594: status=6() m=-1 lockedm=-1
+  G316111: status=6() m=-1 lockedm=-1
+  G322768: status=6() m=-1 lockedm=-1
+  G323092: status=6() m=-1 lockedm=-1
+  G312805: status=6() m=-1 lockedm=-1
+  G313152: status=6() m=-1 lockedm=-1
+  G323036: status=6() m=-1 lockedm=-1
+  G320270: status=6() m=-1 lockedm=-1
+  G323094: status=6() m=-1 lockedm=-1
+  G322447: status=6() m=-1 lockedm=-1
+  G316705: status=6() m=-1 lockedm=-1
+  G315800: status=6() m=-1 lockedm=-1
+  G320568: status=6() m=-1 lockedm=-1
+  G320819: status=6() m=-1 lockedm=-1
+  G321264: status=6() m=-1 lockedm=-1
+  G320064: status=6() m=-1 lockedm=-1
+  G320339: status=6() m=-1 lockedm=-1
+  G303452: status=6() m=-1 lockedm=-1
+  G317085: status=6() m=-1 lockedm=-1
+  G323289: status=6() m=-1 lockedm=-1
+  G321625: status=6() m=-1 lockedm=-1
+  G313883: status=6() m=-1 lockedm=-1
+  G321391: status=6() m=-1 lockedm=-1
+  G320213: status=6() m=-1 lockedm=-1
+  G322865: status=6() m=-1 lockedm=-1
+  G203828: status=6() m=-1 lockedm=-1
+  G322390: status=6() m=-1 lockedm=-1
+  G322439: status=6() m=-1 lockedm=-1
+  G321692: status=6() m=-1 lockedm=-1
+  G322916: status=6() m=-1 lockedm=-1
+  G313668: status=6() m=-1 lockedm=-1
+  G323081: status=6() m=-1 lockedm=-1
+  G314144: status=6() m=-1 lockedm=-1
+  G322696: status=6() m=-1 lockedm=-1
+  G312855: status=6() m=-1 lockedm=-1
+  G323181: status=6() m=-1 lockedm=-1
+  G310324: status=6() m=-1 lockedm=-1
+  G319645: status=6() m=-1 lockedm=-1
+  G321504: status=6() m=-1 lockedm=-1
+  G321245: status=6() m=-1 lockedm=-1
+  G320460: status=6() m=-1 lockedm=-1
+  G322908: status=6() m=-1 lockedm=-1
+  G323050: status=6() m=-1 lockedm=-1
+  G322403: status=6() m=-1 lockedm=-1
+  G315114: status=6() m=-1 lockedm=-1
+  G320471: status=6() m=-1 lockedm=-1
+  G318211: status=6() m=-1 lockedm=-1
+  G320616: status=6() m=-1 lockedm=-1
+  G320259: status=6() m=-1 lockedm=-1
+  G306746: status=6() m=-1 lockedm=-1
+  G322848: status=6() m=-1 lockedm=-1
+  G309481: status=6() m=-1 lockedm=-1
+  G308326: status=6() m=-1 lockedm=-1
+  G203947: status=6() m=-1 lockedm=-1
+  G322932: status=6() m=-1 lockedm=-1
+  G321812: status=6() m=-1 lockedm=-1
+  G319246: status=6() m=-1 lockedm=-1
+  G322789: status=6() m=-1 lockedm=-1
+  G323296: status=6() m=-1 lockedm=-1
+  G322900: status=6() m=-1 lockedm=-1
+  G323009: status=6() m=-1 lockedm=-1
+  G318904: status=6() m=-1 lockedm=-1
+  G322118: status=6() m=-1 lockedm=-1
+  G317292: status=6() m=-1 lockedm=-1
+  G318517: status=6() m=-1 lockedm=-1
+  G321564: status=6() m=-1 lockedm=-1
+  G319616: status=6() m=-1 lockedm=-1
+  G320831: status=6() m=-1 lockedm=-1
+  G323098: status=6() m=-1 lockedm=-1
+  G320954: status=6() m=-1 lockedm=-1
+  G323440: status=1() m=-1 lockedm=-1
+  G310231: status=6() m=-1 lockedm=-1
+  G313741: status=6() m=-1 lockedm=-1
+  G319037: status=6() m=-1 lockedm=-1
+  G323038: status=6() m=-1 lockedm=-1
+  G318868: status=6() m=-1 lockedm=-1
+  G311503: status=6() m=-1 lockedm=-1
+  G322875: status=6() m=-1 lockedm=-1
+  G323299: status=6() m=-1 lockedm=-1
+  G323334: status=6() m=-1 lockedm=-1
+  G323035: status=6() m=-1 lockedm=-1
+  G322838: status=6() m=-1 lockedm=-1
+  G316593: status=6() m=-1 lockedm=-1
+  G317125: status=6() m=-1 lockedm=-1
+  G321844: status=6() m=-1 lockedm=-1
+  G321749: status=6() m=-1 lockedm=-1
+  G315819: status=6() m=-1 lockedm=-1
+  G322799: status=6() m=-1 lockedm=-1
+  G304143: status=6() m=-1 lockedm=-1
+  G323427: status=1() m=-1 lockedm=-1
+  G323348: status=6() m=-1 lockedm=-1
+  G311930: status=6() m=-1 lockedm=-1
+  G321601: status=6() m=-1 lockedm=-1
+  G318029: status=6() m=-1 lockedm=-1
+  G322882: status=6() m=-1 lockedm=-1
+  G322200: status=6() m=-1 lockedm=-1
+  G319966: status=6() m=-1 lockedm=-1
+  G323208: status=6() m=-1 lockedm=-1
+  G323413: status=1() m=-1 lockedm=-1
+  G323026: status=6() m=-1 lockedm=-1
+  G323131: status=6() m=-1 lockedm=-1
+  G321445: status=6() m=-1 lockedm=-1
+  G316029: status=6() m=-1 lockedm=-1
+  G322942: status=6() m=-1 lockedm=-1
+  G321890: status=6() m=-1 lockedm=-1
+  G321822: status=6() m=-1 lockedm=-1
+  G321060: status=6() m=-1 lockedm=-1
+  G323461: status=1() m=-1 lockedm=-1
+  G306667: status=6() m=-1 lockedm=-1
+  G316884: status=6() m=-1 lockedm=-1
+  G323216: status=6() m=-1 lockedm=-1
+  G322951: status=6() m=-1 lockedm=-1
+  G322947: status=6() m=-1 lockedm=-1
+  G322052: status=6() m=-1 lockedm=-1
+  G322158: status=6() m=-1 lockedm=-1
+  G319907: status=6() m=-1 lockedm=-1
+  G318072: status=6() m=-1 lockedm=-1
+  G322843: status=6() m=-1 lockedm=-1
+  G320404: status=6() m=-1 lockedm=-1
+  G320866: status=6() m=-1 lockedm=-1
+  G315087: status=6() m=-1 lockedm=-1
+  G317835: status=6() m=-1 lockedm=-1
+  G309885: status=6() m=-1 lockedm=-1
+  G323010: status=6() m=-1 lockedm=-1
+  G318482: status=6() m=-1 lockedm=-1
+  G319244: status=6() m=-1 lockedm=-1
+  G323236: status=6() m=-1 lockedm=-1
+  G311598: status=6() m=-1 lockedm=-1
+  G316592: status=6() m=-1 lockedm=-1
+  G321870: status=6() m=-1 lockedm=-1
+  G316624: status=6() m=-1 lockedm=-1
+  G316862: status=6() m=-1 lockedm=-1
+  G323441: status=1() m=-1 lockedm=-1
+  G320264: status=6() m=-1 lockedm=-1
+  G321608: status=6() m=-1 lockedm=-1
+  G322650: status=6() m=-1 lockedm=-1
+  G317345: status=6() m=-1 lockedm=-1
+  G322478: status=6() m=-1 lockedm=-1
+  G319782: status=6() m=-1 lockedm=-1
+  G322056: status=6() m=-1 lockedm=-1
+  G322484: status=6() m=-1 lockedm=-1
+  G323195: status=6() m=-1 lockedm=-1
+  G323291: status=6() m=-1 lockedm=-1
+  G322281: status=6() m=-1 lockedm=-1
+  G315873: status=6() m=-1 lockedm=-1
+  G321223: status=6() m=-1 lockedm=-1
+  G304814: status=6() m=-1 lockedm=-1
+  G320608: status=6() m=-1 lockedm=-1
+  G323307: status=6() m=-1 lockedm=-1
+  G317456: status=6() m=-1 lockedm=-1
+  G322950: status=6() m=-1 lockedm=-1
+  G322338: status=6() m=-1 lockedm=-1
+  G321201: status=6() m=-1 lockedm=-1
+  G303213: status=6() m=-1 lockedm=-1
+  G321985: status=6() m=-1 lockedm=-1
+  G323272: status=6() m=-1 lockedm=-1
+  G323365: status=6() m=-1 lockedm=-1
+  G322432: status=6() m=-1 lockedm=-1
+  G204770: status=6() m=-1 lockedm=-1
+  G304317: status=6() m=-1 lockedm=-1
+  G323113: status=6() m=-1 lockedm=-1
+  G319439: status=6() m=-1 lockedm=-1
+  G315357: status=6() m=-1 lockedm=-1
+  G321671: status=6() m=-1 lockedm=-1
+  G323126: status=6() m=-1 lockedm=-1
+  G323091: status=6() m=-1 lockedm=-1
+  G321895: status=6() m=-1 lockedm=-1
+  G318981: status=6() m=-1 lockedm=-1
+  G312552: status=6() m=-1 lockedm=-1
+  G316850: status=6() m=-1 lockedm=-1
+  G312277: status=6() m=-1 lockedm=-1
+  G317613: status=6() m=-1 lockedm=-1
+  G321524: status=6() m=-1 lockedm=-1
+  G312879: status=6() m=-1 lockedm=-1
+  G321530: status=6() m=-1 lockedm=-1
+  G323421: status=1() m=-1 lockedm=-1
+  G322713: status=6() m=-1 lockedm=-1
+  G322462: status=6() m=-1 lockedm=-1
+  G322418: status=6() m=-1 lockedm=-1
+  G322402: status=6() m=-1 lockedm=-1
+  G318187: status=6() m=-1 lockedm=-1
+  G321112: status=6() m=-1 lockedm=-1
+  G316996: status=6() m=-1 lockedm=-1
+  G320911: status=6() m=-1 lockedm=-1
+  G319854: status=6() m=-1 lockedm=-1
+  G323056: status=6() m=-1 lockedm=-1
+  G323354: status=6() m=-1 lockedm=-1
+  G320648: status=6() m=-1 lockedm=-1
+  G320071: status=6() m=-1 lockedm=-1
+  G323174: status=6() m=-1 lockedm=-1
+  G319041: status=6() m=-1 lockedm=-1
+  G322051: status=6() m=-1 lockedm=-1
+  G317739: status=6() m=-1 lockedm=-1
+  G322619: status=6() m=-1 lockedm=-1
+  G319143: status=6() m=-1 lockedm=-1
+  G303812: status=6() m=-1 lockedm=-1
+  G319964: status=6() m=-1 lockedm=-1
+  G322010: status=6() m=-1 lockedm=-1
+  G312964: status=6() m=-1 lockedm=-1
+  G321537: status=6() m=-1 lockedm=-1
+  G318501: status=6() m=-1 lockedm=-1
+  G322952: status=6() m=-1 lockedm=-1
+  G317157: status=6() m=-1 lockedm=-1
+  G322553: status=6() m=-1 lockedm=-1
+  G322140: status=6() m=-1 lockedm=-1
+  G322511: status=6() m=-1 lockedm=-1
+  G319466: status=6() m=-1 lockedm=-1
+  G314725: status=6() m=-1 lockedm=-1
+  G316579: status=6() m=-1 lockedm=-1
+  G320772: status=6() m=-1 lockedm=-1
+  G317702: status=6() m=-1 lockedm=-1
+  G323154: status=6() m=-1 lockedm=-1
+  G323162: status=6() m=-1 lockedm=-1
+  G323332: status=6() m=-1 lockedm=-1
+  G321621: status=6() m=-1 lockedm=-1
+  G322820: status=6() m=-1 lockedm=-1
+  G315318: status=6() m=-1 lockedm=-1
+  G322689: status=6() m=-1 lockedm=-1
+  G318650: status=6() m=-1 lockedm=-1
+  G323470: status=1() m=-1 lockedm=-1
+  G322857: status=6() m=-1 lockedm=-1
+  G309798: status=6() m=-1 lockedm=-1
+  G322196: status=6() m=-1 lockedm=-1
+  G323049: status=6() m=-1 lockedm=-1
+  G322817: status=6() m=-1 lockedm=-1
+  G322864: status=6() m=-1 lockedm=-1
+  G308540: status=6() m=-1 lockedm=-1
+  G322472: status=6() m=-1 lockedm=-1
+  G201549: status=6() m=-1 lockedm=-1
+  G319842: status=6() m=-1 lockedm=-1
+  G323206: status=6() m=-1 lockedm=-1
+  G320853: status=6() m=-1 lockedm=-1
+  G309541: status=6() m=-1 lockedm=-1
+  G322767: status=6() m=-1 lockedm=-1
+  G323362: status=6() m=-1 lockedm=-1
+  G323023: status=6() m=-1 lockedm=-1
+  G311229: status=6() m=-1 lockedm=-1
+  G313269: status=6() m=-1 lockedm=-1
+  G323207: status=6() m=-1 lockedm=-1
+  G319713: status=6() m=-1 lockedm=-1
+  G317567: status=6() m=-1 lockedm=-1
+  G319853: status=6() m=-1 lockedm=-1
+  G321157: status=6() m=-1 lockedm=-1
+  G323205: status=6() m=-1 lockedm=-1
+  G314984: status=6() m=-1 lockedm=-1
+  G322453: status=6() m=-1 lockedm=-1
+  G322710: status=6() m=-1 lockedm=-1
+  G320195: status=6() m=-1 lockedm=-1
+  G321987: status=6() m=-1 lockedm=-1
+  G321411: status=6() m=-1 lockedm=-1
+  G322970: status=6() m=-1 lockedm=-1
+  G322923: status=6() m=-1 lockedm=-1
+  G321221: status=6() m=-1 lockedm=-1
+  G314907: status=6() m=-1 lockedm=-1
+  G317459: status=6() m=-1 lockedm=-1
+  G323290: status=6() m=-1 lockedm=-1
+  G321286: status=6() m=-1 lockedm=-1
+  G321125: status=6() m=-1 lockedm=-1
+  G323203: status=6() m=-1 lockedm=-1
+  G323163: status=6() m=-1 lockedm=-1
+  G204604: status=6() m=-1 lockedm=-1
+  G323202: status=6() m=-1 lockedm=-1
+  G318451: status=6() m=-1 lockedm=-1
+  G316693: status=6() m=-1 lockedm=-1
+  G323125: status=6() m=-1 lockedm=-1
+  G315966: status=6() m=-1 lockedm=-1
+  G322426: status=6() m=-1 lockedm=-1
+  G319288: status=6() m=-1 lockedm=-1
+  G317309: status=6() m=-1 lockedm=-1
+  G322761: status=6() m=-1 lockedm=-1
+  G316103: status=6() m=-1 lockedm=-1
+  G313906: status=6() m=-1 lockedm=-1
+  G318291: status=6() m=-1 lockedm=-1
+  G322744: status=6() m=-1 lockedm=-1
+  G316767: status=6() m=-1 lockedm=-1
+  G204511: status=6() m=-1 lockedm=-1
+  G321575: status=6() m=-1 lockedm=-1
+  G321422: status=6() m=-1 lockedm=-1
+  G314823: status=6() m=-1 lockedm=-1
+  G315058: status=6() m=-1 lockedm=-1
+  G321801: status=6() m=-1 lockedm=-1
+  G315171: status=6() m=-1 lockedm=-1
+  G317406: status=6() m=-1 lockedm=-1
+  G305233: status=6() m=-1 lockedm=-1
+  G311193: status=6() m=-1 lockedm=-1
+  G313535: status=6() m=-1 lockedm=-1
+  G319372: status=6() m=-1 lockedm=-1
+  G321495: status=6() m=-1 lockedm=-1
+  G317759: status=6() m=-1 lockedm=-1
+  G316750: status=6() m=-1 lockedm=-1
+  G322948: status=6() m=-1 lockedm=-1
+  G321388: status=6() m=-1 lockedm=-1
+  G323432: status=1() m=-1 lockedm=-1
+  G320874: status=6() m=-1 lockedm=-1
+  G323185: status=6() m=-1 lockedm=-1
+  G322810: status=6() m=-1 lockedm=-1
+  G313819: status=6() m=-1 lockedm=-1
+  G323282: status=6() m=-1 lockedm=-1
+  G323047: status=6() m=-1 lockedm=-1
+  G320937: status=6() m=-1 lockedm=-1
+  G322935: status=6() m=-1 lockedm=-1
+  G311599: status=6() m=-1 lockedm=-1
+  G314597: status=6() m=-1 lockedm=-1
+  G316239: status=6() m=-1 lockedm=-1
+  G318965: status=6() m=-1 lockedm=-1
+  G317170: status=6() m=-1 lockedm=-1
+  G318631: status=6() m=-1 lockedm=-1
+  G320378: status=6() m=-1 lockedm=-1
+  G322695: status=6() m=-1 lockedm=-1
+  G319849: status=6() m=-1 lockedm=-1
+  G322686: status=6() m=-1 lockedm=-1
+  G322726: status=6() m=-1 lockedm=-1
+  G322747: status=6() m=-1 lockedm=-1
+  G322003: status=6() m=-1 lockedm=-1
+  G322593: status=6() m=-1 lockedm=-1
+  G316923: status=6() m=-1 lockedm=-1
+  G308039: status=6() m=-1 lockedm=-1
+  G305901: status=6() m=-1 lockedm=-1
+  G322284: status=6() m=-1 lockedm=-1
+  G322259: status=6() m=-1 lockedm=-1
+  G322880: status=6() m=-1 lockedm=-1
+  G322661: status=6() m=-1 lockedm=-1
+  G322225: status=6() m=-1 lockedm=-1
+  G316603: status=6() m=-1 lockedm=-1
+  G322029: status=6() m=-1 lockedm=-1
+  G322522: status=6() m=-1 lockedm=-1
+  G322119: status=6() m=-1 lockedm=-1
+  G317086: status=6() m=-1 lockedm=-1
+  G312508: status=6() m=-1 lockedm=-1
+  G320119: status=6() m=-1 lockedm=-1
+  G321532: status=6() m=-1 lockedm=-1
+  G321839: status=6() m=-1 lockedm=-1
+  G322201: status=6() m=-1 lockedm=-1
+  G321219: status=6() m=-1 lockedm=-1
+  G317173: status=6() m=-1 lockedm=-1
+  G323471: status=1() m=-1 lockedm=-1
+  G323101: status=6() m=-1 lockedm=-1
+  G320890: status=6() m=-1 lockedm=-1
+  G316879: status=6() m=-1 lockedm=-1
+  G323082: status=6() m=-1 lockedm=-1
+  G322242: status=6() m=-1 lockedm=-1
+  G309450: status=6() m=-1 lockedm=-1
+  G323477: status=1() m=-1 lockedm=-1
+  G320833: status=6() m=-1 lockedm=-1
+  G322934: status=6() m=-1 lockedm=-1
+  G319122: status=6() m=-1 lockedm=-1
+  G321063: status=6() m=-1 lockedm=-1
+  G322973: status=6() m=-1 lockedm=-1
+  G322370: status=6() m=-1 lockedm=-1
+  G318403: status=6() m=-1 lockedm=-1
+  G322638: status=6() m=-1 lockedm=-1
+  G303601: status=6() m=-1 lockedm=-1
+  G322963: status=6() m=-1 lockedm=-1
+  G319659: status=6() m=-1 lockedm=-1
+  G321052: status=6() m=-1 lockedm=-1
+  G304882: status=6() m=-1 lockedm=-1
+  G314005: status=6() m=-1 lockedm=-1
+  G322737: status=6() m=-1 lockedm=-1
+  G313393: status=6() m=-1 lockedm=-1
+  G323451: status=1() m=-1 lockedm=-1
+  G321871: status=6() m=-1 lockedm=-1
+  G318822: status=6() m=-1 lockedm=-1
+  G322589: status=6() m=-1 lockedm=-1
+  G323074: status=6() m=-1 lockedm=-1
+  G321689: status=6() m=-1 lockedm=-1
+  G322368: status=6() m=-1 lockedm=-1
+  G322977: status=6() m=-1 lockedm=-1
+  G319937: status=6() m=-1 lockedm=-1
+  G317289: status=6() m=-1 lockedm=-1
+  G322687: status=6() m=-1 lockedm=-1
+  G322342: status=6() m=-1 lockedm=-1
+  G323107: status=6() m=-1 lockedm=-1
+  G322792: status=6() m=-1 lockedm=-1
+  G323474: status=1() m=-1 lockedm=-1
+  G323003: status=6() m=-1 lockedm=-1
+  G303854: status=6() m=-1 lockedm=-1
+  G319469: status=6() m=-1 lockedm=-1
+  G322470: status=6() m=-1 lockedm=-1
+  G320570: status=6() m=-1 lockedm=-1
+  G323415: status=1() m=-1 lockedm=-1
+  G319973: status=6() m=-1 lockedm=-1
+  G317303: status=6() m=-1 lockedm=-1
+  G321075: status=6() m=-1 lockedm=-1
+  G321342: status=6() m=-1 lockedm=-1
+  G313443: status=6() m=-1 lockedm=-1
+  G309903: status=6() m=-1 lockedm=-1
+  G322829: status=6() m=-1 lockedm=-1
+  G322870: status=6() m=-1 lockedm=-1
+  G318894: status=6() m=-1 lockedm=-1
+  G322821: status=6() m=-1 lockedm=-1
+  G320932: status=6() m=-1 lockedm=-1
+  G319541: status=6() m=-1 lockedm=-1
+  G317869: status=6() m=-1 lockedm=-1
+  G322633: status=6() m=-1 lockedm=-1
+  G317982: status=6() m=-1 lockedm=-1
+  G317676: status=6() m=-1 lockedm=-1
+  G320047: status=6() m=-1 lockedm=-1
+  G323244: status=6() m=-1 lockedm=-1
+  G312899: status=6() m=-1 lockedm=-1
+  G321073: status=6() m=-1 lockedm=-1
+  G322599: status=6() m=-1 lockedm=-1
+  G318144: status=6() m=-1 lockedm=-1
+  G319237: status=6() m=-1 lockedm=-1
+  G323294: status=6() m=-1 lockedm=-1
+  G318331: status=6() m=-1 lockedm=-1
+  G316737: status=6() m=-1 lockedm=-1
+  G311096: status=6() m=-1 lockedm=-1
+  G320310: status=6() m=-1 lockedm=-1
+  G319226: status=6() m=-1 lockedm=-1
+  G319948: status=6() m=-1 lockedm=-1
+  G321269: status=6() m=-1 lockedm=-1
+  G319892: status=6() m=-1 lockedm=-1
+  G320490: status=6() m=-1 lockedm=-1
+  G321899: status=6() m=-1 lockedm=-1
+  G319919: status=6() m=-1 lockedm=-1
+  G322993: status=6() m=-1 lockedm=-1
+  G321752: status=6() m=-1 lockedm=-1
+  G312463: status=6() m=-1 lockedm=-1
+  G317355: status=6() m=-1 lockedm=-1
+  G304256: status=6() m=-1 lockedm=-1
+  G321599: status=6() m=-1 lockedm=-1
+  G310104: status=6() m=-1 lockedm=-1
+  G319959: status=6() m=-1 lockedm=-1
+  G320913: status=6() m=-1 lockedm=-1
+  G323343: status=6() m=-1 lockedm=-1
+  G321649: status=6() m=-1 lockedm=-1
+  G320120: status=6() m=-1 lockedm=-1
+  G310701: status=6() m=-1 lockedm=-1
+  G314878: status=6() m=-1 lockedm=-1
+  G323479: status=1() m=-1 lockedm=-1
+  G320564: status=6() m=-1 lockedm=-1
+  G323446: status=1() m=-1 lockedm=-1
+  G320322: status=6() m=-1 lockedm=-1
+  G323104: status=6() m=-1 lockedm=-1
+  G319118: status=6() m=-1 lockedm=-1
+  G322555: status=6() m=-1 lockedm=-1
+  G323077: status=6() m=-1 lockedm=-1
+  G316054: status=6() m=-1 lockedm=-1
+  G323111: status=6() m=-1 lockedm=-1
+  G317202: status=6() m=-1 lockedm=-1
+  G319380: status=6() m=-1 lockedm=-1
+  G322784: status=6() m=-1 lockedm=-1
+  G314908: status=6() m=-1 lockedm=-1
+  G323018: status=6() m=-1 lockedm=-1
+  G319821: status=6() m=-1 lockedm=-1
+  G318301: status=6() m=-1 lockedm=-1
+  G303731: status=6() m=-1 lockedm=-1
+  G322339: status=6() m=-1 lockedm=-1
+  G323120: status=6() m=-1 lockedm=-1
+  G318511: status=6() m=-1 lockedm=-1
+  G304025: status=6() m=-1 lockedm=-1
+  G322765: status=6() m=-1 lockedm=-1
+  G309692: status=6() m=-1 lockedm=-1
+  G319123: status=6() m=-1 lockedm=-1
+  G322653: status=6() m=-1 lockedm=-1
+  G323412: status=1() m=-1 lockedm=-1
+  G301325: status=6() m=-1 lockedm=-1
+  G320812: status=6() m=-1 lockedm=-1
+  G322803: status=6() m=-1 lockedm=-1
+  G311768: status=6() m=-1 lockedm=-1
+  G315923: status=6() m=-1 lockedm=-1
+  G321164: status=6() m=-1 lockedm=-1
+  G322772: status=6() m=-1 lockedm=-1
+  G321811: status=6() m=-1 lockedm=-1
+  G322939: status=6() m=-1 lockedm=-1
+  G322808: status=6() m=-1 lockedm=-1
+  G323433: status=1() m=-1 lockedm=-1
+  G316153: status=6() m=-1 lockedm=-1
+  G323423: status=1() m=-1 lockedm=-1
+  G322906: status=6() m=-1 lockedm=-1
+  G303295: status=6() m=-1 lockedm=-1
+  G318612: status=6() m=-1 lockedm=-1
+  G320420: status=6() m=-1 lockedm=-1
+  G316410: status=6() m=-1 lockedm=-1
+  G322760: status=6() m=-1 lockedm=-1
+  G318942: status=6() m=-1 lockedm=-1
+  G320813: status=6() m=-1 lockedm=-1
+  G322666: status=6() m=-1 lockedm=-1
+  G321580: status=6() m=-1 lockedm=-1
+  G322610: status=6() m=-1 lockedm=-1
+  G320333: status=6() m=-1 lockedm=-1
+  G322219: status=6() m=-1 lockedm=-1
+  G318837: status=6() m=-1 lockedm=-1
+  G316774: status=6() m=-1 lockedm=-1
+  G323248: status=6() m=-1 lockedm=-1
+  G318081: status=6() m=-1 lockedm=-1
+  G322425: status=6() m=-1 lockedm=-1
+  G322098: status=6() m=-1 lockedm=-1
+  G321419: status=6() m=-1 lockedm=-1
+  G318707: status=6() m=-1 lockedm=-1
+  G322597: status=6() m=-1 lockedm=-1
+  G323016: status=6() m=-1 lockedm=-1
+  G322044: status=6() m=-1 lockedm=-1
+  G323180: status=6() m=-1 lockedm=-1
+  G322592: status=6() m=-1 lockedm=-1
+  G313511: status=6() m=-1 lockedm=-1
+  G312960: status=6() m=-1 lockedm=-1
+  G310094: status=6() m=-1 lockedm=-1
+  G313109: status=6() m=-1 lockedm=-1
+  G321716: status=6() m=-1 lockedm=-1
+  G322313: status=6() m=-1 lockedm=-1
+  G322697: status=6() m=-1 lockedm=-1
+  G322884: status=6() m=-1 lockedm=-1
+  G321278: status=6() m=-1 lockedm=-1
+  G313351: status=6() m=-1 lockedm=-1
+  G322635: status=6() m=-1 lockedm=-1
+  G205352: status=6() m=-1 lockedm=-1
+  G321508: status=6() m=-1 lockedm=-1
+  G322286: status=6() m=-1 lockedm=-1
+  G318297: status=6() m=-1 lockedm=-1
+  G323455: status=1() m=-1 lockedm=-1
+  G316974: status=6() m=-1 lockedm=-1
+  G321687: status=6() m=-1 lockedm=-1
+  G303514: status=6() m=-1 lockedm=-1
+  G323337: status=6() m=-1 lockedm=-1
+  G317016: status=6() m=-1 lockedm=-1
+  G318031: status=6() m=-1 lockedm=-1
+  G316907: status=6() m=-1 lockedm=-1
+  G306666: status=6() m=-1 lockedm=-1
+  G318094: status=6() m=-1 lockedm=-1
+  G322516: status=6() m=-1 lockedm=-1
+  G322506: status=6() m=-1 lockedm=-1
+  G313325: status=6() m=-1 lockedm=-1
+  G320690: status=6() m=-1 lockedm=-1
+  G319199: status=6() m=-1 lockedm=-1
+  G320900: status=6() m=-1 lockedm=-1
+  G305182: status=6() m=-1 lockedm=-1
+  G320023: status=6() m=-1 lockedm=-1
+  G319266: status=6() m=-1 lockedm=-1
+  G316936: status=6() m=-1 lockedm=-1
+  G313744: status=6() m=-1 lockedm=-1
+  G318359: status=6() m=-1 lockedm=-1
+  G320689: status=6() m=-1 lockedm=-1
+  G321190: status=6() m=-1 lockedm=-1
+  G323110: status=6() m=-1 lockedm=-1
+  G317033: status=6() m=-1 lockedm=-1
+  G320867: status=6() m=-1 lockedm=-1
+  G318705: status=6() m=-1 lockedm=-1
+  G323366: status=6() m=-1 lockedm=-1
+  G322233: status=6() m=-1 lockedm=-1
+  G318169: status=6() m=-1 lockedm=-1
+  G319776: status=6() m=-1 lockedm=-1
+  G322383: status=6() m=-1 lockedm=-1
+  G315935: status=2() m=42 lockedm=-1
+  G318076: status=6() m=-1 lockedm=-1
+  G317405: status=6() m=-1 lockedm=-1
+  G312826: status=6() m=-1 lockedm=-1
+  G312096: status=6() m=-1 lockedm=-1
+  G308299: status=6() m=-1 lockedm=-1
+  G323345: status=6() m=-1 lockedm=-1
+  G204223: status=6() m=-1 lockedm=-1
+  G319927: status=6() m=-1 lockedm=-1
+  G322015: status=6() m=-1 lockedm=-1
+  G322690: status=6() m=-1 lockedm=-1
+  G322152: status=6() m=-1 lockedm=-1
+  G323391: status=6() m=-1 lockedm=-1
+  G313215: status=6() m=-1 lockedm=-1
+  G121683: status=6() m=-1 lockedm=-1
+  G317846: status=6() m=-1 lockedm=-1
+  G322551: status=6() m=-1 lockedm=-1
+  G316169: status=6() m=-1 lockedm=-1
+  G322323: status=6() m=-1 lockedm=-1
+  G323124: status=6() m=-1 lockedm=-1
+  G323039: status=6() m=-1 lockedm=-1
+  G320464: status=6() m=-1 lockedm=-1
+  G322528: status=6() m=-1 lockedm=-1
+  G321966: status=6() m=-1 lockedm=-1
+  G316558: status=6() m=-1 lockedm=-1
+  G313690: status=6() m=-1 lockedm=-1
+  G322798: status=6() m=-1 lockedm=-1
+  G319325: status=6() m=-1 lockedm=-1
+  G323140: status=6() m=-1 lockedm=-1
+  G320550: status=6() m=-1 lockedm=-1
+  G323284: status=6() m=-1 lockedm=-1
+  G323097: status=6() m=-1 lockedm=-1
+  G322852: status=6() m=-1 lockedm=-1
+  G321181: status=6() m=-1 lockedm=-1
+  G310084: status=6() m=-1 lockedm=-1
+  G307922: status=6() m=-1 lockedm=-1
+  G323234: status=6() m=-1 lockedm=-1
+  G322131: status=6() m=-1 lockedm=-1
+  G322699: status=6() m=-1 lockedm=-1
+  G322876: status=6() m=-1 lockedm=-1
+  G319311: status=6() m=-1 lockedm=-1
+  G320796: status=6() m=-1 lockedm=-1
+  G321002: status=6() m=-1 lockedm=-1
+  G318226: status=6() m=-1 lockedm=-1
+  G323397: status=6() m=-1 lockedm=-1
+  G316030: status=6() m=-1 lockedm=-1
+  G320699: status=6() m=-1 lockedm=-1
+  G321111: status=6() m=-1 lockedm=-1
+  G304214: status=6() m=-1 lockedm=-1
+  G322100: status=6() m=-1 lockedm=-1
+  G322649: status=6() m=-1 lockedm=-1
+  G321061: status=6() m=-1 lockedm=-1
+  G323157: status=6() m=-1 lockedm=-1
+  G323218: status=6() m=-1 lockedm=-1
+  G321494: status=6() m=-1 lockedm=-1
+  G320157: status=6() m=-1 lockedm=-1
+  G319869: status=6() m=-1 lockedm=-1
+  G322525: status=6() m=-1 lockedm=-1
+  G309409: status=6() m=-1 lockedm=-1
+  G313309: status=6() m=-1 lockedm=-1
+  G322683: status=6() m=-1 lockedm=-1
+  G321887: status=6() m=-1 lockedm=-1
+  G322033: status=6() m=-1 lockedm=-1
+  G321889: status=6() m=-1 lockedm=-1
+  G322446: status=6() m=-1 lockedm=-1
+  G320293: status=6() m=-1 lockedm=-1
+  G323238: status=6() m=-1 lockedm=-1
+  G322775: status=6() m=-1 lockedm=-1
+  G323030: status=6() m=-1 lockedm=-1
+  G323418: status=1() m=-1 lockedm=-1
+  G322811: status=6() m=-1 lockedm=-1
+  G323237: status=6() m=-1 lockedm=-1
+  G322625: status=6() m=-1 lockedm=-1
+  G323252: status=6() m=-1 lockedm=-1
+  G317589: status=6() m=-1 lockedm=-1
+  G322957: status=6() m=-1 lockedm=-1
+  G323271: status=6() m=-1 lockedm=-1
+  G322306: status=6() m=-1 lockedm=-1
+  G319377: status=6() m=-1 lockedm=-1
+  G323256: status=6() m=-1 lockedm=-1
+  G322954: status=6() m=-1 lockedm=-1
+  G320050: status=6() m=-1 lockedm=-1
+  G312384: status=6() m=-1 lockedm=-1
+  G319186: status=6() m=-1 lockedm=-1
+  G322491: status=6() m=-1 lockedm=-1
+  G320728: status=6() m=-1 lockedm=-1
+  G323158: status=6() m=-1 lockedm=-1
+  G321587: status=6() m=-1 lockedm=-1
+  G321794: status=6() m=-1 lockedm=-1
+  G205178: status=6() m=-1 lockedm=-1
+  G308209: status=6() m=-1 lockedm=-1
+  G322421: status=6() m=-1 lockedm=-1
+  G323187: status=6() m=-1 lockedm=-1
+  G309120: status=6() m=-1 lockedm=-1
+  G321785: status=6() m=-1 lockedm=-1
+  G323389: status=6() m=-1 lockedm=-1
+  G321633: status=6() m=-1 lockedm=-1
+  G322580: status=6() m=-1 lockedm=-1
+  G322684: status=6() m=-1 lockedm=-1
+  G318516: status=6() m=-1 lockedm=-1
+  G321525: status=6() m=-1 lockedm=-1
+  G321000: status=6() m=-1 lockedm=-1
+  G322013: status=6() m=-1 lockedm=-1
+  G321020: status=6() m=-1 lockedm=-1
+  G323387: status=6() m=-1 lockedm=-1
+  G302747: status=6() m=-1 lockedm=-1
+  G321011: status=6() m=-1 lockedm=-1
+  G323453: status=1() m=-1 lockedm=-1
+  G316547: status=6() m=-1 lockedm=-1
+  G323410: status=1() m=-1 lockedm=-1
+  G316281: status=6() m=-1 lockedm=-1
+  G323288: status=6() m=-1 lockedm=-1
+  G317970: status=6() m=-1 lockedm=-1
+  G318162: status=6() m=-1 lockedm=-1
+  G322235: status=6() m=-1 lockedm=-1
+  G322540: status=6() m=-1 lockedm=-1
+  G320332: status=6() m=-1 lockedm=-1
+  G322465: status=6() m=-1 lockedm=-1
+  G320161: status=6() m=-1 lockedm=-1
+  G323002: status=6() m=-1 lockedm=-1
+  G308003: status=6() m=-1 lockedm=-1
+  G323381: status=6() m=-1 lockedm=-1
+  G323258: status=6() m=-1 lockedm=-1
+  G321247: status=6() m=-1 lockedm=-1
+  G318677: status=6() m=-1 lockedm=-1
+  G323425: status=1() m=-1 lockedm=-1
+  G322420: status=6() m=-1 lockedm=-1
+  G322804: status=6() m=-1 lockedm=-1
+  G314710: status=6() m=-1 lockedm=-1
+  G320399: status=6() m=-1 lockedm=-1
+  G320714: status=6() m=-1 lockedm=-1
+  G319583: status=6() m=-1 lockedm=-1
+  G312672: status=6() m=-1 lockedm=-1
+  G323105: status=6() m=-1 lockedm=-1
+  G318848: status=6() m=-1 lockedm=-1
+  G323100: status=6() m=-1 lockedm=-1
+  G317301: status=6() m=-1 lockedm=-1
+  G323353: status=6() m=-1 lockedm=-1
+  G321986: status=6() m=-1 lockedm=-1
+  G320456: status=6() m=-1 lockedm=-1
+  G323088: status=6() m=-1 lockedm=-1
+  G316978: status=6() m=-1 lockedm=-1
+  G322887: status=6() m=-1 lockedm=-1
+  G318725: status=6() m=-1 lockedm=-1
+  G318497: status=6() m=-1 lockedm=-1
+  G320799: status=6() m=-1 lockedm=-1
+  G323085: status=6() m=-1 lockedm=-1
+  G322833: status=6() m=-1 lockedm=-1
+  G321110: status=6() m=-1 lockedm=-1
+  G323311: status=6() m=-1 lockedm=-1
+  G323344: status=6() m=-1 lockedm=-1
+  G322243: status=6() m=-1 lockedm=-1
+  G318345: status=6() m=-1 lockedm=-1
+  G322933: status=6() m=-1 lockedm=-1
+  G323134: status=6() m=-1 lockedm=-1
+  G321570: status=6() m=-1 lockedm=-1
+  G316840: status=6() m=-1 lockedm=-1
+  G323013: status=6() m=-1 lockedm=-1
+  G322584: status=6() m=-1 lockedm=-1
+  G321845: status=6() m=-1 lockedm=-1
+  G317356: status=6() m=-1 lockedm=-1
+  G310357: status=6() m=-1 lockedm=-1
+  G318192: status=6() m=-1 lockedm=-1
+  G307728: status=6() m=-1 lockedm=-1
+  G318204: status=6() m=-1 lockedm=-1
+  G322430: status=6() m=-1 lockedm=-1
+  G321957: status=6() m=-1 lockedm=-1
+  G309697: status=6() m=-1 lockedm=-1
+  G316447: status=6() m=-1 lockedm=-1
+  G309564: status=6() m=-1 lockedm=-1
+  G321029: status=6() m=-1 lockedm=-1
+  G320810: status=6() m=-1 lockedm=-1
+  G322630: status=6() m=-1 lockedm=-1
+  G321618: status=6() m=-1 lockedm=-1
+  G323219: status=6() m=-1 lockedm=-1
+  G320459: status=6() m=-1 lockedm=-1
+  G323052: status=6() m=-1 lockedm=-1
+  G321850: status=6() m=-1 lockedm=-1
+  G313171: status=6() m=-1 lockedm=-1
+  G318024: status=6() m=-1 lockedm=-1
+  G313182: status=6() m=-1 lockedm=-1
+  G318025: status=6() m=-1 lockedm=-1
+  G313523: status=6() m=-1 lockedm=-1
+  G322682: status=6() m=-1 lockedm=-1
+  G319280: status=6() m=-1 lockedm=-1
+  G322606: status=6() m=-1 lockedm=-1
+  G320439: status=6() m=-1 lockedm=-1
+  G322722: status=6() m=-1 lockedm=-1
+  G323395: status=6() m=-1 lockedm=-1
+  G317361: status=6() m=-1 lockedm=-1
+  G317979: status=6() m=-1 lockedm=-1
+  G319332: status=6() m=-1 lockedm=-1
+  G322867: status=6() m=-1 lockedm=-1
+  G323379: status=6() m=-1 lockedm=-1
+  G323014: status=6() m=-1 lockedm=-1
+  G321039: status=6() m=-1 lockedm=-1
+  G322206: status=6() m=-1 lockedm=-1
+  G319035: status=6() m=-1 lockedm=-1
+  G323386: status=6() m=-1 lockedm=-1
+  G319210: status=6() m=-1 lockedm=-1
+  G316349: status=6() m=-1 lockedm=-1
+  G323420: status=1() m=-1 lockedm=-1
+  G322325: status=6() m=-1 lockedm=-1
+  G320026: status=6() m=-1 lockedm=-1
+  G321133: status=6() m=-1 lockedm=-1
+  G320869: status=6() m=-1 lockedm=-1
+  G316833: status=6() m=-1 lockedm=-1
+  G304721: status=6() m=-1 lockedm=-1
+  G309642: status=6() m=-1 lockedm=-1
+  G321354: status=6() m=-1 lockedm=-1
+  G322814: status=6() m=-1 lockedm=-1
+  G320400: status=6() m=-1 lockedm=-1
+  G313557: status=6() m=-1 lockedm=-1
+  G323007: status=6() m=-1 lockedm=-1
+  G323251: status=6() m=-1 lockedm=-1
+  G323127: status=6() m=-1 lockedm=-1
+  G322543: status=6() m=-1 lockedm=-1
+  G313116: status=6() m=-1 lockedm=-1
+  G322716: status=6() m=-1 lockedm=-1
+  G322440: status=6() m=-1 lockedm=-1
+  G323000: status=6() m=-1 lockedm=-1
+  G322611: status=6() m=-1 lockedm=-1
+  G319519: status=6() m=-1 lockedm=-1
+  G318329: status=6() m=-1 lockedm=-1
+  G320092: status=6() m=-1 lockedm=-1
+  G320731: status=6() m=-1 lockedm=-1
+  G323160: status=6() m=-1 lockedm=-1
+  G304911: status=6() m=-1 lockedm=-1
+  G323357: status=6() m=-1 lockedm=-1
+  G303530: status=6() m=-1 lockedm=-1
+  G321975: status=6() m=-1 lockedm=-1
+  G322000: status=6() m=-1 lockedm=-1
+  G323439: status=1() m=-1 lockedm=-1
+  G321470: status=6() m=-1 lockedm=-1
+  G310757: status=6() m=-1 lockedm=-1
+  G318179: status=6() m=-1 lockedm=-1
+  G319732: status=6() m=-1 lockedm=-1
+  G321960: status=6() m=-1 lockedm=-1
+  G321854: status=6() m=-1 lockedm=-1
+  G321686: status=6() m=-1 lockedm=-1
+  G323473: status=1() m=-1 lockedm=-1
+  G323384: status=6() m=-1 lockedm=-1
+  G320779: status=6() m=-1 lockedm=-1
+  G323034: status=6() m=-1 lockedm=-1
+  G317927: status=6() m=-1 lockedm=-1
+  G323011: status=6() m=-1 lockedm=-1
+  G310862: status=6() m=-1 lockedm=-1
+  G323259: status=6() m=-1 lockedm=-1
+  G316740: status=6() m=-1 lockedm=-1
+  G309559: status=6() m=-1 lockedm=-1
+  G323377: status=6() m=-1 lockedm=-1
+  G320964: status=6() m=-1 lockedm=-1
+  G323336: status=6() m=-1 lockedm=-1
+  G320970: status=6() m=-1 lockedm=-1
+  G320999: status=6() m=-1 lockedm=-1
+  G322203: status=6() m=-1 lockedm=-1
+  G313441: status=6() m=-1 lockedm=-1
+  G321481: status=6() m=-1 lockedm=-1
+  G319142: status=6() m=-1 lockedm=-1
+  G321013: status=6() m=-1 lockedm=-1
+  G322356: status=6() m=-1 lockedm=-1
+  G322374: status=6() m=-1 lockedm=-1
+  G322329: status=6() m=-1 lockedm=-1
+  G322974: status=6() m=-1 lockedm=-1
+  G122011: status=6() m=-1 lockedm=-1
+  G320038: status=6() m=-1 lockedm=-1
+  G321520: status=6() m=-1 lockedm=-1
+  G322774: status=6() m=-1 lockedm=-1
+  G322604: status=6() m=-1 lockedm=-1
+  G312732: status=6() m=-1 lockedm=-1
+  G309522: status=6() m=-1 lockedm=-1
+  G315947: status=6() m=-1 lockedm=-1
+  G322897: status=6() m=-1 lockedm=-1
+  G323297: status=6() m=-1 lockedm=-1
+  G321174: status=6() m=-1 lockedm=-1
+  G318384: status=6() m=-1 lockedm=-1
+  G318253: status=6() m=-1 lockedm=-1
+  G319289: status=6() m=-1 lockedm=-1
+  G321953: status=6() m=-1 lockedm=-1
+  G322861: status=6() m=-1 lockedm=-1
+  G317223: status=6() m=-1 lockedm=-1
+  G322844: status=6() m=-1 lockedm=-1
+  G316450: status=6() m=-1 lockedm=-1
+  G323454: status=1() m=-1 lockedm=-1
+  G121742: status=6() m=-1 lockedm=-1
+  G317300: status=6() m=-1 lockedm=-1
+  G319354: status=6() m=-1 lockedm=-1
+  G204837: status=6() m=-1 lockedm=-1
+  G316953: status=6() m=-1 lockedm=-1
+  G321177: status=6() m=-1 lockedm=-1
+  G322503: status=6() m=-1 lockedm=-1
+  G310024: status=6() m=-1 lockedm=-1
+  G323434: status=1() m=-1 lockedm=-1
+  G319726: status=6() m=-1 lockedm=-1
+  G322790: status=6() m=-1 lockedm=-1
+  G321547: status=6() m=-1 lockedm=-1
+  G320786: status=6() m=-1 lockedm=-1
+  G322337: status=6() m=-1 lockedm=-1
+  G321433: status=6() m=-1 lockedm=-1
+  G318995: status=6() m=-1 lockedm=-1
+  G316772: status=6() m=-1 lockedm=-1
+  G316842: status=6() m=-1 lockedm=-1
+  G309929: status=6() m=-1 lockedm=-1
+  G309831: status=6() m=-1 lockedm=-1
+  G321128: status=6() m=-1 lockedm=-1
+  G321944: status=6() m=-1 lockedm=-1
+  G323176: status=6() m=-1 lockedm=-1
+  G320620: status=6() m=-1 lockedm=-1
+  G323173: status=6() m=-1 lockedm=-1
+  G313150: status=6() m=-1 lockedm=-1
+  G311677: status=6() m=-1 lockedm=-1
+  G310934: status=6() m=-1 lockedm=-1
+  G317521: status=6() m=-1 lockedm=-1
+  G321331: status=6() m=-1 lockedm=-1
+  G322379: status=6() m=-1 lockedm=-1
+  G322961: status=6() m=-1 lockedm=-1
+  G321035: status=6() m=-1 lockedm=-1
+  G320057: status=6() m=-1 lockedm=-1
+  G205223: status=6() m=-1 lockedm=-1
+  G322634: status=6() m=-1 lockedm=-1
+  G320864: status=6() m=-1 lockedm=-1
+  G322778: status=6() m=-1 lockedm=-1
+  G322443: status=6() m=-1 lockedm=-1
+  G310147: status=6() m=-1 lockedm=-1
+  G323121: status=6() m=-1 lockedm=-1
+  G321176: status=6() m=-1 lockedm=-1
+  G316935: status=6() m=-1 lockedm=-1
+  G318134: status=6() m=-1 lockedm=-1
+  G321855: status=6() m=-1 lockedm=-1
+  G308461: status=6() m=-1 lockedm=-1
+  G323463: status=1() m=-1 lockedm=-1
+  G319098: status=6() m=-1 lockedm=-1
+  G322901: status=6() m=-1 lockedm=-1
+  G321459: status=6() m=-1 lockedm=-1
+  G323375: status=6() m=-1 lockedm=-1
+  G322898: status=6() m=-1 lockedm=-1
+  G323349: status=6() m=-1 lockedm=-1
+  G319667: status=6() m=-1 lockedm=-1
+  G319539: status=6() m=-1 lockedm=-1
+  G321115: status=6() m=-1 lockedm=-1
+  G323214: status=6() m=-1 lockedm=-1
+  G319653: status=6() m=-1 lockedm=-1
+  G316775: status=6() m=-1 lockedm=-1
+  G317151: status=6() m=-1 lockedm=-1
+  G317449: status=6() m=-1 lockedm=-1
+  G321500: status=6() m=-1 lockedm=-1
+  G316381: status=6() m=-1 lockedm=-1
+  G318606: status=6() m=-1 lockedm=-1
+  G322396: status=6() m=-1 lockedm=-1
+  G323472: status=1() m=-1 lockedm=-1
+  G323233: status=6() m=-1 lockedm=-1
+  G323095: status=6() m=-1 lockedm=-1
+  G320958: status=6() m=-1 lockedm=-1
+  G310190: status=6() m=-1 lockedm=-1
+  G322673: status=6() m=-1 lockedm=-1
+  G319724: status=6() m=-1 lockedm=-1
+  G314660: status=6() m=-1 lockedm=-1
+  G322290: status=6() m=-1 lockedm=-1
+  G323053: status=6() m=-1 lockedm=-1
+  G322149: status=6() m=-1 lockedm=-1
+  G322318: status=6() m=-1 lockedm=-1
+  G304254: status=6() m=-1 lockedm=-1
+  G323486: status=1() m=-1 lockedm=-1
+  G309999: status=6() m=-1 lockedm=-1
+  G321962: status=6() m=-1 lockedm=-1
+  G323269: status=6() m=-1 lockedm=-1
+  G322162: status=6() m=-1 lockedm=-1
+  G321958: status=6() m=-1 lockedm=-1
+  G312827: status=6() m=-1 lockedm=-1
+  G321861: status=6() m=-1 lockedm=-1
+  G205086: status=6() m=-1 lockedm=-1
+  G322454: status=6() m=-1 lockedm=-1
+  G323305: status=6() m=-1 lockedm=-1
+  G317637: status=6() m=-1 lockedm=-1
+  G322559: status=6() m=-1 lockedm=-1
+  G314808: status=6() m=-1 lockedm=-1
+  G322582: status=6() m=-1 lockedm=-1
+  G319794: status=6() m=-1 lockedm=-1
+  G321080: status=6() m=-1 lockedm=-1
+  G320685: status=6() m=-1 lockedm=-1
+  G309650: status=6() m=-1 lockedm=-1
+  G321161: status=6() m=-1 lockedm=-1
+  G312705: status=6() m=-1 lockedm=-1
+  G321280: status=6() m=-1 lockedm=-1
+  G203799: status=6() m=-1 lockedm=-1
+  G316619: status=6() m=-1 lockedm=-1
+  G321511: status=6() m=-1 lockedm=-1
+  G319793: status=6() m=-1 lockedm=-1
+  G322187: status=6() m=-1 lockedm=-1
+  G322651: status=6() m=-1 lockedm=-1
+  G316549: status=6() m=-1 lockedm=-1
+  G323456: status=1() m=-1 lockedm=-1
+  G320606: status=6() m=-1 lockedm=-1
+  G316497: status=6() m=-1 lockedm=-1
+  G322495: status=6() m=-1 lockedm=-1
+  G323190: status=6() m=-1 lockedm=-1
+  G319076: status=6() m=-1 lockedm=-1
+  G312657: status=6() m=-1 lockedm=-1
+  G320974: status=6() m=-1 lockedm=-1
+  G319025: status=6() m=-1 lockedm=-1
+  G318762: status=6() m=-1 lockedm=-1
+  G323464: status=1() m=-1 lockedm=-1
+  G312867: status=6() m=-1 lockedm=-1
+  G323090: status=6() m=-1 lockedm=-1
+  G322806: status=6() m=-1 lockedm=-1
+  G322946: status=6() m=-1 lockedm=-1
+  G316854: status=6() m=-1 lockedm=-1
+  G317220: status=6() m=-1 lockedm=-1
+  G315103: status=6() m=-1 lockedm=-1
+  G317201: status=6() m=-1 lockedm=-1
+  G320069: status=6() m=-1 lockedm=-1
+  G322110: status=6() m=-1 lockedm=-1
+  G323012: status=6() m=-1 lockedm=-1
+  G323239: status=6() m=-1 lockedm=-1
+  G320502: status=6() m=-1 lockedm=-1
+  G320531: status=6() m=-1 lockedm=-1
+  G320621: status=6() m=-1 lockedm=-1
+  G303453: status=6() m=-1 lockedm=-1
+  G317516: status=6() m=-1 lockedm=-1
+  G321276: status=6() m=-1 lockedm=-1
+  G318123: status=6() m=-1 lockedm=-1
+  G309854: status=6() m=-1 lockedm=-1
+  G321153: status=6() m=-1 lockedm=-1
+  G322019: status=6() m=-1 lockedm=-1
+  G318026: status=6() m=-1 lockedm=-1
+  G319523: status=6() m=-1 lockedm=-1
+  G320522: status=6() m=-1 lockedm=-1
+  G322184: status=6() m=-1 lockedm=-1
+  G316280: status=6() m=-1 lockedm=-1
+  G320849: status=6() m=-1 lockedm=-1
+  G321993: status=6() m=-1 lockedm=-1
+  G322129: status=6() m=-1 lockedm=-1
+  G320040: status=6() m=-1 lockedm=-1
+  G323431: status=1() m=-1 lockedm=-1
+  G318817: status=6() m=-1 lockedm=-1
+  G313800: status=6() m=-1 lockedm=-1
+  G323341: status=6() m=-1 lockedm=-1
+  G313706: status=6() m=-1 lockedm=-1
+  G309604: status=6() m=-1 lockedm=-1
+  G306663: status=6() m=-1 lockedm=-1
+  G313321: status=6() m=-1 lockedm=-1
+  G322544: status=6() m=-1 lockedm=-1
+  G321849: status=6() m=-1 lockedm=-1
+  G323313: status=6() m=-1 lockedm=-1
+  G323266: status=6() m=-1 lockedm=-1
+  G323243: status=6() m=-1 lockedm=-1
+  G314633: status=6() m=-1 lockedm=-1
+  G320613: status=6() m=-1 lockedm=-1
+  G321204: status=6() m=-1 lockedm=-1
+  G321069: status=6() m=-1 lockedm=-1
+  G310940: status=6() m=-1 lockedm=-1
+  G316560: status=6() m=-1 lockedm=-1
+  G318669: status=6() m=-1 lockedm=-1
+  G321424: status=6() m=-1 lockedm=-1
+  G321585: status=6() m=-1 lockedm=-1
+  G319925: status=6() m=-1 lockedm=-1
+  G312374: status=6() m=-1 lockedm=-1
+  G318488: status=6() m=-1 lockedm=-1
+  G323475: status=1() m=-1 lockedm=-1
+  G306670: status=6() m=-1 lockedm=-1
+  G320722: status=6() m=-1 lockedm=-1
+  G317816: status=6() m=-1 lockedm=-1
+  G322241: status=6() m=-1 lockedm=-1
+  G313497: status=6() m=-1 lockedm=-1
+  G320897: status=6() m=-1 lockedm=-1
+  G322042: status=6() m=-1 lockedm=-1
+  G316424: status=6() m=-1 lockedm=-1
+  G303801: status=6() m=-1 lockedm=-1
+  G322841: status=6() m=-1 lockedm=-1
+  G319329: status=6() m=-1 lockedm=-1
+  G323209: status=6() m=-1 lockedm=-1
+  G322151: status=6() m=-1 lockedm=-1
+  G322523: status=6() m=-1 lockedm=-1
+  G322485: status=6() m=-1 lockedm=-1
+  G319106: status=6() m=-1 lockedm=-1
+  G313647: status=6() m=-1 lockedm=-1
+  G323242: status=6() m=-1 lockedm=-1
+  G322114: status=6() m=-1 lockedm=-1
+  G310274: status=6() m=-1 lockedm=-1
+  G319424: status=6() m=-1 lockedm=-1
+  G319409: status=6() m=-1 lockedm=-1
+  G310798: status=6() m=-1 lockedm=-1
+  G308303: status=6() m=-1 lockedm=-1
+  G309530: status=6() m=-1 lockedm=-1
+  G323468: status=1() m=-1 lockedm=-1
+  G323378: status=6() m=-1 lockedm=-1
+  G322490: status=6() m=-1 lockedm=-1
+  G323060: status=6() m=-1 lockedm=-1
+  G317186: status=6() m=-1 lockedm=-1
+  G322956: status=6() m=-1 lockedm=-1
+  G322609: status=6() m=-1 lockedm=-1
+  G319108: status=6() m=-1 lockedm=-1
+  G323487: status=1() m=-1 lockedm=-1
+  G323394: status=6() m=-1 lockedm=-1
+  G322648: status=6() m=-1 lockedm=-1
+  G304110: status=6() m=-1 lockedm=-1
+  G320539: status=6() m=-1 lockedm=-1
+  G320045: status=6() m=-1 lockedm=-1
+  G303689: status=6() m=-1 lockedm=-1
+  G320745: status=6() m=-1 lockedm=-1
+  G323342: status=6() m=-1 lockedm=-1
+  G316110: status=6() m=-1 lockedm=-1
+  G320956: status=6() m=-1 lockedm=-1
+  G317269: status=6() m=-1 lockedm=-1
+  G322678: status=6() m=-1 lockedm=-1
+  G304741: status=6() m=-1 lockedm=-1
+  G320258: status=6() m=-1 lockedm=-1
+  G320631: status=6() m=-1 lockedm=-1
+  G318424: status=6() m=-1 lockedm=-1
+  G313408: status=6() m=-1 lockedm=-1
+  G322004: status=6() m=-1 lockedm=-1
+  G323262: status=6() m=-1 lockedm=-1
+  G203817: status=6() m=-1 lockedm=-1
+  G322750: status=6() m=-1 lockedm=-1
+  G317150: status=6() m=-1 lockedm=-1
+  G323352: status=6() m=-1 lockedm=-1
+  G321315: status=6() m=-1 lockedm=-1
+  G322027: status=6() m=-1 lockedm=-1
+  G321091: status=6() m=-1 lockedm=-1
+  G322145: status=6() m=-1 lockedm=-1
+  G321834: status=6() m=-1 lockedm=-1
+  G321858: status=6() m=-1 lockedm=-1
+  G317976: status=6() m=-1 lockedm=-1
+  G311422: status=6() m=-1 lockedm=-1
+  G322762: status=6() m=-1 lockedm=-1
+  G322515: status=6() m=-1 lockedm=-1
+  G314685: status=6() m=-1 lockedm=-1
+  G321751: status=6() m=-1 lockedm=-1
+  G304413: status=6() m=-1 lockedm=-1
+  G323153: status=6() m=-1 lockedm=-1
+  G314864: status=6() m=-1 lockedm=-1
+  G323449: status=1() m=-1 lockedm=-1
+  G319525: status=6() m=-1 lockedm=-1
+  G204668: status=6() m=-1 lockedm=-1
+  G322723: status=6() m=-1 lockedm=-1
+  G320114: status=6() m=-1 lockedm=-1
+  G320744: status=6() m=-1 lockedm=-1
+  G317039: status=6() m=-1 lockedm=-1
+  G323310: status=6() m=-1 lockedm=-1
+  G303342: status=6() m=-1 lockedm=-1
+  G320025: status=6() m=-1 lockedm=-1
+  G322373: status=6() m=-1 lockedm=-1
+  G319512: status=6() m=-1 lockedm=-1
+  G321121: status=6() m=-1 lockedm=-1
+  G320268: status=6() m=-1 lockedm=-1
+  G323115: status=6() m=-1 lockedm=-1
+  G316382: status=6() m=-1 lockedm=-1
+  G317726: status=6() m=-1 lockedm=-1
+  G314773: status=6() m=-1 lockedm=-1
+  G323355: status=6() m=-1 lockedm=-1
+  G322595: status=6() m=-1 lockedm=-1
+  G315210: status=6() m=-1 lockedm=-1
+  G322996: status=6() m=-1 lockedm=-1
+  G322738: status=6() m=-1 lockedm=-1
+  G322058: status=6() m=-1 lockedm=-1
+  G318126: status=6() m=-1 lockedm=-1
+  G322871: status=6() m=-1 lockedm=-1
+  G322705: status=6() m=-1 lockedm=-1
+  G314974: status=6() m=-1 lockedm=-1
+  G323382: status=6() m=-1 lockedm=-1
+  G313190: status=6() m=-1 lockedm=-1
+  G316941: status=6() m=-1 lockedm=-1
+  G321940: status=6() m=-1 lockedm=-1
+  G321017: status=6() m=-1 lockedm=-1
+  G316241: status=6() m=-1 lockedm=-1
+  G311337: status=6() m=-1 lockedm=-1
+  G321902: status=6() m=-1 lockedm=-1
+  G312217: status=6() m=-1 lockedm=-1
+  G320334: status=6() m=-1 lockedm=-1
+  G320529: status=6() m=-1 lockedm=-1
+  G320350: status=6() m=-1 lockedm=-1
+  G313176: status=6() m=-1 lockedm=-1
+  G322911: status=6() m=-1 lockedm=-1
+  G322363: status=6() m=-1 lockedm=-1
+  G322888: status=6() m=-1 lockedm=-1
+  G319979: status=6() m=-1 lockedm=-1
+  G322210: status=6() m=-1 lockedm=-1
+  G319090: status=6() m=-1 lockedm=-1
+  G316741: status=6() m=-1 lockedm=-1
+  G321338: status=6() m=-1 lockedm=-1
+  G319239: status=6() m=-1 lockedm=-1
+  G203826: status=6() m=-1 lockedm=-1
+  G315897: status=6() m=-1 lockedm=-1
+  G317164: status=6() m=-1 lockedm=-1
+  G322581: status=6() m=-1 lockedm=-1
+  G314791: status=6() m=-1 lockedm=-1
+  G323170: status=6() m=-1 lockedm=-1
+  G322322: status=6() m=-1 lockedm=-1
+  G310657: status=6() m=-1 lockedm=-1
+  G322048: status=6() m=-1 lockedm=-1
+  G321113: status=6() m=-1 lockedm=-1
+  G322227: status=6() m=-1 lockedm=-1
+  G319154: status=6() m=-1 lockedm=-1
+  G322215: status=6() m=-1 lockedm=-1
+  G317665: status=6() m=-1 lockedm=-1
+  G320323: status=6() m=-1 lockedm=-1
+  G323199: status=6() m=-1 lockedm=-1
+  G320678: status=6() m=-1 lockedm=-1
+  G322598: status=6() m=-1 lockedm=-1
+  G322104: status=6() m=-1 lockedm=-1
+  G322825: status=6() m=-1 lockedm=-1
+  G319258: status=6() m=-1 lockedm=-1
+  G321760: status=6() m=-1 lockedm=-1
+  G309761: status=6() m=-1 lockedm=-1
+  G323117: status=6() m=-1 lockedm=-1
+  G314810: status=6() m=-1 lockedm=-1
+  G312385: status=6() m=-1 lockedm=-1
+  G320551: status=6() m=-1 lockedm=-1
+  G323448: status=1() m=-1 lockedm=-1
+  G319678: status=6() m=-1 lockedm=-1
+  G323265: status=6() m=-1 lockedm=-1
+  G321694: status=6() m=-1 lockedm=-1
+  G321535: status=6() m=-1 lockedm=-1
+  G321756: status=6() m=-1 lockedm=-1
+  G122213: status=6() m=-1 lockedm=-1
+  G323122: status=6() m=-1 lockedm=-1
+  G322801: status=6() m=-1 lockedm=-1
+  G319086: status=6() m=-1 lockedm=-1
+  G313406: status=6() m=-1 lockedm=-1
+  G203651: status=6() m=-1 lockedm=-1
+  G321330: status=6() m=-1 lockedm=-1
+  G309809: status=6() m=-1 lockedm=-1
+  G323445: status=1() m=-1 lockedm=-1
+  G322399: status=6() m=-1 lockedm=-1
+  G315095: status=6() m=-1 lockedm=-1
+  G321827: status=6() m=-1 lockedm=-1
+  G322218: status=6() m=-1 lockedm=-1
+  G321084: status=6() m=-1 lockedm=-1
+  G319558: status=6() m=-1 lockedm=-1
+  G317042: status=6() m=-1 lockedm=-1
+  G320794: status=6() m=-1 lockedm=-1
+  G319193: status=6() m=-1 lockedm=-1
+  G319344: status=6() m=-1 lockedm=-1
+  G319196: status=6() m=-1 lockedm=-1
+  G318926: status=6() m=-1 lockedm=-1
+  G322565: status=6() m=-1 lockedm=-1
+  G322012: status=6() m=-1 lockedm=-1
+  G322709: status=6() m=-1 lockedm=-1
+  G318466: status=6() m=-1 lockedm=-1
+  G320217: status=6() m=-1 lockedm=-1
+  G204425: status=6() m=-1 lockedm=-1
+  G320965: status=6() m=-1 lockedm=-1
+  G322840: status=6() m=-1 lockedm=-1
+  G322703: status=6() m=-1 lockedm=-1
+  G321173: status=6() m=-1 lockedm=-1
+  G308207: status=6() m=-1 lockedm=-1
+  G318027: status=6() m=-1 lockedm=-1
+  G318668: status=6() m=-1 lockedm=-1
+  G316145: status=6() m=-1 lockedm=-1
+  G320941: status=6() m=-1 lockedm=-1
+  G321800: status=6() m=-1 lockedm=-1
+  G321973: status=6() m=-1 lockedm=-1
+  G322061: status=6() m=-1 lockedm=-1
+  G323411: status=1() m=-1 lockedm=-1
+  G319327: status=6() m=-1 lockedm=-1
+  G323177: status=6() m=-1 lockedm=-1
+  G318298: status=6() m=-1 lockedm=-1
+  G312598: status=6() m=-1 lockedm=-1
+  G314665: status=6() m=-1 lockedm=-1
+  G317129: status=6() m=-1 lockedm=-1
+  G309474: status=6() m=-1 lockedm=-1
+  G322793: status=6() m=-1 lockedm=-1
+  G321510: status=6() m=-1 lockedm=-1
+  G323466: status=1() m=-1 lockedm=-1
+  G323429: status=1() m=-1 lockedm=-1
+  G313491: status=6() m=-1 lockedm=-1
+  G321748: status=6() m=-1 lockedm=-1
+  G321879: status=6() m=-1 lockedm=-1
+  G320125: status=6() m=-1 lockedm=-1
+  G317396: status=6() m=-1 lockedm=-1
+  G323043: status=6() m=-1 lockedm=-1
+  G318739: status=6() m=-1 lockedm=-1
+  G317037: status=6() m=-1 lockedm=-1
+  G318957: status=6() m=-1 lockedm=-1
+  G321509: status=6() m=-1 lockedm=-1
+  G319754: status=6() m=-1 lockedm=-1
+  G314889: status=6() m=-1 lockedm=-1
+  G322138: status=6() m=-1 lockedm=-1
+  G318030: status=6() m=-1 lockedm=-1
+  G322823: status=6() m=-1 lockedm=-1
+  G320611: status=6() m=-1 lockedm=-1
+  G323210: status=6() m=-1 lockedm=-1
+  G311600: status=6() m=-1 lockedm=-1
+  G321650: status=6() m=-1 lockedm=-1
+  G320251: status=6() m=-1 lockedm=-1
+  G322855: status=6() m=-1 lockedm=-1
+  G323037: status=6() m=-1 lockedm=-1
+  G322905: status=6() m=-1 lockedm=-1
+  G320754: status=6() m=-1 lockedm=-1
+  G322314: status=6() m=-1 lockedm=-1
+  G322966: status=6() m=-1 lockedm=-1
+  G313386: status=6() m=-1 lockedm=-1
+  G323484: status=1() m=-1 lockedm=-1
+  G321358: status=6() m=-1 lockedm=-1
+  G321971: status=6() m=-1 lockedm=-1
+  G323308: status=6() m=-1 lockedm=-1
+  G317635: status=6() m=-1 lockedm=-1
+  G318992: status=6() m=-1 lockedm=-1
+  G321465: status=6() m=-1 lockedm=-1
+  G322449: status=6() m=-1 lockedm=-1
+  G322025: status=6() m=-1 lockedm=-1
+  G321124: status=6() m=-1 lockedm=-1
+  G319093: status=6() m=-1 lockedm=-1
+  G323340: status=6() m=-1 lockedm=-1
+  G317906: status=6() m=-1 lockedm=-1
+  G321583: status=6() m=-1 lockedm=-1
+  G322892: status=6() m=-1 lockedm=-1
+  G322066: status=6() m=-1 lockedm=-1
+  G318186: status=6() m=-1 lockedm=-1
+  G307145: status=6() m=-1 lockedm=-1
+  G321602: status=6() m=-1 lockedm=-1
+  G317975: status=6() m=-1 lockedm=-1
+  G320688: status=6() m=-1 lockedm=-1
+  G322997: status=6() m=-1 lockedm=-1
+  G320096: status=6() m=-1 lockedm=-1
+  G315167: status=6() m=-1 lockedm=-1
+  G321797: status=6() m=-1 lockedm=-1
+  G322720: status=6() m=-1 lockedm=-1
+  G323485: status=1() m=-1 lockedm=-1
+  G322708: status=6() m=-1 lockedm=-1
+  G310890: status=6() m=-1 lockedm=-1
+  G317818: status=6() m=-1 lockedm=-1
+  G312701: status=6() m=-1 lockedm=-1
+  G303675: status=6() m=-1 lockedm=-1
+  G321362: status=6() m=-1 lockedm=-1
+  G321755: status=6() m=-1 lockedm=-1
+  G321287: status=6() m=-1 lockedm=-1
+  G320413: status=6() m=-1 lockedm=-1
+  G321645: status=6() m=-1 lockedm=-1
+  G201551: status=6() m=-1 lockedm=-1
+  G319319: status=6() m=-1 lockedm=-1
+  G305903: status=6() m=-1 lockedm=-1
+  G316357: status=6() m=-1 lockedm=-1
+  G322863: status=6() m=-1 lockedm=-1
+  G322754: status=6() m=-1 lockedm=-1
+  G321647: status=6() m=-1 lockedm=-1
+  G313126: status=6() m=-1 lockedm=-1
+  G322639: status=6() m=-1 lockedm=-1
+  G321753: status=6() m=-1 lockedm=-1
+  G323249: status=6() m=-1 lockedm=-1
+  G322561: status=6() m=-1 lockedm=-1
+  G303738: status=6() m=-1 lockedm=-1
+  G317836: status=6() m=-1 lockedm=-1
+  G317559: status=6() m=-1 lockedm=-1
+  G306665: status=6() m=-1 lockedm=-1
+  G116646: status=6() m=-1 lockedm=-1
+  G323220: status=6() m=-1 lockedm=-1
+  G321713: status=6() m=-1 lockedm=-1
+  G323393: status=6() m=-1 lockedm=-1
+  G323286: status=6() m=-1 lockedm=-1
+  G314463: status=6() m=-1 lockedm=-1
+  G323302: status=6() m=-1 lockedm=-1
+  G321885: status=6() m=-1 lockedm=-1
+  G204224: status=6() m=-1 lockedm=-1
+  G312762: status=6() m=-1 lockedm=-1
+  G318587: status=6() m=-1 lockedm=-1
+  G322556: status=6() m=-1 lockedm=-1
+  G319856: status=6() m=-1 lockedm=-1
+  G322644: status=6() m=-1 lockedm=-1
+  G312147: status=6() m=-1 lockedm=-1
+  G319363: status=6() m=-1 lockedm=-1
+  G322009: status=6() m=-1 lockedm=-1
+  G319022: status=6() m=-1 lockedm=-1
+  G320832: status=6() m=-1 lockedm=-1
+  G322590: status=6() m=-1 lockedm=-1
+  G321289: status=6() m=-1 lockedm=-1
+  G323189: status=6() m=-1 lockedm=-1
+  G321972: status=6() m=-1 lockedm=-1
+  G322482: status=6() m=-1 lockedm=-1
+  G321051: status=6() m=-1 lockedm=-1
+  G318212: status=6() m=-1 lockedm=-1
+  G323292: status=6() m=-1 lockedm=-1
+  G321451: status=6() m=-1 lockedm=-1
+  G321516: status=6() m=-1 lockedm=-1
+  G320681: status=6() m=-1 lockedm=-1
+  G323380: status=6() m=-1 lockedm=-1
+  G316736: status=6() m=-1 lockedm=-1
+  G320416: status=6() m=-1 lockedm=-1
+  G317687: status=6() m=-1 lockedm=-1
+  G321676: status=6() m=-1 lockedm=-1
+  G323304: status=6() m=-1 lockedm=-1
+  G320906: status=6() m=-1 lockedm=-1
+  G320304: status=6() m=-1 lockedm=-1
+  G318023: status=6() m=-1 lockedm=-1
+  G321144: status=6() m=-1 lockedm=-1
+  G319253: status=6() m=-1 lockedm=-1
+  G322326: status=6() m=-1 lockedm=-1
+  G320632: status=6() m=-1 lockedm=-1
+  G322601: status=6() m=-1 lockedm=-1
+  G321059: status=6() m=-1 lockedm=-1
+  G313273: status=6() m=-1 lockedm=-1
+  G319563: status=6() m=-1 lockedm=-1
+  G322894: status=6() m=-1 lockedm=-1
+  G321353: status=6() m=-1 lockedm=-1
+  G323172: status=6() m=-1 lockedm=-1
+  G322832: status=6() m=-1 lockedm=-1
+  G311703: status=6() m=-1 lockedm=-1
+  G321548: status=6() m=-1 lockedm=-1
+  G323261: status=6() m=-1 lockedm=-1
+  G318623: status=6() m=-1 lockedm=-1
+  G323194: status=6() m=-1 lockedm=-1
+  G322102: status=6() m=-1 lockedm=-1
+  G317053: status=6() m=-1 lockedm=-1
+  G323057: status=6() m=-1 lockedm=-1
+  G318526: status=6() m=-1 lockedm=-1
+  G317063: status=6() m=-1 lockedm=-1
+  G320825: status=6() m=-1 lockedm=-1
+  G318234: status=6() m=-1 lockedm=-1
+  G322351: status=6() m=-1 lockedm=-1
+  G320336: status=6() m=-1 lockedm=-1
+  G312770: status=6() m=-1 lockedm=-1
+  G322036: status=6() m=-1 lockedm=-1
+  G319033: status=6() m=-1 lockedm=-1
+  G316391: status=6() m=-1 lockedm=-1
+  G314569: status=6() m=-1 lockedm=-1
+  G323376: status=6() m=-1 lockedm=-1
+  G322499: status=6() m=-1 lockedm=-1
+  G321673: status=6() m=-1 lockedm=-1
+  G320036: status=6() m=-1 lockedm=-1
+  G318308: status=6() m=-1 lockedm=-1
+  G317182: status=6() m=-1 lockedm=-1
+  G323245: status=6() m=-1 lockedm=-1
+  G314741: status=6() m=-1 lockedm=-1
+  G322327: status=6() m=-1 lockedm=-1
+  G320422: status=6() m=-1 lockedm=-1
+  G321768: status=6() m=-1 lockedm=-1
+  G316808: status=6() m=-1 lockedm=-1
+  G323167: status=6() m=-1 lockedm=-1
+  G320145: status=6() m=-1 lockedm=-1
+  G303962: status=6() m=-1 lockedm=-1
+  G318205: status=6() m=-1 lockedm=-1
+  G318771: status=6() m=-1 lockedm=-1
+  G318413: status=6() m=-1 lockedm=-1
+  G323459: status=1() m=-1 lockedm=-1
+  G322394: status=6() m=-1 lockedm=-1
+  G322953: status=6() m=-1 lockedm=-1
+  G317444: status=6() m=-1 lockedm=-1
+  G204010: status=6() m=-1 lockedm=-1
+  G321468: status=6() m=-1 lockedm=-1
+  G322995: status=6() m=-1 lockedm=-1
+  G323436: status=1() m=-1 lockedm=-1
+  G319880: status=6() m=-1 lockedm=-1
+  G318083: status=6() m=-1 lockedm=-1
+  G323086: status=6() m=-1 lockedm=-1
+  G323303: status=6() m=-1 lockedm=-1
+  G320783: status=6() m=-1 lockedm=-1
+  G316695: status=6() m=-1 lockedm=-1
+  G320788: status=6() m=-1 lockedm=-1
+  G318361: status=6() m=-1 lockedm=-1
+  G321427: status=6() m=-1 lockedm=-1
+  G323045: status=6() m=-1 lockedm=-1
+  G322488: status=6() m=-1 lockedm=-1
+  G322782: status=6() m=-1 lockedm=-1
+  G323193: status=6() m=-1 lockedm=-1
+  G320982: status=6() m=-1 lockedm=-1
+  G320280: status=6() m=-1 lockedm=-1
+  G323200: status=6() m=-1 lockedm=-1
+  G318048: status=6() m=-1 lockedm=-1
+  G323080: status=6() m=-1 lockedm=-1
+  G322291: status=6() m=-1 lockedm=-1
+  G322967: status=6() m=-1 lockedm=-1
+  G316587: status=6() m=-1 lockedm=-1
+  G322969: status=6() m=-1 lockedm=-1
+  G322994: status=6() m=-1 lockedm=-1
+  G204396: status=6() m=-1 lockedm=-1
+  G304210: status=6() m=-1 lockedm=-1
+  G312972: status=6() m=-1 lockedm=-1
+  G323295: status=6() m=-1 lockedm=-1
+  G322401: status=6() m=-1 lockedm=-1
+  G313194: status=6() m=-1 lockedm=-1
+  G321746: status=6() m=-1 lockedm=-1
+  G320868: status=6() m=-1 lockedm=-1
+  G205009: status=6() m=-1 lockedm=-1
+  G323032: status=6() m=-1 lockedm=-1
+  G309390: status=6() m=-1 lockedm=-1
+  G321747: status=6() m=-1 lockedm=-1
+  G322999: status=6() m=-1 lockedm=-1
+  G318661: status=6() m=-1 lockedm=-1
+  G320850: status=6() m=-1 lockedm=-1
+  G315140: status=6() m=-1 lockedm=-1
+fatal error: acquirep: invalid p state
+
+runtime stack:
+runtime.throw(0x562667)
+	/usr/local/go/src/runtime/panic.go:491 +0xad fp=0xc20dc71f10 sp=0xc20dc71ee0
+acquirep(0xc208060900)
+	/usr/local/go/src/runtime/proc.c:2747 +0x10d fp=0xc20dc71f30 sp=0xc20dc71f10
+stopm()
+	/usr/local/go/src/runtime/proc.c:1186 +0x1b2 fp=0xc20dc71f50 sp=0xc20dc71f30
+findrunnable(0xc208060900)
+	/usr/local/go/src/runtime/proc.c:1487 +0x562 fp=0xc20dc71f88 sp=0xc20dc71f50
+schedule()
+	/usr/local/go/src/runtime/proc.c:1575 +0x151 fp=0xc20dc71fb8 sp=0xc20dc71f88
+goexit0(0xc20d63aa20)
+	/usr/local/go/src/runtime/proc.c:1717 +0x16e fp=0xc20dc71fd0 sp=0xc20dc71fb8
+runtime.mcall(0x42e6b4)
+	/usr/local/go/src/runtime/asm_amd64.s:186 +0x5a fp=0xc20dc71fe0 sp=0xc20dc71fd0
+
+goroutine 1 [semacquire]:
+runtime.gopark(0x430260, 0x568aa0, 0x4f4bb0, 0xa)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc20801f5f8 sp=0xc20801f5c8
+runtime.goparkunlock(0x568aa0, 0x4f4bb0, 0xa)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc20801f620 sp=0xc20801f5f8
+runtime.semacquire(0xc21c2d24f8, 0xc21c2d2401)
+	/usr/local/go/src/runtime/sema.go:89 +0x22f fp=0xc20801f658 sp=0xc20801f620
+runtime.asyncsemacquire(0xc21c2d24f8)
+	/usr/local/go/src/runtime/sema.go:43 +0x2d fp=0xc20801f670 sp=0xc20801f658
+sync.(*WaitGroup).Wait(0xc20d1db8a0)
+	/usr/local/go/src/sync/waitgroup.go:132 +0x169 fp=0xc20801f698 sp=0xc20801f670
+main.sparselu_par_call(0xc2080a2000, 0x9dd1, 0x9dd1)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:105 +0x2bc fp=0xc20801f700 sp=0xc20801f698
+main.main()
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:123 +0x11f fp=0xc20801f798 sp=0xc20801f700
+runtime.main()
+	/usr/local/go/src/runtime/proc.go:63 +0xf3 fp=0xc20801f7e0 sp=0xc20801f798
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc20801f7e8 sp=0xc20801f7e0
+
+goroutine 2 [force gc (idle)]:
+runtime.gopark(0x430260, 0x5646f0, 0x4f26d0, 0xf)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc20801c798 sp=0xc20801c768
+runtime.goparkunlock(0x5646f0, 0x4f26d0, 0xf)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc20801c7c0 sp=0xc20801c798
+runtime.forcegchelper()
+	/usr/local/go/src/runtime/proc.go:99 +0xce fp=0xc20801c7e0 sp=0xc20801c7c0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc20801c7e8 sp=0xc20801c7e0
+created by runtime.init·4
+	/usr/local/go/src/runtime/proc.go:87 +0x25
+
+goroutine 3 [GC sweep wait]:
+runtime.gopark(0x430260, 0x56b9f0, 0x4efaf0, 0xd)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc20801ff98 sp=0xc20801ff68
+runtime.goparkunlock(0x56b9f0, 0x4efaf0, 0xd)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc20801ffc0 sp=0xc20801ff98
+runtime.bgsweep()
+	/usr/local/go/src/runtime/mgc0.go:98 +0xbc fp=0xc20801ffe0 sp=0xc20801ffc0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc20801ffe8 sp=0xc20801ffe0
+created by gc
+	/usr/local/go/src/runtime/mgc0.c:1386
+
+goroutine 4 [finalizer wait]:
+runtime.gopark(0x430260, 0x56b9e8, 0x4f2130, 0xe)
+	/usr/local/go/src/runtime/proc.go:130 +0x105 fp=0xc20801b730 sp=0xc20801b700
+runtime.goparkunlock(0x56b9e8, 0x4f2130, 0xe)
+	/usr/local/go/src/runtime/proc.go:136 +0x48 fp=0xc20801b758 sp=0xc20801b730
+runtime.runfinq()
+	/usr/local/go/src/runtime/malloc.go:727 +0xba fp=0xc20801b7e0 sp=0xc20801b758
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc20801b7e8 sp=0xc20801b7e0
+created by runtime.createfing
+	/usr/local/go/src/runtime/malloc.go:707 +0x5e
+
+goroutine 323424 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc2110e9fd8 sp=0xc2110e9fd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2110e9fe0 sp=0xc2110e9fd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323452 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc20ff267d8 sp=0xc20ff267d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc20ff267e0 sp=0xc20ff267d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323481 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc21716dfd8 sp=0xc21716dfd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc21716dfe0 sp=0xc21716dfd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323437 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc211e4efd8 sp=0xc211e4efd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc211e4efe0 sp=0xc211e4efd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323467 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc2134f4fd8 sp=0xc2134f4fd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2134f4fe0 sp=0xc2134f4fd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323480 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc21716ffd8 sp=0xc21716ffd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc21716ffe0 sp=0xc21716ffd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323414 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc2103697d8 sp=0xc2103697d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2103697e0 sp=0xc2103697d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323428 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc20ec7a7d8 sp=0xc20ec7a7d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc20ec7a7e0 sp=0xc20ec7a7d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323483 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc2149bcfd8 sp=0xc2149bcfd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2149bcfe0 sp=0xc2149bcfd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323457 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc2126ef7d8 sp=0xc2126ef7d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2126ef7e0 sp=0xc2126ef7d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323469 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc2103737d8 sp=0xc2103737d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2103737e0 sp=0xc2103737d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323443 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc2117dafd8 sp=0xc2117dafd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2117dafe0 sp=0xc2117dafd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323465 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc21019a7d8 sp=0xc21019a7d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc21019a7e0 sp=0xc21019a7d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323442 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc211617fd8 sp=0xc211617fd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc211617fe0 sp=0xc211617fd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323430 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc21117d7d8 sp=0xc21117d7d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc21117d7e0 sp=0xc21117d7d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323438 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc2110ec7d8 sp=0xc2110ec7d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2110ec7e0 sp=0xc2110ec7d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323417 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc2117defd8 sp=0xc2117defd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2117defe0 sp=0xc2117defd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323419 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc210a60fd8 sp=0xc210a60fd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc210a60fe0 sp=0xc210a60fd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323435 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc210a607d8 sp=0xc210a607d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc210a607e0 sp=0xc210a607d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323476 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc2117d9fd8 sp=0xc2117d9fd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2117d9fe0 sp=0xc2117d9fd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323462 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc2173ed7d8 sp=0xc2173ed7d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2173ed7e0 sp=0xc2173ed7d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323478 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc212c24fd8 sp=0xc212c24fd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc212c24fe0 sp=0xc212c24fd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323458 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc2119f87d8 sp=0xc2119f87d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2119f87e0 sp=0xc2119f87d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323422 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc2153617d8 sp=0xc2153617d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2153617e0 sp=0xc2153617d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323450 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc216d6a7d8 sp=0xc216d6a7d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc216d6a7e0 sp=0xc216d6a7d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323460 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc20fe737d8 sp=0xc20fe737d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc20fe737e0 sp=0xc20fe737d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323416 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc20f8f67d8 sp=0xc20f8f67d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc20f8f67e0 sp=0xc20f8f67d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323447 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc210a7ffd8 sp=0xc210a7ffd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc210a7ffe0 sp=0xc210a7ffd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323482 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc211f1bfd8 sp=0xc211f1bfd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc211f1bfe0 sp=0xc211f1bfd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323426 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc20fe73fd8 sp=0xc20fe73fd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc20fe73fe0 sp=0xc20fe73fd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323444 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc2156717d8 sp=0xc2156717d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2156717e0 sp=0xc2156717d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323440 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc21036b7d8 sp=0xc21036b7d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc21036b7e0 sp=0xc21036b7d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323427 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc2110d4fd8 sp=0xc2110d4fd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2110d4fe0 sp=0xc2110d4fd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323413 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc20fe877d8 sp=0xc20fe877d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc20fe877e0 sp=0xc20fe877d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323461 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc2171d7fd8 sp=0xc2171d7fd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2171d7fe0 sp=0xc2171d7fd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323441 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc2110e8fd8 sp=0xc2110e8fd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2110e8fe0 sp=0xc2110e8fd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323421 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc2119d6fd8 sp=0xc2119d6fd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2119d6fe0 sp=0xc2119d6fd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323470 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc20febcfd8 sp=0xc20febcfd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc20febcfe0 sp=0xc20febcfd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323432 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc20fa5c7d8 sp=0xc20fa5c7d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc20fa5c7e0 sp=0xc20fa5c7d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323471 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc2173f6fd8 sp=0xc2173f6fd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2173f6fe0 sp=0xc2173f6fd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323477 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc2146647d8 sp=0xc2146647d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2146647e0 sp=0xc2146647d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323451 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc215af2fd8 sp=0xc215af2fd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc215af2fe0 sp=0xc215af2fd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323474 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc20e5407d8 sp=0xc20e5407d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc20e5407e0 sp=0xc20e5407d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323415 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc215f1b7d8 sp=0xc215f1b7d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc215f1b7e0 sp=0xc215f1b7d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323479 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc211613fd8 sp=0xc211613fd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc211613fe0 sp=0xc211613fd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323446 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc20fea57d8 sp=0xc20fea57d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc20fea57e0 sp=0xc20fea57d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323412 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc2101557d8 sp=0xc2101557d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2101557e0 sp=0xc2101557d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323433 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc216e597d8 sp=0xc216e597d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc216e597e0 sp=0xc216e597d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323423 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc20fe92fd8 sp=0xc20fe92fd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc20fe92fe0 sp=0xc20fe92fd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323455 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc20fec8fd8 sp=0xc20fec8fd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc20fec8fe0 sp=0xc20fec8fd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323418 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc212fea7d8 sp=0xc212fea7d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc212fea7e0 sp=0xc212fea7d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323453 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc21040a7d8 sp=0xc21040a7d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc21040a7e0 sp=0xc21040a7d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323410 [runnable]:
+sync.(*WaitGroup).Done(0xc20d1db8a0)
+	/usr/local/go/src/sync/waitgroup.go:84 fp=0xc216e56700 sp=0xc216e566f8
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x3c0 fp=0xc216e567d8 sp=0xc216e56700
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc216e567e0 sp=0xc216e567d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323425 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc2130b5fd8 sp=0xc2130b5fd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2130b5fe0 sp=0xc2130b5fd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323420 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc215f0ffd8 sp=0xc215f0ffd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc215f0ffe0 sp=0xc215f0ffd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323439 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc21480a7d8 sp=0xc21480a7d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc21480a7e0 sp=0xc21480a7d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323473 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc216e887d8 sp=0xc216e887d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc216e887e0 sp=0xc216e887d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323454 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc20fea17d8 sp=0xc20fea17d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc20fea17e0 sp=0xc20fea17d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323434 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc216e8efd8 sp=0xc216e8efd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc216e8efe0 sp=0xc216e8efd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323463 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc2103eb7d8 sp=0xc2103eb7d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2103eb7e0 sp=0xc2103eb7d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323472 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc21309c7d8 sp=0xc21309c7d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc21309c7e0 sp=0xc21309c7d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323486 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc216e41fd8 sp=0xc216e41fd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc216e41fe0 sp=0xc216e41fd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323456 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc210c907d8 sp=0xc210c907d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc210c907e0 sp=0xc210c907d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323464 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc216e387d8 sp=0xc216e387d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc216e387e0 sp=0xc216e387d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323431 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc2127cbfd8 sp=0xc2127cbfd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2127cbfe0 sp=0xc2127cbfd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323475 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc20ff5b7d8 sp=0xc20ff5b7d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc20ff5b7e0 sp=0xc20ff5b7d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323468 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc2127adfd8 sp=0xc2127adfd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2127adfe0 sp=0xc2127adfd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323487 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc20ec7b7d8 sp=0xc20ec7b7d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc20ec7b7e0 sp=0xc20ec7b7d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323449 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc210f07fd8 sp=0xc210f07fd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc210f07fe0 sp=0xc210f07fd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323448 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc20f88dfd8 sp=0xc20f88dfd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc20f88dfe0 sp=0xc20f88dfd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323445 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc2119ed7d8 sp=0xc2119ed7d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2119ed7e0 sp=0xc2119ed7d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323411 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc2174067d8 sp=0xc2174067d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2174067e0 sp=0xc2174067d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323466 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc2108a5fd8 sp=0xc2108a5fd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc2108a5fe0 sp=0xc2108a5fd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323429 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc216eb37d8 sp=0xc216eb37d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc216eb37e0 sp=0xc216eb37d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323484 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc20eedcfd8 sp=0xc20eedcfd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc20eedcfe0 sp=0xc20eedcfd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323485 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc211643fd8 sp=0xc211643fd0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc211643fe0 sp=0xc211643fd8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323459 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc20fa597d8 sp=0xc20fa597d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc20fa597e0 sp=0xc20fa597d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+
+goroutine 323436 [runnable]:
+main.func·001(0xc20d1db8a0)
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:91 fp=0xc20fe937d8 sp=0xc20fe937d0
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2232 +0x1 fp=0xc20fe937e0 sp=0xc20fe937d8
+created by main.sparselu_par_call
+	/home/stsimon/golang-parallel/src/benchmarks/sparselu-crash-mwe.go:102 +0x28f
+exit status 2

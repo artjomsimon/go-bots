@@ -15,24 +15,43 @@ var matrixSize, submatrixSize int
 func genmat(M []*[][]float32) {
 	var null_entry bool
 
-	/* generating the structure */
 	for ii := 0; ii < matrixSize; ii++ {
 		for jj := 0; jj < matrixSize; jj++ {
-			/* computing null entries */
+			null_entry = false
 
-				// In go, we need to initialize a 2d array by initializing the first dimension and
-				// then looping over that, initializing the 2nd dimension: https://golang.org/doc/effective_go.html
+			if (ii < jj) && (ii%3 != 0) {
+				null_entry = true
+			}
+			if (ii > jj) && (jj%3 != 0) {
+				null_entry = true
+			}
+			if ii%2 == 1 {
+				null_entry = true
+			}
+			if jj%2 == 1 {
+				null_entry = true
+			}
+			if ii == jj {
+				null_entry = false
+			}
+			if ii == jj-1 {
+				null_entry = false
+			}
+			if ii-1 == jj {
+				null_entry = false
+			}
+			if null_entry == false {
+
 				subMatrix := make([][]float32, submatrixSize)
 				for i := range subMatrix {
 					subMatrix[i] = make([]float32, submatrixSize)
 				}
 
 				M[ii*matrixSize+jj] = &subMatrix
-				/* error checking not really necessary, because unlike malloc(), make() doesn't simply return "nil" on failure.
-				if ((M[ii*matrixSize+jj] == nil)) {
-				               bots_message("Error: Out of memory\n");
-				               exit(101);
-				            }
+
+			} else {
+				M[ii*matrixSize+jj] = nil
+			}
 		}
 	}
 }

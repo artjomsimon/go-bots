@@ -22,7 +22,7 @@ nqueens:
 	gccgo -O3 -o $(OUT)$@-gccgo-$(TP7) $@-$(TP7).go $(WTIME)
 
 sparselu:
-	go build -o $(OUT)$@-$(TP1) $@-taskpool.go taskpool-$(TP1).go $(WTIME)
+	go build -o $(OUT)$@-$(TP1) $@-goforloop.go taskpool-$(TP1)-chan.go $(WTIME)
 	go build -o $(OUT)$@-$(TP3) $@-taskpool.go taskpool-$(TP3).go $(WTIME)
 	go build -o $(OUT)$@-$(TP5) $@-taskpool.go taskpool-$(TP5).go $(WTIME)
 	go build -o $(OUT)$@-$(TP6) $@-$(TP6).go $(WTIME)
